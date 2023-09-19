@@ -1,0 +1,16 @@
+C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\bin\Debug\Torneo Guillermito.exe.config
+C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\bin\Debug\Torneo Guillermito.exe
+C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\bin\Debug\Torneo Guillermito.pdb
+C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\obj\Debug\Torneo Guillermito.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\obj\Debug\Torneo Guillermito.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Cancha.resources
+C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Encuentro.resources
+C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Equipo.resources
+C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Menu.resources
+C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Club.resources
+C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Properties.Resources.resources
+C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Zona.resources
+C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\obj\Debug\Torneo Guillermito.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\obj\Debug\Torneo Guillermito.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\obj\Debug\Torneo Guillermito.exe
+C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\obj\Debug\Torneo Guillermito.pdb
