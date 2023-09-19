@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:card_view = "http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/card_view_equipos"
+    android:layout_margin="12dp"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardElevation="10dp"
+    card_view:contentPadding="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgEquipo"
+            android:layout_width="70dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/item_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginRight="45dp"
+            android:layout_toEndOf="@id/imgEquipo"
+            android:layout_toRightOf="@id/imgEquipo"
+            android:text="CLUB ATLETICO SARMIENTO DE HUMBOLDT"
+
+            android:textColor="@color/Prueba"
+            android:textSize="17.5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_nombre"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="0.5dp"
+            android:layout_toEndOf="@id/categoria_palabra"
+            android:layout_toRightOf="@id/categoria_palabra"
+            android:text="2008"
+
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/categoria_palabra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_nombre"
+            android:layout_toEndOf="@id/imgEquipo"
+            android:layout_toRightOf="@id/imgEquipo"
+            android:text="Categoria"
+
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:id="@+id/imgEstrella"
+            android:layout_width="40dp"
+            android:layout_height="37dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/idEquipoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tvZona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/nav_home"
+        android:title="Inicio"
+        android:icon="@drawable/home"
+        />
+
+    <item android:id="@+id/nav_favoritos"
+        android:title="Favoritos"
+        android:icon="@drawable/favorito"
+        />
+
+    <item android:id="@+id/nav_encuentros"
+        android:title="Encuentros"
+        android:icon="@drawable/encuentros"
+        />
+
+    <item android:id="@+id/nav_equipos"
+        android:title="Equipos"
+        android:icon="@drawable/escudo"
+        />
+
+    <item android:id="@+id/nav_fasedegrupos"
+        android:title="Grupos"
+        android:icon="@drawable/fasedegrupos1"
+        />
+
+        <item android:id="@+id/nav_cruces"
+            android:title="Cruces"
+            android:icon="@drawable/cruces3"
+            />
+
+    <item android:id="@+id/nav_instalaciones"
+        android:title="Instalaciones"
+        android:icon="@drawable/canchadefutbol"
+        />
+
+    <item android:id="@+id/nav_reglamento"
+        android:title="Reglamento"
+        android:icon="@drawable/documento"
+        />
+
+    <item android:id="@+id/nav_contactos"
+        android:title="Contactos"
+        android:icon="@drawable/telefono"
+        />
+    </group>
+</menu>

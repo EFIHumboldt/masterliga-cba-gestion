@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name"> Gestion Sarmientito Cruces </string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="equipo1">CLUB ATLETICO SARMIENTO</string>
+    <string name="equipo2">CLUB JUVENTUD UNIDA</string>
+    <string name="equipo3">CLUB ARGENTINOS DE FRANCK</string>
+    <string name="equipo4">CLUB ATLETICO FRANCK</string>
+    <string name="equipo5">CLUB ATLETICO 9 DE JULIO</string>
+    <string name="equipo6">SPORTING CLUB BEN HUR</string>
+    <string name="equipo7">CLUB ATLETICO MITRE</string>
+    <string name="categoria1">Categoria 2010</string>
+    <string name="categoria2">Categoria 2011</string>
+    <string name="categoria3">Categoria 2012</string>
+    <string name="categoria4">Categoria 2013</string>
+
+    <string name="zona_a_cancha_4_15_30_hs_16_11">ZONA A - CANCHA 4 - 15:30 HS - 16/11</string>
+    <string name="club_ateltico_franck">CLUB ATELTICO FRANCK</string>
+    <string name="title_activity_instalaciones">InstalacionesActivity</string>
+
+
+</resources>

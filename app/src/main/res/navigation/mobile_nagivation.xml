@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_nagivation"
+    app:startDestination="@id/inicioFragment">
+
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.aplicacionsarmientitoii.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" />
+
+
+    <fragment
+        android:id="@+id/equiposFragment"
+        android:name="com.example.aplicacionsarmientitoii.EquiposFragment"
+        android:label="fragment_equipos"
+        tools:layout="@layout/fragment_equipos">
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/favoritosFragment"
+        android:name="com.example.aplicacionsarmientitoii.FavoritosFragment"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_favoritos" />
+
+
+    <fragment
+        android:id="@+id/contactosFragment"
+        android:name="com.example.aplicacionsarmientitoii.ContactosFragment"
+        android:label="fragment_contactos"
+        tools:layout="@layout/fragment_contactos" />
+
+
+    <fragment
+        android:id="@+id/encuentrosFragment"
+        android:name="com.example.aplicacionsarmientitoii.EncuentrosFragment"
+        android:label="fragment_fase_de_grupos"
+        tools:layout="@layout/fragment_encuentros" />
+
+    <fragment
+        android:id="@+id/faseDeGruposFragment"
+        android:name="com.example.aplicacionsarmientitoii.EncuentrosFragment"
+        android:label="fragment_fase_de_grupos"
+        tools:layout="@layout/fragment_fase_de_grupos"/>
+
+
+    <fragment
+        android:id="@+id/reglamentoFragment"
+        android:name="com.example.aplicacionsarmientitoii.ReglamentoFragment"
+        android:label="fragment_reglamento"
+        tools:layout="@layout/fragment_reglamento" />
+
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.aplicacionsarmientitoii.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+
+
+    <activity
+        android:id="@+id/inicioAnimActivity"
+        android:name="com.example.aplicacionsarmientitoii.InicioAnimActivity"
+        android:label="InicioAnimActivity" />
+    <fragment
+        android:id="@+id/ayerFragment"
+        android:name="com.example.aplicacionsarmientitoii.CosasEncuentros.AyerFragment"
+        android:label="AyerFragment" />
+    <fragment
+        android:id="@+id/hoyFragment"
+        android:name="com.example.aplicacionsarmientitoii.CosasEncuentros.HoyFragment"
+        android:label="HoyFragment" />
+    <fragment
+        android:id="@+id/manianaFragment"
+        android:name="com.example.aplicacionsarmientitoii.CosasEncuentros.ManianaFragment"
+        android:label="ManianaFragment" />
+    <fragment
+        android:id="@+id/campaniaFragment"
+        android:name="com.example.aplicacionsarmientitoii.CosasDetalleEquipo.CampaniaFragment"
+        android:label="CampaniaFragment" />
+    <activity
+        android:id="@+id/detalleEquipoActivity"
+        android:name="com.example.aplicacionsarmientitoii.DetalleEquipoActivity"
+        android:label="DetalleEquipoActivity" />
+    <fragment
+        android:id="@+id/posicionFragment"
+        android:name="com.example.aplicacionsarmientitoii.CosasDetalleEquipo.PosicionFragment"
+        android:label="PosicionFragment" />
+    <fragment
+        android:id="@+id/crucesFragment"
+        android:name="com.example.aplicacionsarmientitoii.CrucesFragment"
+        android:label="fragment_cruces"
+        tools:layout="@layout/fragment_cruces" />
+    <activity
+        android:id="@+id/instalacionesActivity"
+        android:name="com.example.aplicacionsarmientitoii.InstalacionesActivity"
+        android:label="activity_instalaciones"
+        tools:layout="@layout/activity_instalaciones" />
+    <activity
+        android:id="@+id/faseDeGruposActivity"
+        android:name="com.example.aplicacionsarmientitoii.FaseDeGruposActivity"
+        android:label="FaseDeGruposActivity" />
+</navigation>

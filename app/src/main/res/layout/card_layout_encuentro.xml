@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+
+    xmlns:card_view = "http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/card_view_encuentro"
+    android:layout_margin="12dp"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardElevation="10dp"
+    card_view:contentPadding="0dp">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/id2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/FondoResultado"
+            android:visibility="invisible" />
+        <TextView
+            android:id="@+id/eq1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/FondoResultado"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/eq2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/FondoResultado"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tvTipoCruce"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/FondoResultado"
+            android:visibility="invisible" />
+
+
+        <ImageView
+            android:id="@+id/barraNegra"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/BarraInferior" />
+
+
+        <TextView
+            android:id="@+id/tvDatosEncuentro"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_alignParentBottom="true"
+            android:text="ZONA A - CANCHA 4 - 15:30 HS - 16/11"
+            android:textAlignment="center"
+            android:textColor="@color/DatosPartido"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgEquipoL"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/tvEquipoL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/barraNegra"
+            android:layout_below="@id/finalizado"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toLeftOf="@id/tvResultadoL"
+            android:layout_toRightOf="@+id/imgEquipoL"
+            android:gravity="center"
+            android:text="CLUB ATLETICO FRANCK"
+            android:textColor="@color/Prueba"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tvResultadoL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/barraNegra"
+            android:layout_below="@id/finalizado"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/guion"
+            android:lineSpacingExtra="8sp"
+            android:text="3"
+            android:textAlignment="textEnd"
+            android:textColor="@color/Prueba"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPenalesL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/barraNegra"
+            android:layout_below="@id/finalizado"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/guion"
+            android:lineSpacingExtra="8sp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/Prueba"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/guion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/finalizado"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:lineSpacingExtra="8sp"
+            android:text="-\n-"
+            android:textAlignment="center"
+            android:textColor="@color/Prueba"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvResultadoV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/barraNegra"
+            android:layout_below="@id/finalizado"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/guion"
+            android:lineSpacingExtra="8sp"
+            android:text="3"
+            android:textAlignment="textStart"
+            android:textColor="@color/Prueba"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPenalesV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/barraNegra"
+            android:layout_below="@id/finalizado"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/guion"
+            android:lineSpacingExtra="8sp"
+            android:textAlignment="textStart"
+            android:textColor="@color/Prueba"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvEquipov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/barraNegra"
+            android:layout_below="@id/finalizado"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toLeftOf="@id/imgEquipoV"
+            android:layout_toRightOf="@+id/tvResultadoV"
+            android:gravity="center"
+            android:text="CLUB ATELTICO MITRE"
+            android:textAlignment="center"
+            android:textColor="@color/Prueba"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/imgEquipoV"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            card_view:layout_constraintBottom_toTopOf="@id/barraNegra" />
+
+
+        <TextView
+            android:id="@+id/nroTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/Prueba"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/finalizado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:text="Finalizado"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tvidequipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

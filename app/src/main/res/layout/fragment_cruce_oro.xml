@@ -1,0 +1,2129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_copa_plata">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/scroll">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:id="@+id/tvFinalOro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#F6D949"
+                    android:text="FINAL - COPA DE ORO"
+                    android:textAlignment="center"
+                    android:textColor="#816305"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label1l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:paddingBottom="10dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvFinalOro"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora1"
+                    app:layout_constraintLeft_toRightOf="@id/label1l"
+                    app:layout_constraintRight_toLeftOf="@id/label1r"
+
+                    app:layout_constraintTop_toBottomOf="@+id/tvFinalOro"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label1r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvFinalOro"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label1l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs1"
+                    app:layout_constraintTop_toBottomOf="@+id/label1r"></EditText>
+
+                <TextView
+                    android:id="@+id/tv3Y4Oro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#F6D949"
+                    android:text="3ER Y 4TO PUESTO - COPA DE ORO"
+                    android:textAlignment="center"
+                    android:textColor="#816305"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/cancha1"
+                    tools:ignore="MissingConstraints" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/label2l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:paddingBottom="10dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv3Y4Oro"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="2\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora2"
+                    app:layout_constraintLeft_toRightOf="@id/label2l"
+                    app:layout_constraintRight_toLeftOf="@id/label2r"
+
+                    app:layout_constraintTop_toBottomOf="@+id/tv3Y4Oro"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label2r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv3Y4Oro"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label2l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs2"
+                    app:layout_constraintTop_toBottomOf="@+id/label2r"></EditText>
+
+
+                <TextView
+                    android:id="@+id/tvSemiOro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#F6D949"
+                    android:text="SEMIFINALES - COPA DE ORO"
+                    android:textAlignment="center"
+                    android:textColor="#816305"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/cancha2"
+                    tools:ignore="MissingConstraints" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/label3l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:paddingBottom="10dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvSemiOro"></AutoCompleteTextView>
+
+
+                <TextView
+                    android:id="@+id/vs3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora3"
+                    app:layout_constraintLeft_toRightOf="@id/label3l"
+                    app:layout_constraintRight_toLeftOf="@id/label3r"
+                    app:layout_constraintTop_toTopOf="@+id/label3r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label3r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSemiOro"></AutoCompleteTextView>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/label4l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:paddingBottom="10dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha3"></AutoCompleteTextView>
+
+
+                <EditText
+                    android:id="@+id/cancha3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label3l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs3"
+                    app:layout_constraintTop_toBottomOf="@+id/label3r"></EditText>
+
+
+                <TextView
+                    android:id="@+id/vs4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora4"
+                    app:layout_constraintEnd_toStartOf="@+id/label4r"
+                    app:layout_constraintStart_toEndOf="@+id/label4l"
+                    app:layout_constraintTop_toTopOf="@+id/label4r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <EditText
+                    android:id="@+id/cancha4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label4l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs4"
+                    app:layout_constraintTop_toBottomOf="@+id/label4r"></EditText>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/label4r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora3"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/tv4tosOro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#F6D949"
+                    android:text="4TOS DE FINAL - COPA DE ORO"
+                    android:textAlignment="center"
+                    android:textColor="#816305"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/cancha4" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/label5l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:paddingBottom="10dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv4tosOro"></AutoCompleteTextView>
+
+
+                <TextView
+                    android:id="@+id/vs5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="5\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora5"
+                    app:layout_constraintLeft_toRightOf="@id/label5l"
+                    app:layout_constraintRight_toLeftOf="@id/label5r"
+                    app:layout_constraintTop_toBottomOf="@+id/tv4tosOro"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label5r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv4tosOro"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label5l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs5"
+                    app:layout_constraintTop_toBottomOf="@+id/label5r"></EditText>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/label6l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:paddingBottom="10dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha5"></AutoCompleteTextView>
+
+
+                <TextView
+                    android:id="@+id/vs6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora6"
+                    app:layout_constraintLeft_toRightOf="@id/label6l"
+                    app:layout_constraintRight_toLeftOf="@id/label6r"
+                    app:layout_constraintTop_toTopOf="@+id/label6r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label6r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora5"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label6l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs6"
+                    app:layout_constraintTop_toBottomOf="@+id/label6r"></EditText>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/label7l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha6"></AutoCompleteTextView>
+
+
+                <TextView
+                    android:id="@+id/vs7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora7"
+                    app:layout_constraintLeft_toRightOf="@id/label7l"
+                    app:layout_constraintRight_toLeftOf="@id/label7r"
+                    app:layout_constraintTop_toTopOf="@+id/label7r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label7r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora6"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label7l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs7"
+                    app:layout_constraintTop_toBottomOf="@+id/label7r"></EditText>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/label8l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha7"></AutoCompleteTextView>
+
+
+                <TextView
+                    android:id="@+id/vs8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora8"
+                    app:layout_constraintLeft_toRightOf="@id/label8l"
+                    app:layout_constraintRight_toLeftOf="@id/label8r"
+                    app:layout_constraintTop_toTopOf="@+id/label8r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label8r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora7"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label8l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs8"
+                    app:layout_constraintTop_toBottomOf="@+id/label8r"></EditText>
+
+
+                <TextView
+                    android:id="@+id/tv8vosOro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#F6D949"
+                    android:text="8VOS DE FINAL - COPA DE ORO"
+                    android:textAlignment="center"
+                    android:textColor="#816305"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/cancha8"
+                    tools:ignore="MissingConstraints"
+                    />
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/label9l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv8vosOro"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="9\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora9"
+                    app:layout_constraintLeft_toRightOf="@id/label9l"
+                    app:layout_constraintRight_toLeftOf="@id/label9r"
+                    app:layout_constraintTop_toBottomOf="@+id/tv8vosOro"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label9r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv8vosOro"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label9l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs9"
+                    app:layout_constraintTop_toBottomOf="@+id/label9r"></EditText>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label10l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha9"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora10"
+                    app:layout_constraintLeft_toRightOf="@id/label10l"
+                    app:layout_constraintRight_toLeftOf="@id/label10r"
+                    app:layout_constraintTop_toTopOf="@+id/label10r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label10r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora9"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label10l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs10"
+                    app:layout_constraintTop_toBottomOf="@+id/label10r"></EditText>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label11l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha10"></AutoCompleteTextView>
+
+
+                <TextView
+                    android:id="@+id/vs11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora11"
+                    app:layout_constraintEnd_toStartOf="@+id/label11r"
+                    app:layout_constraintStart_toEndOf="@+id/label11l"
+                    app:layout_constraintTop_toTopOf="@+id/label11r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label11r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cancha10"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs11"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label11l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs11"
+                    app:layout_constraintTop_toBottomOf="@+id/label11r"></EditText>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/label12l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha11"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora12"
+                    app:layout_constraintEnd_toStartOf="@+id/label12r"
+                    app:layout_constraintStart_toEndOf="@+id/label12l"
+                    app:layout_constraintTop_toTopOf="@+id/label12r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label12r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora11"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label12l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs12"
+                    app:layout_constraintTop_toBottomOf="@+id/label12r"></EditText>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/label13l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha12"></AutoCompleteTextView>
+
+
+                <TextView
+                    android:id="@+id/vs13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora13"
+                    app:layout_constraintEnd_toStartOf="@+id/label13r"
+                    app:layout_constraintStart_toEndOf="@+id/label13l"
+                    app:layout_constraintTop_toTopOf="@+id/label13r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label13r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cancha12">
+                </AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label13l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs13"
+                    app:layout_constraintTop_toBottomOf="@+id/label13r"></EditText>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label14l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha13"></AutoCompleteTextView>
+
+
+                <TextView
+                    android:id="@+id/vs14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora14"
+                    app:layout_constraintEnd_toStartOf="@+id/label14r"
+                    app:layout_constraintStart_toEndOf="@+id/label14l"
+                    app:layout_constraintTop_toTopOf="@+id/label14r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label14r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora13"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs14"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label14l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs14"
+                    app:layout_constraintTop_toBottomOf="@+id/label14r"></EditText>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/label15l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha14"></AutoCompleteTextView>
+
+
+                <TextView
+                    android:id="@+id/vs15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora15"
+                    app:layout_constraintEnd_toStartOf="@+id/label15r"
+                    app:layout_constraintStart_toEndOf="@+id/label15l"
+                    app:layout_constraintTop_toTopOf="@+id/label15r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label15r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora14"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label15l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs15"
+                    app:layout_constraintTop_toBottomOf="@+id/label15r"></EditText>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label16l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha15"></AutoCompleteTextView>
+
+
+                <TextView
+                    android:id="@+id/vs16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora16"
+                    app:layout_constraintEnd_toStartOf="@+id/label16r"
+                    app:layout_constraintStart_toEndOf="@+id/label16l"
+                    app:layout_constraintTop_toTopOf="@+id/label16r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label16r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora15"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label16l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs16"
+                    app:layout_constraintTop_toBottomOf="@+id/label16r"></EditText>
+
+                <TextView
+                    android:id="@+id/tv16vosOro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#F6D949"
+                    android:text="16VOS DE FINAL - COPA DE ORO"
+                    android:textAlignment="center"
+                    android:textColor="#816305"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/cancha16"
+                    tools:ignore="MissingConstraints"
+                    />
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/label17l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv16vosOro"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora17"
+                    app:layout_constraintLeft_toRightOf="@id/label17l"
+                    app:layout_constraintRight_toLeftOf="@id/label17r"
+                    app:layout_constraintTop_toBottomOf="@+id/tv16vosOro"
+                    tools:ignore="MissingConstraints"></TextView>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/label17r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv16vosOro"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs17"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label17l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs17"
+                    app:layout_constraintTop_toBottomOf="@+id/label17r"></EditText>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label18l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha17"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora18"
+                    app:layout_constraintEnd_toStartOf="@+id/label18r"
+                    app:layout_constraintStart_toEndOf="@+id/label18l"
+                    app:layout_constraintTop_toTopOf="@+id/label18r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label18r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora17"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs18"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label18l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs18"
+                    app:layout_constraintTop_toBottomOf="@+id/label18r"></EditText>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label19l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha18"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora19"
+                    app:layout_constraintEnd_toStartOf="@+id/label19r"
+                    app:layout_constraintStart_toEndOf="@+id/label19l"
+                    app:layout_constraintTop_toTopOf="@+id/label19r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label19r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora18"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs19"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label19l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs19"
+                    app:layout_constraintTop_toBottomOf="@+id/label19r"></EditText>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label20l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha19"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora20"
+                    app:layout_constraintEnd_toStartOf="@+id/label20r"
+                    app:layout_constraintStart_toEndOf="@+id/label20l"
+                    app:layout_constraintTop_toTopOf="@+id/label20r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label20r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora19"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs20"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label20l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs20"
+                    app:layout_constraintTop_toBottomOf="@+id/label20r"></EditText>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label21l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha20"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora21"
+                    app:layout_constraintEnd_toStartOf="@+id/label21r"
+                    app:layout_constraintStart_toEndOf="@+id/label21l"
+                    app:layout_constraintTop_toTopOf="@+id/label21r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label21r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora20"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs21"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label21l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs21"
+                    app:layout_constraintTop_toBottomOf="@+id/label21r"></EditText>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label22l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha21"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora22"
+                    app:layout_constraintEnd_toStartOf="@+id/label22r"
+                    app:layout_constraintStart_toEndOf="@+id/label22l"
+                    app:layout_constraintTop_toTopOf="@+id/label22r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label22r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cancha21"></AutoCompleteTextView>
+
+
+                <EditText
+                    android:id="@+id/cancha22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs22"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label22l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs22"
+                    app:layout_constraintTop_toBottomOf="@+id/label22r"></EditText>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/label23l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha22"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora23"
+                    app:layout_constraintEnd_toStartOf="@+id/label23r"
+                    app:layout_constraintStart_toEndOf="@+id/label23l"
+                    app:layout_constraintTop_toTopOf="@+id/label23r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label23r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora22"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs23"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label23l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs23"
+                    app:layout_constraintTop_toBottomOf="@+id/label23r"></EditText>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label24l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha23"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora24"
+                    app:layout_constraintEnd_toStartOf="@+id/label24r"
+                    app:layout_constraintStart_toEndOf="@+id/label24l"
+                    app:layout_constraintTop_toTopOf="@+id/label24r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label24r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora23"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label24l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs24"
+                    app:layout_constraintTop_toBottomOf="@+id/label24r"></EditText>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label25l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/hora24"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora25"
+                    app:layout_constraintEnd_toStartOf="@+id/label25r"
+                    app:layout_constraintStart_toEndOf="@+id/label25l"
+                    app:layout_constraintTop_toTopOf="@+id/label25r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label25r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora24"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs25"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label25l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs25"
+                    app:layout_constraintTop_toBottomOf="@+id/label25r"></EditText>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label26l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha25"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="26\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora26"
+                    app:layout_constraintEnd_toStartOf="@+id/label26r"
+                    app:layout_constraintStart_toEndOf="@+id/label26l"
+                    app:layout_constraintTop_toTopOf="@+id/label26r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label26r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora25"></AutoCompleteTextView>
+
+
+                <EditText
+                    android:id="@+id/cancha26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs26"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label26l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs26"
+                    app:layout_constraintTop_toBottomOf="@+id/label26r"></EditText>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/label27l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha26"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="27\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora27"
+                    app:layout_constraintEnd_toStartOf="@+id/label27r"
+                    app:layout_constraintStart_toEndOf="@+id/label27l"
+                    app:layout_constraintTop_toTopOf="@+id/label27r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label27r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora26"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs27"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label27l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs27"
+                    app:layout_constraintTop_toBottomOf="@+id/label27r"></EditText>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label28l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha27"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="28\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora28"
+                    app:layout_constraintEnd_toStartOf="@+id/label28r"
+                    app:layout_constraintStart_toEndOf="@+id/label28l"
+                    app:layout_constraintTop_toTopOf="@+id/label28r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label28r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora27"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs28"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label28l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs28"
+                    app:layout_constraintTop_toBottomOf="@+id/label28r"></EditText>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label29l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha28"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="29\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora29"
+                    app:layout_constraintEnd_toStartOf="@+id/label29r"
+                    app:layout_constraintStart_toEndOf="@+id/label29l"
+                    app:layout_constraintTop_toTopOf="@+id/label29r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label29r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora28"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs29"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label29l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs29"
+                    app:layout_constraintTop_toBottomOf="@+id/label29r"></EditText>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/label30l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha29"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora30"
+                    app:layout_constraintEnd_toStartOf="@+id/label30r"
+                    app:layout_constraintStart_toEndOf="@+id/label30l"
+                    app:layout_constraintTop_toTopOf="@+id/label30r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label30r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora29"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs30"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label30l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs30"
+                    app:layout_constraintTop_toBottomOf="@+id/label30r"></EditText>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label31l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha30"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="31\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora31"
+                    app:layout_constraintEnd_toStartOf="@+id/label31r"
+                    app:layout_constraintStart_toEndOf="@+id/label31l"
+                    app:layout_constraintTop_toTopOf="@+id/label31r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label31r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora30"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs31"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label31l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs31"
+                    app:layout_constraintTop_toBottomOf="@+id/label31r"></EditText>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label32l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cancha31"></AutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/vs32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="32\nVS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/hora32"
+                    app:layout_constraintEnd_toStartOf="@+id/label32r"
+                    app:layout_constraintStart_toEndOf="@+id/label32l"
+                    app:layout_constraintTop_toTopOf="@+id/label32r"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/label32r"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:completionThreshold="1"
+                    android:text=""
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hora31"></AutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/cancha32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="CANCHA"
+                    app:layout_constraintEnd_toStartOf="@+id/vs32"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label32l"></EditText>
+
+                <EditText
+                    android:id="@+id/hora32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="HORARIO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/vs32"
+                    app:layout_constraintTop_toBottomOf="@+id/label32r"></EditText>
+
+                <Button
+                    android:id="@+id/btnAceptarCreacionPlanilla"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CREAR CRUCES"
+                    android:visibility="invisible"
+                    app:layout_constraintTop_toBottomOf="@id/cancha32"
+                   >
+
+                </Button>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
