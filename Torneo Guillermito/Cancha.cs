@@ -16,5 +16,11 @@ namespace Torneo_Guillermito
         {
             InitializeComponent();
         }
+
+        private void Cancha_Load(object sender, EventArgs e)
+        {
+            Querys q = new Querys();
+            dgvCanchas.DataSource = q.LlenarTablaCanchas();
+        }
     }
 }
