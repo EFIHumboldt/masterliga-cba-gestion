@@ -14,3 +14,51 @@ C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\obj\Deb
 C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\obj\Debug\Torneo Guillermito.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\obj\Debug\Torneo Guillermito.exe
 C:\Users\Usuario\Desktop\PROYECTOS\Torneo Guillermito\Torneo Guillermito\obj\Debug\Torneo Guillermito.pdb
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\Torneo Guillermito.exe.config
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\Torneo Guillermito.exe
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\Torneo Guillermito.pdb
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\BouncyCastle.Crypto.dll
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\Google.Protobuf.dll
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\K4os.Compression.LZ4.dll
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\K4os.Hash.xxHash.dll
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\MySql.Data.dll
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Buffers.dll
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.IO.Pipelines.dll
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Memory.dll
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Numerics.Vectors.dll
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\ZstdSharp.dll
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\BouncyCastle.Crypto.xml
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\Google.Protobuf.pdb
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\Google.Protobuf.xml
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\K4os.Compression.LZ4.xml
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\K4os.Hash.xxHash.xml
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\MySql.Data.xml
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Buffers.xml
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.IO.Pipelines.xml
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Memory.xml
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Numerics.Vectors.xml
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guillermito.csproj.AssemblyReference.cache
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guillermito.csproj.SuggestedBindingRedirects.cache
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Cancha.resources
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Encuentro.resources
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Equipo.resources
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Menu.resources
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Club.resources
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Properties.Resources.resources
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Zona.resources
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guillermito.csproj.GenerateResource.cache
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guillermito.csproj.CoreCompileInputs.cache
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guillermito.csproj.CopyComplete
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guillermito.exe
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guillermito.pdb
