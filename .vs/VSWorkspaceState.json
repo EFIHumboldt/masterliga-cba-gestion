@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Torneo Guillermito",
+    "\\Torneo Guillermito\\Properties"
   ],
-  "SelectedNode": "\\Torneo Guillermito.sln",
+  "SelectedNode": "\\Torneo Guillermito\\Properties\\Resources.Designer.cs",
   "PreviewInSolutionExplorer": false
 }
