@@ -29,30 +29,33 @@ namespace Torneo_Guillermito
             DataTable dt = new DataTable();
             dt = q.LlenarTablaZonaFiltrado(comboEquipo1.Text);
 
+            comboEquipo2.Items.Clear();
+
             foreach (DataRow fila in dt.Rows)
             { comboEquipo2.Items.Add(fila[0].ToString()); }
-            comboEquipo2.SelectedIndex = 0;
+            if(comboEquipo2.Items.Count > 0) comboEquipo2.SelectedIndex = 0;
         }
 
-        private void Equipo_Load(object sender, EventArgs e)
+        private async void Equipo_Load(object sender, EventArgs e)
         {
             Querys q = new Querys();
-
             DataTable dt = new DataTable();
-            dt = q.LlenarTablaCategoria();
 
+            dt = q.LlenarTablaCategoria();
             foreach (DataRow fila in dt.Rows)
             { comboEquipo1.Items.Add(fila[0].ToString()); }
             comboEquipo1.SelectedIndex = 0;
             dgvEquipo1.DataSource = q.LlenarTablaClubFiltrado("");
 
-            dgvEquipo2.DataSource = q.LlenarTablaEquipo();
+            DataTable dt2 =  q.LlenarTablaEquipo();
+            dgvEquipo2.DataSource = dt2;
 
+            
             dgvEquipo1.Columns[0].Visible = false;
             dgvEquipo1.Columns[1].Width = 300;
             dgvEquipo2.Columns[0].Visible = false;
 
-
+            
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

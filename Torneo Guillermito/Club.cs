@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,16 +22,47 @@ namespace Torneo_Guillermito
             InitializeComponent();
         }
 
-        private void Club_Load(object sender, EventArgs e)
+        private async void Club_Load(object sender, EventArgs e)
         {
             Querys q = new Querys();
-            dgvClub.DataSource = q.LlenarTablaClub();
+            //MessageBox.Show(q.LlenarTablaClub().ToString());
+            DataTable dataTable = new DataTable();
+            dataTable = q.LlenarTablaClub();
+            dgvClub.DataSource = dataTable;
+            lbAdvertencia.Visible = true;
         }
 
         private void btLimpiarCanchas_Click(object sender, EventArgs e)
         {
             tbNombreClub1.Text = "";
             pbCancha1.Image = Resources.nada;
+           
+        }
+
+        private void DescargarImagenExistenteRemota(string url)
+        {
+            try
+            {
+                using (WebClient webClient = new WebClient())
+                {
+                    // Descarga la imagen desde la URL remota
+                    byte[] data = webClient.DownloadData(url);
+
+                    // Convierte los datos descargados en una imagen
+                    using (var ms = new System.IO.MemoryStream(data))
+                    {
+                        Image imagen = Image.FromStream(ms);
+
+                        // Asigna la imagen a la PictureBox
+                        pbCancha2.Image = imagen;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejo de errores
+                MessageBox.Show("Error al descargar la imagen: " + ex.Message);
+            }
         }
 
         private void pbCancha1_Click(object sender, EventArgs e)
@@ -56,43 +88,33 @@ namespace Torneo_Guillermito
 
                     // Abre el cuadro de diálogo para seleccionar la carpeta de destino
                     FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
-                    
 
-               
-                    // Obtiene la ruta seleccionada
 
-                    // Genera un nombre de archivo único (por ejemplo, usando la fecha y hora actual)
-                    
-
-                    // Combina la ruta de la carpeta de destino con el nombre del archivo
-                    string rutaCompleta = Path.Combine("D:\\xampp\\htdocs\\ESCUDOS", nombreArchivo);
-
-                    // Guarda la imagen en la carpeta de destino
+                    /* FALLA ALGO DEL FORMATO O NO SE QUE, LA DEJO AHI
+                     
+                    string rutaCompleta = Path.Combine("http://vps-3666997-x.dattaweb.com/ESCUDOS/", nombreArchivo);
                     pbCancha1.Image.Save(rutaCompleta, ImageFormat.Jpeg);
-
                     MessageBox.Show("Imagen guardada exitosamente.");
-                
-            }
-            else
+
+                    */
+                }
+                else
             {
                 MessageBox.Show("No se ha seleccionado una imagen para guardar.");
             }
         }
 
-        private void tbNombreClub1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void dgvClub_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            lbAdvertencia.Visible = false;
             // Especifica la ruta completa de la imagen, por ejemplo:
-            string rutaImagen = @"D:\xampp\htdocs\ESCUDOS\" + dgvClub.SelectedRows[0].Cells[2].Value.ToString();
+            string rutaImagen = Resources.carpetaFotosServer + dgvClub.SelectedRows[0].Cells[2].Value.ToString();
 
             try
             {
                 // Carga la imagen en el PictureBox
-                pbCancha2.Image = System.Drawing.Image.FromFile(rutaImagen);
+             
+                DescargarImagenExistenteRemota(rutaImagen);
                 tbNombreClub2.Text = dgvClub.SelectedRows[0].Cells[1].Value.ToString();
             }
             catch (Exception ex)
@@ -105,6 +127,8 @@ namespace Torneo_Guillermito
 
 
         }
+
+        // HAY QUE PROBAR SI SE LIBERA EL IF, SINO NI BORRAR LA FOTO NO CREO QUE ESTEN AHI CAMBIANDO FOTOS A DOS MANOS.
 
         private void btModificarClub_Click(object sender, EventArgs e)
         {
@@ -124,11 +148,6 @@ namespace Torneo_Guillermito
                     pbCancha2.Image.Dispose();
                     pbCancha2.Image = null;
                     pbCancha2.Image = Resources.nada;
-
-                    // Elimina el archivo (momentaneamente no util)
-
-                    //File.Delete(rutaArchivo);
-                    //MessageBox.Show("Archivo eliminado exitosamente.");
 
 
                 }

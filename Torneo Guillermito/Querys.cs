@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using MySql.Data.MySqlClient;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.Drawing.Imaging;
-using System.IO;
+using System.Net.Http;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
+
 
 namespace Torneo_Guillermito
 {
@@ -22,7 +21,7 @@ namespace Torneo_Guillermito
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
 
 
-            string cadena = "SELECT id as Numero, latitud as Latitud, longitud as Longitud FROM cancha";
+            string cadena = "SELECT id_cancha as Numero, latitud as Latitud, longitud as Longitud FROM cancha";
            
             MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
             MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
@@ -52,19 +51,17 @@ namespace Torneo_Guillermito
 
         public DataTable LlenarTablaEquipo()
         {
-
+            
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
 
-
             string cadena = "SELECT e.id_equipo as ID, c.nombre as Nombre, e.categoria as Categoria, z.id_zona as Zona FROM equipo as e INNER JOIN club as c ON e.club = c.id_club INNER JOIN zona as z ON e.zona = z.id WHERE z.id_zona <> 'Z';";
-
             MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
             MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
             DataSet ds = new DataSet();
             adapter.Fill(ds, "tabla_resultados_canchas");
             cn.cerrarconexion();
             return ds.Tables["tabla_resultados_canchas"];
-
+            
         }
 
         public void InsertarCancha(string numero, string latitud, string longitud)
@@ -186,8 +183,7 @@ namespace Torneo_Guillermito
                 MessageBox.Show("Zona '" + categoria + " - " +zona+ "' insertada correctamente", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception e)
-            {
-                //MessageBox.Show(e.Message);
+            {     
                 MessageBox.Show("Error al insertar la zona, verifique que los datos esten completos y correctos. Asegúrese además que el número de cancha que intenta ingresar no sea uno existente.", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
@@ -239,14 +235,14 @@ namespace Torneo_Guillermito
             return ds.Tables["tabla_resultados_club"];
 
         }
-
+     
         public DataTable LlenarTablaClubFiltrado(string nombre)
         {
 
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
 
 
-            string cadena = "SELECT id_club, nombre as 'Nombre Club' FROM club WHERE id_club>192 and nombre like '%" + nombre + "%'";
+            string cadena = "SELECT id_club, nombre as 'Nombre Club', escudo FROM club WHERE id_club>192 and nombre like '%" + nombre + "%'";
 
             MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
             MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
@@ -259,7 +255,6 @@ namespace Torneo_Guillermito
 
         public DataTable LlenarTablaZona()
         {
-
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
 
 

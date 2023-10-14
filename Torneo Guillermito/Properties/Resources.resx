@@ -121,4 +121,22 @@
   <data name="nada" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="carpetaFotosServer" xml:space="preserve">
+    <value>http://vps-3666997-x.dattaweb.com/ESCUDOS/</value>
+  </data>
+  <data name="Canchas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Canchas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Categorias" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Categorias.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clubes2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clubes2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Encuentros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Encuentros.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Equipos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Equipos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

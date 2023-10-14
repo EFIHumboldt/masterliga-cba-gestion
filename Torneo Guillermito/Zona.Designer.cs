@@ -56,54 +56,61 @@
             this.dgvCategoria.AllowUserToDeleteRows = false;
             this.dgvCategoria.AllowUserToResizeRows = false;
             this.dgvCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCategoria.Location = new System.Drawing.Point(157, 34);
+            this.dgvCategoria.Location = new System.Drawing.Point(183, 42);
+            this.dgvCategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvCategoria.MultiSelect = false;
             this.dgvCategoria.Name = "dgvCategoria";
             this.dgvCategoria.ReadOnly = true;
             this.dgvCategoria.RowHeadersVisible = false;
             this.dgvCategoria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCategoria.Size = new System.Drawing.Size(112, 320);
+            this.dgvCategoria.Size = new System.Drawing.Size(131, 394);
             this.dgvCategoria.TabIndex = 1;
             this.dgvCategoria.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategoria_CellClick);
             // 
             // gbAgregarClub
             // 
+            this.gbAgregarClub.BackColor = System.Drawing.Color.LemonChiffon;
             this.gbAgregarClub.Controls.Add(this.btEliminarCategoria);
             this.gbAgregarClub.Controls.Add(this.tbModificarCategoria);
             this.gbAgregarClub.Controls.Add(this.btModificarCategoria);
             this.gbAgregarClub.Controls.Add(this.tbAgregarCategoria);
             this.gbAgregarClub.Controls.Add(this.btAgregarCategoria);
             this.gbAgregarClub.Controls.Add(this.dgvCategoria);
-            this.gbAgregarClub.Location = new System.Drawing.Point(31, 25);
+            this.gbAgregarClub.Location = new System.Drawing.Point(36, 31);
+            this.gbAgregarClub.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbAgregarClub.Name = "gbAgregarClub";
-            this.gbAgregarClub.Size = new System.Drawing.Size(296, 437);
+            this.gbAgregarClub.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbAgregarClub.Size = new System.Drawing.Size(345, 538);
             this.gbAgregarClub.TabIndex = 23;
             this.gbAgregarClub.TabStop = false;
             this.gbAgregarClub.Text = "CATEGORIAS";
             // 
             // btEliminarCategoria
             // 
-            this.btEliminarCategoria.Location = new System.Drawing.Point(157, 373);
+            this.btEliminarCategoria.Location = new System.Drawing.Point(183, 459);
+            this.btEliminarCategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btEliminarCategoria.Name = "btEliminarCategoria";
-            this.btEliminarCategoria.Size = new System.Drawing.Size(112, 33);
+            this.btEliminarCategoria.Size = new System.Drawing.Size(131, 41);
             this.btEliminarCategoria.TabIndex = 20;
-            this.btEliminarCategoria.Text = "Eliminar";
+            this.btEliminarCategoria.Text = "Eliminar categoría";
             this.btEliminarCategoria.UseVisualStyleBackColor = true;
             // 
             // tbModificarCategoria
             // 
             this.tbModificarCategoria.Enabled = false;
-            this.tbModificarCategoria.Location = new System.Drawing.Point(28, 262);
+            this.tbModificarCategoria.Location = new System.Drawing.Point(33, 322);
+            this.tbModificarCategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbModificarCategoria.Name = "tbModificarCategoria";
-            this.tbModificarCategoria.Size = new System.Drawing.Size(104, 20);
+            this.tbModificarCategoria.Size = new System.Drawing.Size(121, 21);
             this.tbModificarCategoria.TabIndex = 19;
             // 
             // btModificarCategoria
             // 
             this.btModificarCategoria.Enabled = false;
-            this.btModificarCategoria.Location = new System.Drawing.Point(28, 297);
+            this.btModificarCategoria.Location = new System.Drawing.Point(33, 366);
+            this.btModificarCategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btModificarCategoria.Name = "btModificarCategoria";
-            this.btModificarCategoria.Size = new System.Drawing.Size(104, 33);
+            this.btModificarCategoria.Size = new System.Drawing.Size(121, 41);
             this.btModificarCategoria.TabIndex = 18;
             this.btModificarCategoria.Text = "Modificar categ.";
             this.btModificarCategoria.UseVisualStyleBackColor = true;
@@ -111,16 +118,18 @@
             // 
             // tbAgregarCategoria
             // 
-            this.tbAgregarCategoria.Location = new System.Drawing.Point(28, 68);
+            this.tbAgregarCategoria.Location = new System.Drawing.Point(33, 84);
+            this.tbAgregarCategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbAgregarCategoria.Name = "tbAgregarCategoria";
-            this.tbAgregarCategoria.Size = new System.Drawing.Size(104, 20);
+            this.tbAgregarCategoria.Size = new System.Drawing.Size(121, 21);
             this.tbAgregarCategoria.TabIndex = 17;
             // 
             // btAgregarCategoria
             // 
-            this.btAgregarCategoria.Location = new System.Drawing.Point(28, 103);
+            this.btAgregarCategoria.Location = new System.Drawing.Point(33, 127);
+            this.btAgregarCategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btAgregarCategoria.Name = "btAgregarCategoria";
-            this.btAgregarCategoria.Size = new System.Drawing.Size(104, 33);
+            this.btAgregarCategoria.Size = new System.Drawing.Size(121, 41);
             this.btAgregarCategoria.TabIndex = 14;
             this.btAgregarCategoria.Text = "Agregar categ.";
             this.btAgregarCategoria.UseVisualStyleBackColor = true;
@@ -128,6 +137,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.LemonChiffon;
             this.groupBox1.Controls.Add(this.comboZona3);
             this.groupBox1.Controls.Add(this.comboZona4);
             this.groupBox1.Controls.Add(this.btMoficiarZona);
@@ -136,9 +146,11 @@
             this.groupBox1.Controls.Add(this.btEliminarZona);
             this.groupBox1.Controls.Add(this.btAgregarZona);
             this.groupBox1.Controls.Add(this.dgvZona);
-            this.groupBox1.Location = new System.Drawing.Point(408, 25);
+            this.groupBox1.Location = new System.Drawing.Point(476, 31);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(479, 437);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(559, 538);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ZONAS";
@@ -148,9 +160,10 @@
             this.comboZona3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboZona3.Enabled = false;
             this.comboZona3.FormattingEnabled = true;
-            this.comboZona3.Location = new System.Drawing.Point(25, 262);
+            this.comboZona3.Location = new System.Drawing.Point(29, 322);
+            this.comboZona3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboZona3.Name = "comboZona3";
-            this.comboZona3.Size = new System.Drawing.Size(104, 21);
+            this.comboZona3.Size = new System.Drawing.Size(121, 24);
             this.comboZona3.TabIndex = 25;
             // 
             // comboZona4
@@ -158,17 +171,19 @@
             this.comboZona4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboZona4.Enabled = false;
             this.comboZona4.FormattingEnabled = true;
-            this.comboZona4.Location = new System.Drawing.Point(135, 262);
+            this.comboZona4.Location = new System.Drawing.Point(158, 322);
+            this.comboZona4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboZona4.Name = "comboZona4";
-            this.comboZona4.Size = new System.Drawing.Size(104, 21);
+            this.comboZona4.Size = new System.Drawing.Size(121, 24);
             this.comboZona4.TabIndex = 24;
             // 
             // btMoficiarZona
             // 
             this.btMoficiarZona.Enabled = false;
-            this.btMoficiarZona.Location = new System.Drawing.Point(80, 299);
+            this.btMoficiarZona.Location = new System.Drawing.Point(95, 373);
+            this.btMoficiarZona.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btMoficiarZona.Name = "btMoficiarZona";
-            this.btMoficiarZona.Size = new System.Drawing.Size(104, 33);
+            this.btMoficiarZona.Size = new System.Drawing.Size(121, 41);
             this.btMoficiarZona.TabIndex = 23;
             this.btMoficiarZona.Text = "Modificar zona";
             this.btMoficiarZona.UseVisualStyleBackColor = true;
@@ -177,34 +192,38 @@
             // 
             this.comboZona1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboZona1.FormattingEnabled = true;
-            this.comboZona1.Location = new System.Drawing.Point(25, 68);
+            this.comboZona1.Location = new System.Drawing.Point(29, 84);
+            this.comboZona1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboZona1.Name = "comboZona1";
-            this.comboZona1.Size = new System.Drawing.Size(104, 21);
+            this.comboZona1.Size = new System.Drawing.Size(121, 24);
             this.comboZona1.TabIndex = 22;
             // 
             // comboZona2
             // 
             this.comboZona2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboZona2.FormattingEnabled = true;
-            this.comboZona2.Location = new System.Drawing.Point(135, 68);
+            this.comboZona2.Location = new System.Drawing.Point(158, 84);
+            this.comboZona2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboZona2.Name = "comboZona2";
-            this.comboZona2.Size = new System.Drawing.Size(104, 21);
+            this.comboZona2.Size = new System.Drawing.Size(121, 24);
             this.comboZona2.TabIndex = 21;
             // 
             // btEliminarZona
             // 
-            this.btEliminarZona.Location = new System.Drawing.Point(306, 373);
+            this.btEliminarZona.Location = new System.Drawing.Point(342, 459);
+            this.btEliminarZona.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btEliminarZona.Name = "btEliminarZona";
-            this.btEliminarZona.Size = new System.Drawing.Size(104, 33);
+            this.btEliminarZona.Size = new System.Drawing.Size(157, 41);
             this.btEliminarZona.TabIndex = 20;
-            this.btEliminarZona.Text = "Eliminar";
+            this.btEliminarZona.Text = "Eliminar zona";
             this.btEliminarZona.UseVisualStyleBackColor = true;
             // 
             // btAgregarZona
             // 
-            this.btAgregarZona.Location = new System.Drawing.Point(80, 105);
+            this.btAgregarZona.Location = new System.Drawing.Point(93, 129);
+            this.btAgregarZona.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btAgregarZona.Name = "btAgregarZona";
-            this.btAgregarZona.Size = new System.Drawing.Size(104, 33);
+            this.btAgregarZona.Size = new System.Drawing.Size(121, 41);
             this.btAgregarZona.TabIndex = 14;
             this.btAgregarZona.Text = "Agregar zona";
             this.btAgregarZona.UseVisualStyleBackColor = true;
@@ -216,23 +235,27 @@
             this.dgvZona.AllowUserToDeleteRows = false;
             this.dgvZona.AllowUserToResizeRows = false;
             this.dgvZona.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvZona.Location = new System.Drawing.Point(260, 34);
+            this.dgvZona.Location = new System.Drawing.Point(303, 42);
+            this.dgvZona.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvZona.MultiSelect = false;
             this.dgvZona.Name = "dgvZona";
             this.dgvZona.ReadOnly = true;
             this.dgvZona.RowHeadersVisible = false;
             this.dgvZona.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvZona.Size = new System.Drawing.Size(189, 320);
+            this.dgvZona.Size = new System.Drawing.Size(220, 394);
             this.dgvZona.TabIndex = 1;
             this.dgvZona.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvZona_CellClick);
             // 
             // Zona
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 503);
+            this.BackColor = System.Drawing.Color.Khaki;
+            this.ClientSize = new System.Drawing.Size(1059, 604);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbAgregarClub);
+            this.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Zona";
             this.Text = "Categorias y Zonas Torneo Guillermito";
             this.Load += new System.EventHandler(this.Zona_Load);

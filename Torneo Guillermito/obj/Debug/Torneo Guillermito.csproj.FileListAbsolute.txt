@@ -49,7 +49,6 @@ D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Numeri
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guillermito.csproj.AssemblyReference.cache
-D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guillermito.csproj.SuggestedBindingRedirects.cache
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Cancha.resources
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Encuentro.resources
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Equipo.resources
@@ -62,3 +61,5 @@ D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guille
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guillermito.csproj.CopyComplete
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guillermito.exe
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guillermito.pdb
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\Newtonsoft.Json.dll
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\Newtonsoft.Json.xml
