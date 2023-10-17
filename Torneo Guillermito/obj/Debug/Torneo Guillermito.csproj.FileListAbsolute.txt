@@ -52,7 +52,6 @@ D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guille
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Cancha.resources
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Encuentro.resources
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Equipo.resources
-D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Menu.resources
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Club.resources
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Properties.Resources.resources
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Zona.resources
@@ -63,3 +62,4 @@ D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guille
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guillermito.pdb
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\Newtonsoft.Json.dll
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\Newtonsoft.Json.xml
+D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.gbEncuentros.resources

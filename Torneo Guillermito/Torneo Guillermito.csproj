@@ -228,5 +228,23 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fototorneo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tournament.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\football-pitch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categorization.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

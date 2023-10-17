@@ -1,21 +1,32 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.Net;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net.Http.Headers;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace Torneo_Guillermito
 {
-    public partial class Menu : Form
+
+    
+    public partial class gbEncuentros : Form
     {
-        public Menu()
+
+        public string rutaLocalArchivo = "";
+
+        public gbEncuentros()
         {
             InitializeComponent();
         }
@@ -38,8 +49,9 @@ namespace Torneo_Guillermito
             encuentro.Show();
         }
 
-        private void Club_Click(object sender, EventArgs e)
+        private async void Club_Click(object sender, EventArgs e)
         {
+           
             var club = new Club(); 
             club.Show();
         }
@@ -50,67 +62,56 @@ namespace Torneo_Guillermito
             equipo.Show();
         }
 
-        private void Menu_Load(object sender, EventArgs e)
+        private async void Menu_Load(object sender, EventArgs e)
         {
+            if (System.IO.File.Exists(@"C:\Users\Usuario\Pictures\foto.png"))
+            {
+                await SubirImagenAServidorRemoto();
+            }
         }
 
-        private void Club_MouseEnter(object sender, EventArgs e)
+        private async Task SubirImagenAServidorRemoto()
         {
-            lbClubes.Font = new Font(lbClubes.Font, FontStyle.Bold);
-        }
 
-        private void Club_MouseLeave(object sender, EventArgs e)
-        {
-            lbClubes.Font = new Font(lbClubes.Font, FontStyle.Regular);
+            // Configura la URL del servidor HTTPS
+            string serverUrl = "http://vps-3666997-x.dattaweb.com/ESCUDOS";
 
-        }
+            // Ruta completa del archivo local que deseas subir
+            string localFilePath = @"C:\Users\Usuario\Pictures\foto.png";
 
-        private void Zona_MouseEnter(object sender, EventArgs e)
-        {
-            lbCyZ.Font = new Font(lbCyZ.Font, FontStyle.Bold);
+            // Crea un cliente HTTP
+            using (HttpClient httpClient = new HttpClient())
+            {
+                using (MultipartFormDataContent form = new MultipartFormDataContent())
+                {
+                    // Lee el archivo local
+                    byte[] fileContents = System.IO.File.ReadAllBytes(localFilePath);
 
-        }
+                    // Crea un contenido de archivo
+                    ByteArrayContent fileContent = new ByteArrayContent(fileContents);
+                    fileContent.Headers.ContentDisposition = new ContentDispositionHeaderValue("form-data")
+                    {
+                        Name = "file",
+                        FileName = "foto.png"
+                    };
 
-        private void Zona_MouseLeave(object sender, EventArgs e)
-        {
-            lbCyZ.Font = new Font(lbCyZ.Font, FontStyle.Regular);
+                    // Agrega el contenido del archivo al formulario
+                    form.Add(fileContent);
 
-        }
+                    // Realiza la solicitud POST
+                    HttpResponseMessage response = await httpClient.PostAsync(serverUrl, form);
 
-        private void Equipo_MouseEnter(object sender, EventArgs e)
-        {
-            lbEquipos.Font = new Font(lbEquipos.Font, FontStyle.Bold);
-
-        }
-
-        private void Equipo_MouseLeave(object sender, EventArgs e)
-        {
-            lbEquipos.Font = new Font(lbEquipos.Font, FontStyle.Regular);
-
-        }
-
-        private void Encuentro_MouseEnter(object sender, EventArgs e)
-        {
-            lbEncuentros.Font = new Font(lbEncuentros.Font, FontStyle.Bold);
-
-        }
-
-        private void Encuentro_MouseLeave(object sender, EventArgs e)
-        {
-            lbEncuentros.Font = new Font(lbEncuentros.Font, FontStyle.Regular);
-
-        }
-
-        private void Cancha_MouseEnter(object sender, EventArgs e)
-        {
-            lbCanchas.Font = new Font(lbCanchas.Font, FontStyle.Bold);
-
-        }
-
-        private void Cancha_MouseLeave(object sender, EventArgs e)
-        {
-            lbCanchas.Font = new Font(lbCanchas.Font, FontStyle.Regular);
-
+                    // Verifica la respuesta
+                    if (response.IsSuccessStatusCode)
+                    {
+                        MessageBox.Show("File upload successful!");
+                    }
+                    else
+                    {
+                        MessageBox.Show($"File upload failed. Status Code: {response.StatusCode}");
+                    }
+                }
+            }
         }
     }
 }

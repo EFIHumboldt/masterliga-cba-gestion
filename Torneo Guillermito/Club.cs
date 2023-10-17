@@ -8,6 +8,8 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -89,20 +91,77 @@ namespace Torneo_Guillermito
                     // Abre el cuadro de diálogo para seleccionar la carpeta de destino
                     FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
 
+                    string rutaCompleta = Path.Combine(Resources.carpetaFotosServer, nombreArchivo);
 
-                    /* FALLA ALGO DEL FORMATO O NO SE QUE, LA DEJO AHI
-                     
-                    string rutaCompleta = Path.Combine("http://vps-3666997-x.dattaweb.com/ESCUDOS/", nombreArchivo);
-                    pbCancha1.Image.Save(rutaCompleta, ImageFormat.Jpeg);
-                    MessageBox.Show("Imagen guardada exitosamente.");
+                    SubirImagenAServidorRemoto();
 
-                    */
+
+
+                    //pbCancha1.Image.Save(rutaCompleta, ImageFormat.Png);
+                    //MessageBox.Show("Imagen guardada exitosamente.");
+
+                    
                 }
                 else
             {
                 MessageBox.Show("No se ha seleccionado una imagen para guardar.");
             }
         }
+
+        private async void SubirImagenAServidorRemoto()
+        {
+            try
+            {
+                // URL del servidor donde deseas cargar la imagen
+                string urlServidor = "https://vps-3666997-x.dattaweb.com/ESCUDOS";
+
+                // Ruta local del archivo que deseas cargar
+                string rutaLocalArchivo = @"D:\xampp\htdocs\ESCUDOS\20231010030129.png";
+
+                using (HttpClient cliente = new HttpClient())
+                using (var formData = new MultipartFormDataContent())
+                using (var archivoStream = new FileStream(rutaLocalArchivo, FileMode.Open, FileAccess.Read))
+                {
+                    // Crea un contenido de archivo y agrega el archivo al formulario
+                    var archivoContent = new StreamContent(archivoStream);
+                    archivoContent.Headers.ContentDisposition = new ContentDispositionHeaderValue("form-data")
+                    {
+                        Name = "archivo", // Nombre del campo en el formulario
+                        FileName = Path.GetFileName(rutaLocalArchivo) // Nombre del archivo en el servidor
+                    };
+
+                    formData.Add(archivoContent);
+
+                    // Realiza la solicitud POST al servidor
+                    HttpResponseMessage respuesta = await cliente.PostAsync(urlServidor, formData);
+
+                    // Verifica si la carga fue exitosa
+                    if (respuesta.IsSuccessStatusCode)
+                    {
+                        Console.WriteLine("La imagen se cargó con éxito en el servidor.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error al cargar la imagen: " + respuesta.ReasonPhrase);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+        }
+
+        // Método para convertir una imagen en un arreglo de bytes
+        private byte[] ImageToByteArray(Image imagen, System.Drawing.Imaging.ImageFormat formato)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                imagen.Save(ms, formato);
+                return ms.ToArray();
+            }
+        }
+
 
         private void dgvClub_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
