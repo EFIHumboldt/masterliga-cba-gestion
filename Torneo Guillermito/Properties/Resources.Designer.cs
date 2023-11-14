@@ -63,6 +63,26 @@ namespace Torneo_Guillermito.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap abajo {
+            get {
+                object obj = ResourceManager.GetObject("abajo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arriba {
+            get {
+                object obj = ResourceManager.GetObject("arriba", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Canchas {
             get {
                 object obj = ResourceManager.GetObject("Canchas", resourceCulture);
@@ -145,6 +165,16 @@ namespace Torneo_Guillermito.Properties {
         internal static System.Drawing.Bitmap fototorneo {
             get {
                 object obj = ResourceManager.GetObject("fototorneo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap location_pin {
+            get {
+                object obj = ResourceManager.GetObject("location-pin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

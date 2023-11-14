@@ -116,24 +116,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cancha.cs">
+    <Compile Include="Carga.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cancha.Designer.cs">
-      <DependentUpon>Cancha.cs</DependentUpon>
+    <Compile Include="Carga.Designer.cs">
+      <DependentUpon>Carga.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
-    <Compile Include="Encuentro.cs">
+    <Compile Include="DetalleCruce.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Encuentro.Designer.cs">
-      <DependentUpon>Encuentro.cs</DependentUpon>
+    <Compile Include="DetalleCruce.Designer.cs">
+      <DependentUpon>DetalleCruce.cs</DependentUpon>
     </Compile>
-    <Compile Include="Equipo.cs">
+    <Compile Include="GenerarCruce.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Equipo.Designer.cs">
-      <DependentUpon>Equipo.cs</DependentUpon>
+    <Compile Include="GenerarCruce.Designer.cs">
+      <DependentUpon>GenerarCruce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlantillaCruce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlantillaCruce.Designer.cs">
+      <DependentUpon>PlantillaCruce.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -141,48 +147,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Querys.cs" />
-    <Compile Include="Zona.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Zona.Designer.cs">
-      <DependentUpon>Zona.cs</DependentUpon>
-    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Club.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Club.Designer.cs">
-      <DependentUpon>Club.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Cancha.resx">
-      <DependentUpon>Cancha.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Encuentro.resx">
-      <DependentUpon>Encuentro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Equipo.resx">
-      <DependentUpon>Equipo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Club.resx">
-      <DependentUpon>Club.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Zona.resx">
-      <DependentUpon>Zona.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -245,6 +224,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\soccer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arriba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location-pin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
