@@ -49,12 +49,7 @@ D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Numeri
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guillermito.csproj.AssemblyReference.cache
-D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Cancha.resources
-D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Encuentro.resources
-D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Equipo.resources
-D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Club.resources
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Properties.Resources.resources
-D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo_Guillermito.Zona.resources
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guillermito.csproj.GenerateResource.cache
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guillermito.csproj.CoreCompileInputs.cache
 D:\PROYECTOS\TorneoGuillermitoGestion\Torneo Guillermito\obj\Debug\Torneo Guillermito.csproj.CopyComplete
