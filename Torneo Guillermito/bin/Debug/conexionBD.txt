@@ -1,1 +1,1 @@
-Server=vps-3666997-x.dattaweb.com; Database=vps2_sarmientito;Uid=vps3_efihumboldt;Pwd=guillermito2023;
+Server=vps-3888229-x.dattaweb.com; Database=vps3_guillermito;Uid=vps_2024;Pwd=laquevosquieras2022;
