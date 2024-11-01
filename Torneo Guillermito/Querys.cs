@@ -65,7 +65,7 @@ namespace Torneo_Guillermito
 
         }
 
-        public DataTable LlenarTablaEncuentro()
+        public DataTable LlenarTablaEncuentro(string filtro)
         {
 
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
@@ -76,9 +76,9 @@ namespace Torneo_Guillermito
                 " JOIN club as c1 ON eq1.club = c1.id_club" +
                 " JOIN club as c2 ON eq2.club = c2.id_club" +
                 " JOIN zona as z ON eq1.zona = z.id" +
-                " JOIN zona as z2 ON eq2.zona = z2.id" +
-                " WHERE z.id_zona<> 'Z' and z2.id_zona<> 'Z' and en.tipo = 0 and en.goles1 is null" +
-                " ORDER BY id_zona, hora;";
+                " JOIN zona as z2 ON eq2.zona = z2.id " +
+                filtro + " and en.goles1 is null" +
+                " ORDER BY en.fecha, en.hora;";
 
             MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
             MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
@@ -89,8 +89,9 @@ namespace Torneo_Guillermito
 
         }
 
-        public DataTable LlenarTablaEncuentroFiltrado(bool todos, string categoria, string zona, string fecha)
+        public DataTable LlenarTablaEncuentroFiltrado(bool todos, string categoria, string zona, string fecha, string filtro)
         {
+            filtro = " " + filtro;
             string all = "";
             if (todos)
             {
@@ -121,8 +122,8 @@ namespace Torneo_Guillermito
                 " JOIN club as c2 ON eq2.club = c2.id_club" +
                 " JOIN zona as z ON eq1.zona = z.id" +
                 " JOIN zona as z2 ON eq2.zona = z2.id" +
-                " WHERE en.tipo = 0 and z.id_zona<> 'Z' and z2.id_zona<> 'Z'" + all + categoria + zona + fecha +
-                " ORDER BY id_zona, hora;";
+                filtro + all + categoria + zona + fecha +
+                " ORDER BY en.fecha, en.hora;";
 
             MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
             MySqlDataAdapter adapter = new MySqlDataAdapter(comando);

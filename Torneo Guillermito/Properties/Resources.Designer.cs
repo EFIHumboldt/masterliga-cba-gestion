@@ -182,6 +182,16 @@ namespace Torneo_Guillermito.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo2024 {
+            get {
+                object obj = ResourceManager.GetObject("logo2024", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap nada {
             get {
                 object obj = ResourceManager.GetObject("nada", resourceCulture);

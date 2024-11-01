@@ -5,6 +5,7 @@ using MySql.Data.MySqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Torneo_Guillermito
 {
@@ -14,13 +15,13 @@ namespace Torneo_Guillermito
 
 
         string cadena = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
+        //string cadena = "Server=vps-3888229-x.dattaweb.com;Database=infantiles_torneoguillermito;Uid=casacolotest;Pwd=laquevosquieras;";
         public MySqlConnection conectarbd = new MySqlConnection();
 
         public conexion()
         {
-
+            Console.WriteLine(cadena); 
             conectarbd.ConnectionString = cadena;
-
         }
 
         public void abrirconexion()

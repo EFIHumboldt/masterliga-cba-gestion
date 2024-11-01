@@ -269,7 +269,7 @@
             this.Controls.Add(this.btGenerarCruce);
             this.Controls.Add(this.labelTituloCategoria);
             this.Controls.Add(this.dgvTabla);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximumSize = new System.Drawing.Size(966, 1257);
             this.Name = "GenerarCruce";

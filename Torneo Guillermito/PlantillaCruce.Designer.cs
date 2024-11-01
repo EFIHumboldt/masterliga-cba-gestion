@@ -3271,7 +3271,7 @@
             this.Controls.Add(this.lb1);
             this.Controls.Add(this.dgvFinalesOro);
             this.Controls.Add(this.pictureBox120);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximumSize = new System.Drawing.Size(2656, 1441);
             this.Name = "PlantillaCruce";

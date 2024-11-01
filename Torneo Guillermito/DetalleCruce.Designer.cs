@@ -345,7 +345,7 @@
             this.ClientSize = new System.Drawing.Size(854, 474);
             this.Controls.Add(this.groupBox11);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DetalleCruce";
             this.Text = "DetalleCruce";
