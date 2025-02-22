@@ -14,8 +14,9 @@ namespace Torneo_Guillermito
 
 
 
-        string cadena = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
-        //string cadena = "Server=vps-3888229-x.dattaweb.com;Database=infantiles_torneoguillermito;Uid=casacolotest;Pwd=laquevosquieras;";
+        //string cadena = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
+        string cadena = "Server=vps-4677860-x.dattaweb.com;Database=vps4_lipa_test;Uid=vps4_admin;Pwd=root;";
+        //contraseña del ssh: DA5wjdo56MVN%I
         public MySqlConnection conectarbd = new MySqlConnection();
 
         public conexion()

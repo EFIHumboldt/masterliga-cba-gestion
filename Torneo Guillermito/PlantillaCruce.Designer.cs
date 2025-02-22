@@ -2049,7 +2049,7 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.BackColor = System.Drawing.Color.FloralWhite;
+            this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(17, 15, 21);
             this.pictureBox10.Location = new System.Drawing.Point(1448, 115);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pictureBox10.Name = "pictureBox10";
@@ -3042,7 +3042,7 @@
             // 
             // pictureBox120
             // 
-            this.pictureBox120.BackColor = System.Drawing.Color.FloralWhite;
+            this.pictureBox120.BackColor = System.Drawing.Color.FromArgb(17, 15, 21);
             this.pictureBox120.Location = new System.Drawing.Point(1448, 702);
             this.pictureBox120.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pictureBox120.Name = "pictureBox120";

@@ -39,7 +39,7 @@ namespace Torneo_Guillermito
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
 
 
-            string cadena = "SELECT anio as AÑO FROM categoria";
+            string cadena = "SELECT ID, nombre as DIVISION FROM division";
 
             MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
             MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
@@ -55,7 +55,10 @@ namespace Torneo_Guillermito
 
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
 
-            string cadena = "SELECT e.id_equipo as ID, c.nombre as Nombre, e.categoria as Categoria, z.id_zona as Zona FROM equipo as e INNER JOIN club as c ON e.club = c.id_club INNER JOIN zona as z ON e.zona = z.id WHERE z.id_zona <> 'Z';";
+            string cadena = "SELECT e.ID, c.nombrecompleto, d.nombre, z.nombre as Zona FROM equipo as e " +
+                "INNER JOIN club as c ON e.club = c.id " +
+                "INNER JOIN zona as z ON e.zona = z.nombre " +
+                "INNER JOIN division as d ON d.ID = e.division;";
             MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
             MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
             DataSet ds = new DataSet();
@@ -70,14 +73,16 @@ namespace Torneo_Guillermito
 
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
 
-            string cadena = "SELECT en.id_partido, c1.nombre as 'nombre1', en.goles1, en.goles2,  c2.nombre  as 'nombre2', eq1.categoria, z.id_zona, z2.id_zona as id_zona2, DATE_FORMAT(en.fecha, '%Y-%m-%d') as fecha, TIME_FORMAT(en.hora, '%H:%i') as hora, en.cancha FROM partido as en" +
-                " JOIN equipo as eq1 ON en.equipo1 = eq1.id_equipo" +
-                " JOIN equipo as eq2 ON en.equipo2 = eq2.id_equipo" +
-                " JOIN club as c1 ON eq1.club = c1.id_club" +
-                " JOIN club as c2 ON eq2.club = c2.id_club" +
-                " JOIN zona as z ON eq1.zona = z.id" +
-                " JOIN zona as z2 ON eq2.zona = z2.id " +
-                filtro + " and en.goles1 is null" +
+            string cadena = "SELECT en.ID, c1.nombrecompleto as 'nombre1', en.golesLocal, en.golesVisita,  c2.nombrecompleto  as 'nombre2', d.nombre, fl.numero, " +
+                "DATE_FORMAT(en.fecha, '%Y-%m-%d') as dia, TIME_FORMAT(en.hora, '%H:%i') as hora, en.url_transmicion, en.url_imagenes FROM partido as en" +
+                " JOIN equipo as eq1 ON en.equipoLocal = eq1.ID" +
+                " JOIN equipo as eq2 ON en.equipoVisita = eq2.ID" +
+                " JOIN club as c1 ON eq1.club = c1.ID" +
+                " JOIN club as c2 ON eq2.club = c2.ID " +
+                " JOIN fecha as fl ON fl.ID = en.fechaLiga " +
+                " JOIN division as d ON d.ID = eq1.division " +
+                filtro + " and en.golesLocal is null" +
+                " and eq1.division=1 " +
                 " ORDER BY en.fecha, en.hora;";
 
             MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
@@ -95,7 +100,7 @@ namespace Torneo_Guillermito
             string all = "";
             if (todos)
             {
-                all = " and en.goles1 is null";
+                all = " and en.golesLocal is null ";
             }
             if (!string.IsNullOrEmpty(categoria))
             {
@@ -111,19 +116,22 @@ namespace Torneo_Guillermito
             }
             if (!string.IsNullOrEmpty(fecha))
             {
-                fecha = " and en.fecha = '" + fecha + "'";
+                fecha = " and en.fechaLiga = (SELECT ID from fecha where numero= '" + fecha + "' and division=1) ";
             }
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
 
-            string cadena = "SELECT en.id_partido, c1.nombre as 'nombre1', en.goles1, en.goles2,  c2.nombre  as 'nombre2', eq1.categoria, z.id_zona, z2.id_zona as id_zona2, DATE_FORMAT(en.fecha, '%Y-%m-%d') as fecha, TIME_FORMAT(en.hora, '%H:%i') as hora, en.cancha FROM partido as en" +
-                " JOIN equipo as eq1 ON en.equipo1 = eq1.id_equipo" +
-                " JOIN equipo as eq2 ON en.equipo2 = eq2.id_equipo" +
-                " JOIN club as c1 ON eq1.club = c1.id_club" +
-                " JOIN club as c2 ON eq2.club = c2.id_club" +
-                " JOIN zona as z ON eq1.zona = z.id" +
-                " JOIN zona as z2 ON eq2.zona = z2.id" +
-                filtro + all + categoria + zona + fecha +
+            string cadena = "SELECT en.ID, c1.nombrecompleto as 'nombre1', en.golesLocal, en.golesVisita,  c2.nombrecompleto  as 'nombre2', d.nombre, fl.numero, " +
+                "DATE_FORMAT(en.fecha, '%Y-%m-%d') as dia, TIME_FORMAT(en.hora, '%H:%i') as hora, en.url_transmicion, en.url_imagenes FROM partido as en" +
+                " JOIN equipo as eq1 ON en.equipoLocal = eq1.ID" +
+                " JOIN equipo as eq2 ON en.equipoVisita = eq2.ID" +
+                " JOIN club as c1 ON eq1.club = c1.ID" +
+                " JOIN club as c2 ON eq2.club = c2.ID " +
+                " JOIN fecha as fl ON fl.ID = en.fechaLiga " +
+                " JOIN division as d ON d.ID = eq1.division " +
+                filtro + all +/* categoria + zona + */ fecha +
+                " and eq1.division=1 " +
                 " ORDER BY en.fecha, en.hora;";
+            Console.WriteLine(cadena);
 
             MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
             MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
@@ -139,7 +147,7 @@ namespace Torneo_Guillermito
 
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
 
-            string cadena = "SELECT DATE_FORMAT(fecha, '%Y-%m-%d') FROM fecha;";
+            string cadena = "SELECT numero FROM fecha where division=1;";
             MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
             MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
             DataSet ds = new DataSet();
@@ -154,7 +162,8 @@ namespace Torneo_Guillermito
 
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
 
-            string cadena = "SELECT e.id_equipo as ID, c.nombre as Nombre FROM equipo as e INNER JOIN club as c ON e.club = c.id_club INNER JOIN zona as z ON e.zona = z.id WHERE z.id_zona LIKE '" + b + "' and z.id_zona <> 'Z' and e.categoria = '" + a + "'";
+            string cadena = "SELECT e.ID as ID, c.nombrecompleto as Nombre FROM equipo as e INNER JOIN club as c ON e.club = c.ID WHERE e.zona = '" + b + "' and e.division = " +
+                " (SELECT id FROM division where nombre = '" + a + "');";
             MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
             MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
             DataSet ds = new DataSet();
@@ -186,7 +195,7 @@ namespace Torneo_Guillermito
 
         public void InsertarCategoria(string numero)
         {
-            String cadena = "INSERT INTO categoria Values ('" + numero + "');";
+            String cadena = "INSERT INTO division (nombre, torneo, duracionPartido, orden, tablaGeneral) Values ('" + numero + "', 1, 45, 1, 0);";
 
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
             try
@@ -239,7 +248,7 @@ namespace Torneo_Guillermito
         public void EliminarClub(String codigo)
         {
 
-            String cadena = "DELETE FROM club where id_club =" + codigo;
+            String cadena = "DELETE FROM club where ID =" + codigo;
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
             try
             {
@@ -255,7 +264,7 @@ namespace Torneo_Guillermito
         public void EliminarEncuentro(String codigo)
         {
 
-            String cadena = "DELETE FROM partido where id_partido =" + codigo;
+            String cadena = "DELETE FROM partido where id =" + codigo;
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
             try
             {
@@ -271,7 +280,7 @@ namespace Torneo_Guillermito
         public void EliminarCategoria(String codigo)
         {
 
-            String cadena = "DELETE FROM categoria where anio = '" + codigo + "'";
+            String cadena = "DELETE FROM division where ID = '" + codigo + "'";
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
             try
             {
@@ -304,7 +313,7 @@ namespace Torneo_Guillermito
         public void EliminarEquipo(String codigo)
         {
 
-            String cadena = "DELETE FROM equipo where id_equipo =" + codigo;
+            String cadena = "DELETE FROM equipo where ID =" + codigo;
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
             try
             {
@@ -317,36 +326,37 @@ namespace Torneo_Guillermito
             cn.cerrarconexion();
         }
 
-        public void InsertarClub(string nombre, string foto)
+        public void InsertarClub(string nombrecompleto, string nombrecorto, string foto)
         {
-            String cadena = "INSERT INTO club (nombre, escudo) Values ('" + nombre + "', '" + foto + "');";
+            String cadena = "INSERT INTO club (nombrecompleto, nombrecorto, escudo) Values ('" + nombrecompleto + "', '" + nombrecorto + "', 'ESCUDOS/" + foto + "');";
 
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
             try
             {
                 MySqlCommand command = new MySqlCommand(cadena, cn.conectarbd);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Club '" + nombre + "' insertado correctamente", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Club '" + nombrecompleto + "' insertado correctamente", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception e)
             {
-                //MessageBox.Show(e.Message);
+                MessageBox.Show(e.Message);
                 MessageBox.Show("Error al insertar el club, verifique que los datos esten completos y correctos. Asegúrese además que el número de cancha que intenta ingresar no sea uno existente.", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             cn.cerrarconexion();
         }
 
-        public void InsertarZona(string categoria, string zona)
+        public void InsertarZona(string division, string zona)
         {
-            String cadena = "INSERT INTO zona (id_zona, categoria) Values ('" + zona + "', '" + categoria + "');";
+            String cadena = "INSERT INTO zona (division, nombre) Values ((" +
+                "SELECT ID from division where nombre= '" + division + "'), '" + zona + "');";
 
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
             try
             {
                 MySqlCommand command = new MySqlCommand(cadena, cn.conectarbd);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Zona '" + categoria + " - " + zona + "' insertada correctamente", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Zona '" + division + " - " + zona + "' insertada correctamente", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception e)
             {
@@ -356,19 +366,12 @@ namespace Torneo_Guillermito
             cn.cerrarconexion();
         }
 
-        public void InsertarEquipo(string club, string categoria, string zona)
+        public void InsertarEquipo(string club, string division, string zona)
         {
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
-            string cadena = "SELECT id FROM zona WHERE id_zona = '" + zona + "' and categoria = '" + categoria + "'";
 
-            MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
-            MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
-            DataSet ds = new DataSet();
-            adapter.Fill(ds, "tabla_resultados_zona");
-            DataTable dt = new DataTable();
-            dt = ds.Tables["tabla_resultados_zona"];
-            DataRow dr = dt.Rows[0];
-            cadena = "INSERT INTO equipo (club, categoria, zona) Values ('" + club + "', '" + categoria + "', '" + dr[0].ToString() + "');";
+            string cadena = "INSERT INTO equipo (club, division, zona) Values ('" + club + "', " +
+                "(SELECT id from division where nombre = '" + division + "'), '" + zona + "');";
             try
             {
                 MySqlCommand command = new MySqlCommand(cadena, cn.conectarbd);
@@ -383,10 +386,11 @@ namespace Torneo_Guillermito
             cn.cerrarconexion();
         }
 
-        public void InsertarEncuentro(string equipo1, string equipo2, string hora, string cancha, string fecha)
+        public void InsertarEncuentro(string equipo1, string equipo2, string dia, string fecha, string hora, string url_transmicion, string url_imagenes)
         {
-            String cadena = "INSERT INTO partido (equipo1, equipo2, fecha, hora, cancha, tipo) VALUES (" + equipo1 + ", " + equipo2 + ", '" + fecha + "', '" + hora + "', '" + cancha + "', 0)";
-            //MessageBox.Show(cadena);
+            String cadena = "INSERT INTO partido (equipoLocal, equipoVisita, fecha, fechaLiga, hora, url_transmicion, url_imagenes) VALUES " +
+                "(" + equipo1 + ", " + equipo2 + ", '" + dia + "', (SELECT ID from fecha where numero = '" + fecha + "' and division=1), '" + hora + "', '" + url_transmicion + "', '" + url_imagenes + "')";
+            Console.WriteLine(cadena);
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
             try
             {
@@ -408,7 +412,7 @@ namespace Torneo_Guillermito
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
 
 
-            string cadena = "SELECT id_club, nombre as 'Nombre Club', escudo FROM club WHERE id_club>192";
+            string cadena = "SELECT ID, nombrecompleto as 'Nombre Club', nombrecorto as 'Nombre Corto', escudo FROM club";
 
             MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
             MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
@@ -462,7 +466,7 @@ namespace Torneo_Guillermito
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
 
 
-            string cadena = "SELECT id_club, nombre as 'Nombre Club', escudo FROM club WHERE id_club>192 and nombre like '%" + nombre + "%'";
+            string cadena = "SELECT ID, nombrecompleto as 'Nombre Club', escudo FROM club WHERE nombrecompleto like '%" + nombre + "%'";
 
             MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
             MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
@@ -478,7 +482,9 @@ namespace Torneo_Guillermito
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
 
 
-            string cadena = "SELECT id as ID, categoria as Categoria, id_zona as Zona FROM zona WHERE id_zona <> 'Z' ORDER BY categoria ASC";
+            string cadena = "SELECT z.id as ID, d.nombre as DIVISION, z.nombre as Zona " +
+                "FROM zona as z INNER JOIN division as d " +
+                "ON z.division = d.id ORDER BY division ASC, z.nombre ASC";
 
             MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
             MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
@@ -544,7 +550,8 @@ namespace Torneo_Guillermito
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
 
 
-            string cadena = "SELECT id_zona as Zona FROM zona WHERE id_zona <> 'Z' and categoria = '" + categoria + "' ORDER BY categoria ASC";
+            string cadena = "SELECT z.nombre FROM zona as z " +
+                            "INNER JOIN division as d ON z.division = d.id WHERE d.nombre = '" + categoria + "' ORDER BY z.nombre ASC";
 
             MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
             MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
@@ -555,11 +562,11 @@ namespace Torneo_Guillermito
 
         }
 
-        public void actualizarClub(string id, string nombre, string foto)
+        public void actualizarClub(string id, string nombrecompleto, string nombrecorto, string foto)
         {
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
 
-            string cadena = "UPDATE club SET nombre='" + nombre + "', escudo='" + foto + "' WHERE id_club=" + id;
+            string cadena = "UPDATE club SET nombrecompleto='" + nombrecompleto + "', nombrecorto='" + nombrecorto + "', escudo='" + foto + "' WHERE ID=" + id;
             try
             {
                 MySqlCommand command = new MySqlCommand(cadena, cn.conectarbd);
@@ -623,12 +630,12 @@ namespace Torneo_Guillermito
         {
             try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
 
-            string cadena = "UPDATE categoria SET anio='" + id1 + "' WHERE anio='" + id2 + "'";
+            string cadena = "UPDATE division SET nombre='" + id1 + "' WHERE id='" + id2 + "'";
             try
             {
                 MySqlCommand command = new MySqlCommand(cadena, cn.conectarbd);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Categoría modificada correctamente", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Division modificada correctamente", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             catch (Exception e) { MessageBox.Show(e.Message); }

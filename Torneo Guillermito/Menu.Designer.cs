@@ -1,4 +1,6 @@
-﻿namespace Torneo_Guillermito
+﻿using System.Drawing;
+
+namespace Torneo_Guillermito
 {
     partial class gbEncuentros
     {
@@ -28,47 +30,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle83 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle84 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle85 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle86 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle87 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle88 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle89 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle90 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle91 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle92 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle93 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle94 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle95 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle96 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle97 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle98 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle99 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle100 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle101 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle102 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle103 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle104 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle105 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle106 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle107 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle108 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle109 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle110 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle111 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle112 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle113 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle114 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle115 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle116 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle117 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle118 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle119 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle120 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle121 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle122 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle123 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -104,6 +103,7 @@
             this.tbAgregarCategoria = new System.Windows.Forms.TextBox();
             this.btAgregarCategoria = new System.Windows.Forms.Button();
             this.dgvCategoria = new System.Windows.Forms.DataGridView();
+            this.idDivision = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.asd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbEquipos = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -149,6 +149,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.gbPartidos = new System.Windows.Forms.GroupBox();
+            this.btSeleccionar = new System.Windows.Forms.Button();
             this.btPDF = new System.Windows.Forms.Button();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.cbCruces = new System.Windows.Forms.CheckBox();
@@ -164,15 +165,26 @@
             this.cbPartidos = new System.Windows.Forms.CheckBox();
             this.btEliminarEncuentro = new System.Windows.Forms.Button();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.datePickerEn2 = new System.Windows.Forms.DateTimePicker();
+            this.label54 = new System.Windows.Forms.Label();
+            this.tbDriveEncuentro2 = new System.Windows.Forms.TextBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.tbYoutubeEncuentro2 = new System.Windows.Forms.TextBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
             this.comboFechaEncuentro2 = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.tbZonaEncuentro2 = new System.Windows.Forms.TextBox();
             this.tbVisitaEncuentro2 = new System.Windows.Forms.TextBox();
             this.tbLocalEncuentro2 = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
             this.tbGolesVisita = new System.Windows.Forms.TextBox();
             this.tbGolesLocal = new System.Windows.Forms.TextBox();
-            this.label39 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.btModificarPartido = new System.Windows.Forms.Button();
@@ -184,19 +196,12 @@
             this.label32 = new System.Windows.Forms.Label();
             this.tbCategoriaEncuentro2 = new System.Windows.Forms.TextBox();
             this.dgvEncuentros = new System.Windows.Forms.DataGridView();
-            this.id_partido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.local = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gl = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vs = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.visita = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoria_encuentro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zl = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hora_encuentro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cancha_encuentro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.datePickerEnc1 = new System.Windows.Forms.DateTimePicker();
+            this.label51 = new System.Windows.Forms.Label();
+            this.tbDriveEncuentro1 = new System.Windows.Forms.TextBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.tbYoutubeEncuentro1 = new System.Windows.Forms.TextBox();
             this.comboIDvisita = new System.Windows.Forms.ComboBox();
             this.comboIDlocal = new System.Windows.Forms.ComboBox();
             this.comboFechaEncuentro1 = new System.Windows.Forms.ComboBox();
@@ -300,14 +305,19 @@
             this.dgvClub = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombrecorto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.escudo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbAgregarClub = new System.Windows.Forms.GroupBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.tbNombreCortoClub1 = new System.Windows.Forms.TextBox();
             this.pbCancha1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tbNombreClub1 = new System.Windows.Forms.TextBox();
             this.btLimpiarCanchas = new System.Windows.Forms.Button();
             this.btAgregarCancha = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.tbNombreCortoClub2 = new System.Windows.Forms.TextBox();
             this.pbCancha2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbNombreClub2 = new System.Windows.Forms.TextBox();
@@ -318,7 +328,28 @@
             this.tbNombreClubFiltro = new System.Windows.Forms.TextBox();
             this.gbClubes = new System.Windows.Forms.GroupBox();
             this.pbCancha2Control = new System.Windows.Forms.PictureBox();
-            this.btSeleccionar = new System.Windows.Forms.Button();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.id_partido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.local = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vs = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.visita = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoria_encuentro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaCalendario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hora_encuentro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.url_transmicion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.url_imagenes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -346,6 +377,8 @@
             this.gbPartidos.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEncuentros)).BeginInit();
             this.groupBox10.SuspendLayout();
             this.gbCruces.SuspendLayout();
@@ -367,24 +400,35 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbCancha2)).BeginInit();
             this.gbClubes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCancha2Control)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FloralWhite;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 10);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(49, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(234, 50);
+            this.label1.Size = new System.Drawing.Size(187, 50);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Sistema de gestión\r\nTorneo Guillermito 2024";
+            this.label1.Text = "Sistema de gestión\r\nLIPa 2025";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FloralWhite;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.pictureBox1.Location = new System.Drawing.Point(-1, -4);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
@@ -394,22 +438,23 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FloralWhite;
-            this.pictureBox2.Image = global::Torneo_Guillermito.Properties.Resources.logo2024;
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
+            this.pictureBox2.Image = global::Torneo_Guillermito.Properties.Resources.icon_google_play;
             this.pictureBox2.Location = new System.Drawing.Point(-2, 60);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(298, 308);
+            this.pictureBox2.Size = new System.Drawing.Size(296, 306);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
             // 
             // btClubes
             // 
-            this.btClubes.BackColor = System.Drawing.Color.FloralWhite;
+            this.btClubes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.btClubes.FlatAppearance.BorderSize = 0;
             this.btClubes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btClubes.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btClubes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btClubes.Location = new System.Drawing.Point(-4, 384);
             this.btClubes.Margin = new System.Windows.Forms.Padding(4);
             this.btClubes.Name = "btClubes";
@@ -423,16 +468,17 @@
             // 
             // btCyZ
             // 
-            this.btCyZ.BackColor = System.Drawing.Color.FloralWhite;
+            this.btCyZ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.btCyZ.FlatAppearance.BorderSize = 0;
             this.btCyZ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCyZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCyZ.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btCyZ.Location = new System.Drawing.Point(-4, 450);
             this.btCyZ.Margin = new System.Windows.Forms.Padding(4);
             this.btCyZ.Name = "btCyZ";
             this.btCyZ.Size = new System.Drawing.Size(298, 64);
             this.btCyZ.TabIndex = 14;
-            this.btCyZ.Text = "            Categ. y zonas";
+            this.btCyZ.Text = "        Div. y zonas";
             this.btCyZ.UseVisualStyleBackColor = false;
             this.btCyZ.Click += new System.EventHandler(this.btCyZ_Click);
             this.btCyZ.MouseEnter += new System.EventHandler(this.btCyZ_MouseEnter);
@@ -440,10 +486,11 @@
             // 
             // btEquipos
             // 
-            this.btEquipos.BackColor = System.Drawing.Color.FloralWhite;
+            this.btEquipos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.btEquipos.FlatAppearance.BorderSize = 0;
             this.btEquipos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btEquipos.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEquipos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btEquipos.Location = new System.Drawing.Point(-4, 517);
             this.btEquipos.Margin = new System.Windows.Forms.Padding(4);
             this.btEquipos.Name = "btEquipos";
@@ -457,28 +504,31 @@
             // 
             // btCruces
             // 
-            this.btCruces.BackColor = System.Drawing.Color.FloralWhite;
+            this.btCruces.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.btCruces.FlatAppearance.BorderSize = 0;
             this.btCruces.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCruces.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCruces.Location = new System.Drawing.Point(-3, 716);
+            this.btCruces.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btCruces.Location = new System.Drawing.Point(-1, 645);
             this.btCruces.Margin = new System.Windows.Forms.Padding(4);
             this.btCruces.Name = "btCruces";
             this.btCruces.Size = new System.Drawing.Size(298, 64);
             this.btCruces.TabIndex = 18;
             this.btCruces.Text = "Cruces";
             this.btCruces.UseVisualStyleBackColor = false;
+            this.btCruces.Visible = false;
             this.btCruces.Click += new System.EventHandler(this.btCruces_Click);
             this.btCruces.MouseEnter += new System.EventHandler(this.btCruces_MouseEnter);
             this.btCruces.MouseLeave += new System.EventHandler(this.btCruces_MouseLeave);
             // 
             // btEncuentros
             // 
-            this.btEncuentros.BackColor = System.Drawing.Color.FloralWhite;
+            this.btEncuentros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.btEncuentros.FlatAppearance.BorderSize = 0;
             this.btEncuentros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btEncuentros.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEncuentros.Location = new System.Drawing.Point(-4, 650);
+            this.btEncuentros.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btEncuentros.Location = new System.Drawing.Point(-3, 581);
             this.btEncuentros.Margin = new System.Windows.Forms.Padding(4);
             this.btEncuentros.Name = "btEncuentros";
             this.btEncuentros.Size = new System.Drawing.Size(298, 64);
@@ -491,24 +541,26 @@
             // 
             // btCanchas
             // 
-            this.btCanchas.BackColor = System.Drawing.Color.FloralWhite;
+            this.btCanchas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.btCanchas.FlatAppearance.BorderSize = 0;
             this.btCanchas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCanchas.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCanchas.Location = new System.Drawing.Point(-4, 583);
+            this.btCanchas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btCanchas.Location = new System.Drawing.Point(-1, 709);
             this.btCanchas.Margin = new System.Windows.Forms.Padding(4);
             this.btCanchas.Name = "btCanchas";
             this.btCanchas.Size = new System.Drawing.Size(298, 64);
             this.btCanchas.TabIndex = 16;
             this.btCanchas.Text = "   Canchas";
             this.btCanchas.UseVisualStyleBackColor = false;
+            this.btCanchas.Visible = false;
             this.btCanchas.Click += new System.EventHandler(this.btCanchas_Click);
             this.btCanchas.MouseEnter += new System.EventHandler(this.btCanchas_MouseEnter);
             this.btCanchas.MouseLeave += new System.EventHandler(this.btCanchas_MouseLeave);
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FloralWhite;
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.WindowText;
             this.pictureBox3.Location = new System.Drawing.Point(275, -4);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
@@ -518,7 +570,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FloralWhite;
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.pictureBox4.Image = global::Torneo_Guillermito.Properties.Resources.soccer;
             this.pictureBox4.Location = new System.Drawing.Point(33, 392);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
@@ -533,7 +585,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FloralWhite;
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.pictureBox5.Image = global::Torneo_Guillermito.Properties.Resources.categorization;
             this.pictureBox5.Location = new System.Drawing.Point(33, 457);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
@@ -548,7 +600,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.FloralWhite;
+            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.pictureBox6.Image = global::Torneo_Guillermito.Properties.Resources.team;
             this.pictureBox6.Location = new System.Drawing.Point(33, 524);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
@@ -563,24 +615,25 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.FloralWhite;
+            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.pictureBox7.Image = global::Torneo_Guillermito.Properties.Resources.tournament;
-            this.pictureBox7.Location = new System.Drawing.Point(33, 723);
+            this.pictureBox7.Location = new System.Drawing.Point(35, 652);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(47, 49);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 25;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Visible = false;
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             this.pictureBox7.MouseEnter += new System.EventHandler(this.pictureBox7_MouseEnter);
             this.pictureBox7.MouseLeave += new System.EventHandler(this.pictureBox7_MouseLeave);
             // 
             // pictureBox8
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.FloralWhite;
+            this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.pictureBox8.Image = global::Torneo_Guillermito.Properties.Resources.football_pitch;
-            this.pictureBox8.Location = new System.Drawing.Point(33, 657);
+            this.pictureBox8.Location = new System.Drawing.Point(33, 588);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(47, 49);
@@ -593,24 +646,26 @@
             // 
             // pictureBox9
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.FloralWhite;
+            this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.pictureBox9.Image = global::Torneo_Guillermito.Properties.Resources.location_pin;
-            this.pictureBox9.Location = new System.Drawing.Point(33, 590);
+            this.pictureBox9.Location = new System.Drawing.Point(36, 716);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(47, 49);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 23;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Visible = false;
             this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             this.pictureBox9.MouseEnter += new System.EventHandler(this.pictureBox9_MouseEnter);
             this.pictureBox9.MouseLeave += new System.EventHandler(this.pictureBox9_MouseLeave);
             // 
             // gbCyZ
             // 
+            this.gbCyZ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(244)))));
             this.gbCyZ.Controls.Add(this.groupBox2);
             this.gbCyZ.Controls.Add(this.groupBox3);
-            this.gbCyZ.Location = new System.Drawing.Point(287, 38);
+            this.gbCyZ.Location = new System.Drawing.Point(288, 38);
             this.gbCyZ.Margin = new System.Windows.Forms.Padding(4);
             this.gbCyZ.Name = "gbCyZ";
             this.gbCyZ.Padding = new System.Windows.Forms.Padding(4);
@@ -621,7 +676,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.LemonChiffon;
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
             this.groupBox2.Controls.Add(this.label19);
             this.groupBox2.Controls.Add(this.label18);
             this.groupBox2.Controls.Add(this.comboZona1);
@@ -653,11 +708,11 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(68, 257);
+            this.label18.Location = new System.Drawing.Point(85, 257);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(56, 20);
+            this.label18.Size = new System.Drawing.Size(36, 20);
             this.label18.TabIndex = 26;
-            this.label18.Text = "Categ:";
+            this.label18.Text = "Div:";
             // 
             // comboZona1
             // 
@@ -731,9 +786,9 @@
             // 
             // idZona
             // 
-            dataGridViewCellStyle83.BackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle83.ForeColor = System.Drawing.Color.White;
-            this.idZona.DefaultCellStyle = dataGridViewCellStyle83;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            this.idZona.DefaultCellStyle = dataGridViewCellStyle1;
             this.idZona.HeaderText = "ID";
             this.idZona.Name = "idZona";
             this.idZona.ReadOnly = true;
@@ -742,7 +797,7 @@
             // 
             // categoriaZona
             // 
-            this.categoriaZona.HeaderText = "CATEGORIA";
+            this.categoriaZona.HeaderText = "DIVISION";
             this.categoriaZona.Name = "categoriaZona";
             this.categoriaZona.ReadOnly = true;
             this.categoriaZona.Width = 115;
@@ -756,7 +811,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.LemonChiffon;
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
             this.groupBox3.Controls.Add(this.btEliminarCategoria);
             this.groupBox3.Controls.Add(this.tbModificarCategoria);
             this.groupBox3.Controls.Add(this.btModificarCategoria);
@@ -783,7 +838,7 @@
             this.btEliminarCategoria.Name = "btEliminarCategoria";
             this.btEliminarCategoria.Size = new System.Drawing.Size(150, 40);
             this.btEliminarCategoria.TabIndex = 20;
-            this.btEliminarCategoria.Text = "Eliminar categoría";
+            this.btEliminarCategoria.Text = "Eliminar div.";
             this.btEliminarCategoria.UseVisualStyleBackColor = false;
             this.btEliminarCategoria.Click += new System.EventHandler(this.btEliminarCategoria_Click);
             // 
@@ -807,7 +862,7 @@
             this.btModificarCategoria.Name = "btModificarCategoria";
             this.btModificarCategoria.Size = new System.Drawing.Size(150, 40);
             this.btModificarCategoria.TabIndex = 18;
-            this.btModificarCategoria.Text = "Modificar categ.";
+            this.btModificarCategoria.Text = "Modificar div.";
             this.btModificarCategoria.UseVisualStyleBackColor = false;
             this.btModificarCategoria.Click += new System.EventHandler(this.btModificarCategoria_Click);
             // 
@@ -828,7 +883,7 @@
             this.btAgregarCategoria.Name = "btAgregarCategoria";
             this.btAgregarCategoria.Size = new System.Drawing.Size(150, 40);
             this.btAgregarCategoria.TabIndex = 14;
-            this.btAgregarCategoria.Text = "Agregar categ.";
+            this.btAgregarCategoria.Text = "Agregar div.";
             this.btAgregarCategoria.UseVisualStyleBackColor = true;
             this.btAgregarCategoria.Click += new System.EventHandler(this.btAgregarCategoria_Click);
             // 
@@ -839,6 +894,7 @@
             this.dgvCategoria.AllowUserToResizeRows = false;
             this.dgvCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCategoria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDivision,
             this.asd});
             this.dgvCategoria.Location = new System.Drawing.Point(198, 60);
             this.dgvCategoria.Margin = new System.Windows.Forms.Padding(5);
@@ -850,19 +906,28 @@
             this.dgvCategoria.Size = new System.Drawing.Size(150, 495);
             this.dgvCategoria.TabIndex = 1;
             this.dgvCategoria.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategoria_CellClick);
+            this.dgvCategoria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategoria_CellContentClick);
             this.dgvCategoria.Leave += new System.EventHandler(this.dgvCategoria_Leave);
+            // 
+            // idDivision
+            // 
+            this.idDivision.HeaderText = "ID";
+            this.idDivision.Name = "idDivision";
+            this.idDivision.ReadOnly = true;
+            this.idDivision.Visible = false;
             // 
             // asd
             // 
-            dataGridViewCellStyle84.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.asd.DefaultCellStyle = dataGridViewCellStyle84;
-            this.asd.HeaderText = "CATEGORÍAS";
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.asd.DefaultCellStyle = dataGridViewCellStyle2;
+            this.asd.HeaderText = "DIVISIONES";
             this.asd.Name = "asd";
             this.asd.ReadOnly = true;
             this.asd.Width = 145;
             // 
             // gbEquipos
             // 
+            this.gbEquipos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(244)))));
             this.gbEquipos.Controls.Add(this.groupBox6);
             this.gbEquipos.Controls.Add(this.groupBox4);
             this.gbEquipos.Controls.Add(this.groupBox5);
@@ -878,7 +943,7 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.BackColor = System.Drawing.Color.LemonChiffon;
+            this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
             this.groupBox6.Controls.Add(this.label5);
             this.groupBox6.Controls.Add(this.dgvEquipo2);
             this.groupBox6.Controls.Add(this.textBox2);
@@ -929,9 +994,9 @@
             // 
             // idEquipoCreado
             // 
-            dataGridViewCellStyle85.BackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle85.ForeColor = System.Drawing.Color.White;
-            this.idEquipoCreado.DefaultCellStyle = dataGridViewCellStyle85;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            this.idEquipoCreado.DefaultCellStyle = dataGridViewCellStyle3;
             this.idEquipoCreado.HeaderText = "ID";
             this.idEquipoCreado.Name = "idEquipoCreado";
             this.idEquipoCreado.ReadOnly = true;
@@ -940,8 +1005,8 @@
             // 
             // nombreEquipoCreado
             // 
-            dataGridViewCellStyle86.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombreEquipoCreado.DefaultCellStyle = dataGridViewCellStyle86;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreEquipoCreado.DefaultCellStyle = dataGridViewCellStyle4;
             this.nombreEquipoCreado.HeaderText = "NOMBRE";
             this.nombreEquipoCreado.Name = "nombreEquipoCreado";
             this.nombreEquipoCreado.ReadOnly = true;
@@ -949,17 +1014,17 @@
             // 
             // categoriaEquipoCreado
             // 
-            dataGridViewCellStyle87.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoriaEquipoCreado.DefaultCellStyle = dataGridViewCellStyle87;
-            this.categoriaEquipoCreado.HeaderText = "CATEGORÍA";
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoriaEquipoCreado.DefaultCellStyle = dataGridViewCellStyle5;
+            this.categoriaEquipoCreado.HeaderText = "DIVISIÓN";
             this.categoriaEquipoCreado.Name = "categoriaEquipoCreado";
             this.categoriaEquipoCreado.ReadOnly = true;
             this.categoriaEquipoCreado.Width = 90;
             // 
             // zonaEquipo
             // 
-            dataGridViewCellStyle88.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.zonaEquipo.DefaultCellStyle = dataGridViewCellStyle88;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zonaEquipo.DefaultCellStyle = dataGridViewCellStyle6;
             this.zonaEquipo.HeaderText = "ZONA";
             this.zonaEquipo.Name = "zonaEquipo";
             this.zonaEquipo.ReadOnly = true;
@@ -992,7 +1057,7 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.LemonChiffon;
+            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.dgvEquipo1);
             this.groupBox4.Controls.Add(this.tbEquipos1);
@@ -1041,10 +1106,10 @@
             // 
             // idEquipo
             // 
-            dataGridViewCellStyle89.BackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle89.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle89.ForeColor = System.Drawing.Color.White;
-            this.idEquipo.DefaultCellStyle = dataGridViewCellStyle89;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            this.idEquipo.DefaultCellStyle = dataGridViewCellStyle7;
             this.idEquipo.HeaderText = "ID";
             this.idEquipo.Name = "idEquipo";
             this.idEquipo.ReadOnly = true;
@@ -1053,8 +1118,8 @@
             // 
             // nombreClub
             // 
-            dataGridViewCellStyle90.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombreClub.DefaultCellStyle = dataGridViewCellStyle90;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreClub.DefaultCellStyle = dataGridViewCellStyle8;
             this.nombreClub.HeaderText = "CLUB";
             this.nombreClub.Name = "nombreClub";
             this.nombreClub.ReadOnly = true;
@@ -1062,8 +1127,8 @@
             // 
             // escudoClub
             // 
-            dataGridViewCellStyle91.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.escudoClub.DefaultCellStyle = dataGridViewCellStyle91;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.escudoClub.DefaultCellStyle = dataGridViewCellStyle9;
             this.escudoClub.HeaderText = "ESCUDO";
             this.escudoClub.Name = "escudoClub";
             this.escudoClub.ReadOnly = true;
@@ -1081,7 +1146,7 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.BackColor = System.Drawing.Color.LemonChiffon;
+            this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
             this.groupBox5.Controls.Add(this.label7);
             this.groupBox5.Controls.Add(this.label8);
             this.groupBox5.Controls.Add(this.label9);
@@ -1128,12 +1193,12 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(33, 94);
+            this.label9.Location = new System.Drawing.Point(48, 94);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 20);
+            this.label9.Size = new System.Drawing.Size(70, 20);
             this.label9.TabIndex = 37;
-            this.label9.Text = "Categoria:";
+            this.label9.Text = "División:";
             // 
             // label10
             // 
@@ -1193,6 +1258,7 @@
             // 
             // gbCanchas
             // 
+            this.gbCanchas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(244)))));
             this.gbCanchas.Controls.Add(this.groupBox8);
             this.gbCanchas.Controls.Add(this.groupBox7);
             this.gbCanchas.Location = new System.Drawing.Point(287, 38);
@@ -1206,7 +1272,7 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.BackColor = System.Drawing.Color.LemonChiffon;
+            this.groupBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
             this.groupBox8.Controls.Add(this.dgvCanchas);
             this.groupBox8.Controls.Add(this.btEliminarCancha);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1238,25 +1304,25 @@
             // 
             // nroCancha
             // 
-            dataGridViewCellStyle92.BackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle92.ForeColor = System.Drawing.Color.White;
-            this.nroCancha.DefaultCellStyle = dataGridViewCellStyle92;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            this.nroCancha.DefaultCellStyle = dataGridViewCellStyle10;
             this.nroCancha.HeaderText = "NÚMERO";
             this.nroCancha.Name = "nroCancha";
             this.nroCancha.Width = 95;
             // 
             // latitud
             // 
-            dataGridViewCellStyle93.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.latitud.DefaultCellStyle = dataGridViewCellStyle93;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.latitud.DefaultCellStyle = dataGridViewCellStyle11;
             this.latitud.HeaderText = "LATITUD";
             this.latitud.Name = "latitud";
             this.latitud.Width = 120;
             // 
             // longitud
             // 
-            dataGridViewCellStyle94.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.longitud.DefaultCellStyle = dataGridViewCellStyle94;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.longitud.DefaultCellStyle = dataGridViewCellStyle12;
             this.longitud.HeaderText = "LONGITUD";
             this.longitud.Name = "longitud";
             this.longitud.Width = 120;
@@ -1277,7 +1343,7 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.BackColor = System.Drawing.Color.LemonChiffon;
+            this.groupBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
             this.groupBox7.Controls.Add(this.label11);
             this.groupBox7.Controls.Add(this.tbLongitud);
             this.groupBox7.Controls.Add(this.btLimpiarCancha);
@@ -1396,6 +1462,7 @@
             // 
             // gbPartidos
             // 
+            this.gbPartidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(244)))));
             this.gbPartidos.Controls.Add(this.btSeleccionar);
             this.gbPartidos.Controls.Add(this.btPDF);
             this.gbPartidos.Controls.Add(this.groupBox12);
@@ -1413,6 +1480,18 @@
             this.gbPartidos.Visible = false;
             this.gbPartidos.Enter += new System.EventHandler(this.gbPartidos_Enter);
             // 
+            // btSeleccionar
+            // 
+            this.btSeleccionar.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSeleccionar.Location = new System.Drawing.Point(895, 818);
+            this.btSeleccionar.Name = "btSeleccionar";
+            this.btSeleccionar.Size = new System.Drawing.Size(150, 40);
+            this.btSeleccionar.TabIndex = 73;
+            this.btSeleccionar.Text = "Seleccionar todo";
+            this.btSeleccionar.UseVisualStyleBackColor = true;
+            this.btSeleccionar.Visible = false;
+            this.btSeleccionar.Click += new System.EventHandler(this.btSeleccionar_Click);
+            // 
             // btPDF
             // 
             this.btPDF.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1422,11 +1501,12 @@
             this.btPDF.TabIndex = 72;
             this.btPDF.Text = "Generar fichas";
             this.btPDF.UseVisualStyleBackColor = true;
+            this.btPDF.Visible = false;
             this.btPDF.Click += new System.EventHandler(this.btPDF_Click_1);
             // 
             // groupBox12
             // 
-            this.groupBox12.BackColor = System.Drawing.Color.LemonChiffon;
+            this.groupBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
             this.groupBox12.Controls.Add(this.cbCruces);
             this.groupBox12.Controls.Add(this.label43);
             this.groupBox12.Controls.Add(this.button1);
@@ -1439,11 +1519,11 @@
             this.groupBox12.Controls.Add(this.comboFiltroEncuentros1);
             this.groupBox12.Controls.Add(this.cbPartidos);
             this.groupBox12.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox12.Location = new System.Drawing.Point(25, 356);
+            this.groupBox12.Location = new System.Drawing.Point(25, 373);
             this.groupBox12.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox12.Size = new System.Drawing.Size(167, 480);
+            this.groupBox12.Size = new System.Drawing.Size(167, 259);
             this.groupBox12.TabIndex = 66;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "FILTROS DE BUSQUEDA";
@@ -1452,12 +1532,13 @@
             // 
             this.cbCruces.AutoSize = true;
             this.cbCruces.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbCruces.Location = new System.Drawing.Point(17, 41);
+            this.cbCruces.Location = new System.Drawing.Point(15, 265);
             this.cbCruces.Name = "cbCruces";
             this.cbCruces.Size = new System.Drawing.Size(137, 24);
             this.cbCruces.TabIndex = 72;
             this.cbCruces.Text = "Mostrar cruces";
             this.cbCruces.UseVisualStyleBackColor = true;
+            this.cbCruces.Visible = false;
             this.cbCruces.CheckedChanged += new System.EventHandler(this.cbCruces_CheckedChanged);
             // 
             // label43
@@ -1465,7 +1546,7 @@
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label43.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label43.Location = new System.Drawing.Point(8, 349);
+            this.label43.Location = new System.Drawing.Point(9, 188);
             this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(150, 48);
@@ -1476,11 +1557,11 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(8, 430);
+            this.button1.Location = new System.Drawing.Point(9, 135);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 40);
             this.button1.TabIndex = 68;
-            this.button1.Text = "Limpiar flitros";
+            this.button1.Text = "Limpiar flitro";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -1488,20 +1569,20 @@
             // 
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(56, 229);
+            this.label41.Location = new System.Drawing.Point(14, 33);
             this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(51, 20);
+            this.label41.Size = new System.Drawing.Size(55, 20);
             this.label41.TabIndex = 71;
-            this.label41.Text = "Fecha";
+            this.label41.Text = "Fecha:";
             // 
             // comboFiltroEncuentros3
             // 
             this.comboFiltroEncuentros3.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFiltroEncuentros3.FormattingEnabled = true;
-            this.comboFiltroEncuentros3.Location = new System.Drawing.Point(7, 251);
+            this.comboFiltroEncuentros3.Location = new System.Drawing.Point(72, 29);
             this.comboFiltroEncuentros3.Name = "comboFiltroEncuentros3";
-            this.comboFiltroEncuentros3.Size = new System.Drawing.Size(150, 28);
+            this.comboFiltroEncuentros3.Size = new System.Drawing.Size(87, 28);
             this.comboFiltroEncuentros3.TabIndex = 70;
             this.comboFiltroEncuentros3.SelectedIndexChanged += new System.EventHandler(this.comboFiltroEncuentros3_SelectedIndexChanged);
             // 
@@ -1509,32 +1590,35 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(57, 158);
+            this.label36.Location = new System.Drawing.Point(59, 363);
             this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(45, 20);
             this.label36.TabIndex = 69;
             this.label36.Text = "Zona";
+            this.label36.Visible = false;
             // 
             // label35
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(42, 84);
+            this.label35.Location = new System.Drawing.Point(43, 326);
             this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(80, 20);
             this.label35.TabIndex = 68;
             this.label35.Text = "Categoría";
+            this.label35.Visible = false;
             // 
             // comboFiltroEncuentros2
             // 
             this.comboFiltroEncuentros2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFiltroEncuentros2.FormattingEnabled = true;
-            this.comboFiltroEncuentros2.Location = new System.Drawing.Point(6, 180);
+            this.comboFiltroEncuentros2.Location = new System.Drawing.Point(8, 385);
             this.comboFiltroEncuentros2.Name = "comboFiltroEncuentros2";
             this.comboFiltroEncuentros2.Size = new System.Drawing.Size(151, 28);
             this.comboFiltroEncuentros2.TabIndex = 45;
+            this.comboFiltroEncuentros2.Visible = false;
             this.comboFiltroEncuentros2.SelectedIndexChanged += new System.EventHandler(this.comboFiltroEncuentros2_SelectedIndexChanged);
             // 
             // label47
@@ -1551,17 +1635,18 @@
             // 
             this.comboFiltroEncuentros1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFiltroEncuentros1.FormattingEnabled = true;
-            this.comboFiltroEncuentros1.Location = new System.Drawing.Point(7, 106);
+            this.comboFiltroEncuentros1.Location = new System.Drawing.Point(8, 348);
             this.comboFiltroEncuentros1.Name = "comboFiltroEncuentros1";
             this.comboFiltroEncuentros1.Size = new System.Drawing.Size(150, 28);
             this.comboFiltroEncuentros1.TabIndex = 3;
+            this.comboFiltroEncuentros1.Visible = false;
             this.comboFiltroEncuentros1.SelectedIndexChanged += new System.EventHandler(this.comboFiltroEncuentros1_SelectedIndexChanged);
             // 
             // cbPartidos
             // 
             this.cbPartidos.AutoSize = true;
             this.cbPartidos.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbPartidos.Location = new System.Drawing.Point(15, 314);
+            this.cbPartidos.Location = new System.Drawing.Point(23, 82);
             this.cbPartidos.Name = "cbPartidos";
             this.cbPartidos.Size = new System.Drawing.Size(133, 24);
             this.cbPartidos.TabIndex = 1;
@@ -1574,7 +1659,7 @@
             this.btEliminarEncuentro.BackColor = System.Drawing.Color.DarkRed;
             this.btEliminarEncuentro.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btEliminarEncuentro.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btEliminarEncuentro.Location = new System.Drawing.Point(548, 816);
+            this.btEliminarEncuentro.Location = new System.Drawing.Point(25, 814);
             this.btEliminarEncuentro.Margin = new System.Windows.Forms.Padding(4);
             this.btEliminarEncuentro.Name = "btEliminarEncuentro";
             this.btEliminarEncuentro.Size = new System.Drawing.Size(164, 44);
@@ -1585,16 +1670,37 @@
             // 
             // groupBox11
             // 
-            this.groupBox11.BackColor = System.Drawing.Color.LemonChiffon;
+            this.groupBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
+            this.groupBox11.Controls.Add(this.pictureBox20);
+            this.groupBox11.Controls.Add(this.pictureBox21);
+            this.groupBox11.Controls.Add(this.pictureBox22);
+            this.groupBox11.Controls.Add(this.pictureBox15);
+            this.groupBox11.Controls.Add(this.pictureBox13);
+            this.groupBox11.Controls.Add(this.pictureBox17);
+            this.groupBox11.Controls.Add(this.pictureBox18);
+            this.groupBox11.Controls.Add(this.pictureBox19);
+            this.groupBox11.Controls.Add(this.pictureBox16);
+            this.groupBox11.Controls.Add(this.pictureBox14);
+            this.groupBox11.Controls.Add(this.datePickerEn2);
+            this.groupBox11.Controls.Add(this.label54);
+            this.groupBox11.Controls.Add(this.tbDriveEncuentro2);
+            this.groupBox11.Controls.Add(this.label55);
+            this.groupBox11.Controls.Add(this.tbYoutubeEncuentro2);
+            this.groupBox11.Controls.Add(this.pictureBox12);
+            this.groupBox11.Controls.Add(this.pictureBox11);
+            this.groupBox11.Controls.Add(this.textBox10);
+            this.groupBox11.Controls.Add(this.textBox11);
+            this.groupBox11.Controls.Add(this.label40);
+            this.groupBox11.Controls.Add(this.textBox8);
+            this.groupBox11.Controls.Add(this.textBox9);
+            this.groupBox11.Controls.Add(this.label39);
             this.groupBox11.Controls.Add(this.comboFechaEncuentro2);
             this.groupBox11.Controls.Add(this.label34);
             this.groupBox11.Controls.Add(this.tbZonaEncuentro2);
             this.groupBox11.Controls.Add(this.tbVisitaEncuentro2);
             this.groupBox11.Controls.Add(this.tbLocalEncuentro2);
-            this.groupBox11.Controls.Add(this.label40);
             this.groupBox11.Controls.Add(this.tbGolesVisita);
             this.groupBox11.Controls.Add(this.tbGolesLocal);
-            this.groupBox11.Controls.Add(this.label39);
             this.groupBox11.Controls.Add(this.label38);
             this.groupBox11.Controls.Add(this.label37);
             this.groupBox11.Controls.Add(this.btModificarPartido);
@@ -1610,10 +1716,134 @@
             this.groupBox11.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox11.Size = new System.Drawing.Size(562, 305);
+            this.groupBox11.Size = new System.Drawing.Size(562, 326);
             this.groupBox11.TabIndex = 51;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "MODIFICAR ENCUENTRO";
+            // 
+            // datePickerEn2
+            // 
+            this.datePickerEn2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datePickerEn2.Location = new System.Drawing.Point(13, 242);
+            this.datePickerEn2.Name = "datePickerEn2";
+            this.datePickerEn2.Size = new System.Drawing.Size(116, 21);
+            this.datePickerEn2.TabIndex = 95;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(161, 240);
+            this.label54.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(51, 20);
+            this.label54.TabIndex = 77;
+            this.label54.Text = "Drive:";
+            // 
+            // tbDriveEncuentro2
+            // 
+            this.tbDriveEncuentro2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDriveEncuentro2.Location = new System.Drawing.Point(215, 236);
+            this.tbDriveEncuentro2.Name = "tbDriveEncuentro2";
+            this.tbDriveEncuentro2.Size = new System.Drawing.Size(336, 27);
+            this.tbDriveEncuentro2.TabIndex = 76;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(139, 203);
+            this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(75, 20);
+            this.label55.TabIndex = 75;
+            this.label55.Text = "Youtube:";
+            // 
+            // tbYoutubeEncuentro2
+            // 
+            this.tbYoutubeEncuentro2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbYoutubeEncuentro2.Location = new System.Drawing.Point(215, 199);
+            this.tbYoutubeEncuentro2.Name = "tbYoutubeEncuentro2";
+            this.tbYoutubeEncuentro2.Size = new System.Drawing.Size(336, 27);
+            this.tbYoutubeEncuentro2.TabIndex = 74;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::Torneo_Guillermito.Properties.Resources.minus;
+            this.pictureBox12.Location = new System.Drawing.Point(121, 80);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 84;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.pictureBox11.Location = new System.Drawing.Point(171, 80);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 83;
+            this.pictureBox11.TabStop = false;
+            // 
+            // textBox10
+            // 
+            this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.textBox10.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.Location = new System.Drawing.Point(321, 153);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(26, 27);
+            this.textBox10.TabIndex = 82;
+            // 
+            // textBox11
+            // 
+            this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.textBox11.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.Location = new System.Drawing.Point(214, 153);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(26, 27);
+            this.textBox11.TabIndex = 81;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(255, 157);
+            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(48, 20);
+            this.label40.TabIndex = 80;
+            this.label40.Text = "Rojas";
+            // 
+            // textBox8
+            // 
+            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.textBox8.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(321, 117);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(26, 27);
+            this.textBox8.TabIndex = 79;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.textBox9.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(214, 117);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(26, 27);
+            this.textBox9.TabIndex = 78;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(244, 121);
+            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(75, 20);
+            this.label39.TabIndex = 77;
+            this.label39.Text = "Amarillas";
             // 
             // comboFechaEncuentro2
             // 
@@ -1621,9 +1851,9 @@
             this.comboFechaEncuentro2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFechaEncuentro2.FormatString = "d";
             this.comboFechaEncuentro2.FormattingEnabled = true;
-            this.comboFechaEncuentro2.Location = new System.Drawing.Point(243, 147);
+            this.comboFechaEncuentro2.Location = new System.Drawing.Point(64, 199);
             this.comboFechaEncuentro2.Name = "comboFechaEncuentro2";
-            this.comboFechaEncuentro2.Size = new System.Drawing.Size(116, 28);
+            this.comboFechaEncuentro2.Size = new System.Drawing.Size(65, 28);
             this.comboFechaEncuentro2.TabIndex = 51;
             // 
             // label34
@@ -1631,12 +1861,12 @@
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label34.Location = new System.Drawing.Point(153, 280);
+            this.label34.Location = new System.Drawing.Point(250, 283);
             this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(265, 16);
+            this.label34.Size = new System.Drawing.Size(145, 32);
             this.label34.TabIndex = 51;
-            this.label34.Text = "(Debe seleccionar uno de la lista para modificar)";
+            this.label34.Text = "(Debe seleccionar uno de \r\nla lista para modificar)";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tbZonaEncuentro2
@@ -1648,15 +1878,16 @@
             this.tbZonaEncuentro2.Size = new System.Drawing.Size(230, 27);
             this.tbZonaEncuentro2.TabIndex = 64;
             this.tbZonaEncuentro2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbZonaEncuentro2.Visible = false;
             // 
             // tbVisitaEncuentro2
             // 
             this.tbVisitaEncuentro2.Enabled = false;
             this.tbVisitaEncuentro2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVisitaEncuentro2.Location = new System.Drawing.Point(320, 65);
+            this.tbVisitaEncuentro2.Location = new System.Drawing.Point(321, 21);
             this.tbVisitaEncuentro2.Multiline = true;
             this.tbVisitaEncuentro2.Name = "tbVisitaEncuentro2";
-            this.tbVisitaEncuentro2.Size = new System.Drawing.Size(230, 56);
+            this.tbVisitaEncuentro2.Size = new System.Drawing.Size(230, 44);
             this.tbVisitaEncuentro2.TabIndex = 62;
             this.tbVisitaEncuentro2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1664,28 +1895,17 @@
             // 
             this.tbLocalEncuentro2.Enabled = false;
             this.tbLocalEncuentro2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbLocalEncuentro2.Location = new System.Drawing.Point(9, 66);
+            this.tbLocalEncuentro2.Location = new System.Drawing.Point(10, 22);
             this.tbLocalEncuentro2.Multiline = true;
             this.tbLocalEncuentro2.Name = "tbLocalEncuentro2";
-            this.tbLocalEncuentro2.Size = new System.Drawing.Size(230, 53);
+            this.tbLocalEncuentro2.Size = new System.Drawing.Size(230, 43);
             this.tbLocalEncuentro2.TabIndex = 61;
             this.tbLocalEncuentro2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(270, 196);
-            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(15, 20);
-            this.label40.TabIndex = 58;
-            this.label40.Text = "-";
             // 
             // tbGolesVisita
             // 
             this.tbGolesVisita.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbGolesVisita.Location = new System.Drawing.Point(289, 192);
+            this.tbGolesVisita.Location = new System.Drawing.Point(321, 80);
             this.tbGolesVisita.Name = "tbGolesVisita";
             this.tbGolesVisita.Size = new System.Drawing.Size(26, 27);
             this.tbGolesVisita.TabIndex = 57;
@@ -1693,38 +1913,27 @@
             // tbGolesLocal
             // 
             this.tbGolesLocal.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbGolesLocal.Location = new System.Drawing.Point(239, 192);
+            this.tbGolesLocal.Location = new System.Drawing.Point(214, 80);
             this.tbGolesLocal.Name = "tbGolesLocal";
             this.tbGolesLocal.Size = new System.Drawing.Size(26, 27);
             this.tbGolesLocal.TabIndex = 56;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(318, 196);
-            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(91, 20);
-            this.label39.TabIndex = 55;
-            this.label39.Text = "Goles visita";
             // 
             // label38
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(149, 195);
+            this.label38.Location = new System.Drawing.Point(253, 84);
             this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(88, 20);
+            this.label38.Size = new System.Drawing.Size(50, 20);
             this.label38.TabIndex = 54;
-            this.label38.Text = "Goles local";
+            this.label38.Text = "Goles";
             // 
             // label37
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(264, 82);
+            this.label37.Location = new System.Drawing.Point(269, 36);
             this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(29, 19);
@@ -1734,7 +1943,7 @@
             // btModificarPartido
             // 
             this.btModificarPartido.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btModificarPartido.Location = new System.Drawing.Point(208, 227);
+            this.btModificarPartido.Location = new System.Drawing.Point(401, 279);
             this.btModificarPartido.Name = "btModificarPartido";
             this.btModificarPartido.Size = new System.Drawing.Size(150, 40);
             this.btModificarPartido.TabIndex = 44;
@@ -1747,27 +1956,29 @@
             this.comboCanchaEncuentro2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboCanchaEncuentro2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboCanchaEncuentro2.FormattingEnabled = true;
-            this.comboCanchaEncuentro2.Location = new System.Drawing.Point(449, 146);
+            this.comboCanchaEncuentro2.Location = new System.Drawing.Point(494, 78);
             this.comboCanchaEncuentro2.Name = "comboCanchaEncuentro2";
             this.comboCanchaEncuentro2.Size = new System.Drawing.Size(61, 28);
             this.comboCanchaEncuentro2.TabIndex = 49;
+            this.comboCanchaEncuentro2.Visible = false;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(383, 150);
+            this.label29.Location = new System.Drawing.Point(428, 82);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(65, 20);
             this.label29.TabIndex = 48;
             this.label29.Text = "Cancha:";
+            this.label29.Visible = false;
             // 
             // label30
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(186, 151);
+            this.label30.Location = new System.Drawing.Point(9, 200);
             this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(55, 20);
@@ -1778,7 +1989,7 @@
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(50, 151);
+            this.label31.Location = new System.Drawing.Point(15, 283);
             this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(49, 20);
@@ -1788,9 +1999,9 @@
             // tbHoraEncuentro2
             // 
             this.tbHoraEncuentro2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbHoraEncuentro2.Location = new System.Drawing.Point(102, 147);
+            this.tbHoraEncuentro2.Location = new System.Drawing.Point(65, 279);
             this.tbHoraEncuentro2.Name = "tbHoraEncuentro2";
-            this.tbHoraEncuentro2.Size = new System.Drawing.Size(51, 27);
+            this.tbHoraEncuentro2.Size = new System.Drawing.Size(64, 27);
             this.tbHoraEncuentro2.TabIndex = 45;
             // 
             // label32
@@ -1812,6 +2023,7 @@
             this.tbCategoriaEncuentro2.Size = new System.Drawing.Size(230, 27);
             this.tbCategoriaEncuentro2.TabIndex = 63;
             this.tbCategoriaEncuentro2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCategoriaEncuentro2.Visible = false;
             // 
             // dgvEncuentros
             // 
@@ -1828,137 +2040,29 @@
             this.gv,
             this.visita,
             this.categoria_encuentro,
-            this.zl,
-            this.zv,
             this.fecha,
+            this.fechaCalendario,
             this.hora_encuentro,
-            this.cancha_encuentro});
+            this.url_transmicion,
+            this.url_imagenes});
             this.dgvEncuentros.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvEncuentros.Location = new System.Drawing.Point(203, 356);
+            this.dgvEncuentros.Location = new System.Drawing.Point(203, 368);
             this.dgvEncuentros.Name = "dgvEncuentros";
             this.dgvEncuentros.ReadOnly = true;
             this.dgvEncuentros.RowHeadersVisible = false;
             this.dgvEncuentros.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEncuentros.Size = new System.Drawing.Size(852, 451);
+            this.dgvEncuentros.Size = new System.Drawing.Size(852, 490);
             this.dgvEncuentros.TabIndex = 0;
             this.dgvEncuentros.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEncuentros_CellClick);
             // 
-            // id_partido
-            // 
-            this.id_partido.HeaderText = "ID";
-            this.id_partido.Name = "id_partido";
-            this.id_partido.ReadOnly = true;
-            this.id_partido.Visible = false;
-            // 
-            // local
-            // 
-            dataGridViewCellStyle95.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.local.DefaultCellStyle = dataGridViewCellStyle95;
-            this.local.HeaderText = "EQUIPO LOCAL";
-            this.local.Name = "local";
-            this.local.ReadOnly = true;
-            this.local.Width = 245;
-            // 
-            // gl
-            // 
-            dataGridViewCellStyle96.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle96.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle96.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle96.ForeColor = System.Drawing.Color.White;
-            this.gl.DefaultCellStyle = dataGridViewCellStyle96;
-            this.gl.HeaderText = "";
-            this.gl.Name = "gl";
-            this.gl.ReadOnly = true;
-            this.gl.Width = 25;
-            // 
-            // vs
-            // 
-            dataGridViewCellStyle97.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle97.BackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle97.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle97.ForeColor = System.Drawing.Color.White;
-            this.vs.DefaultCellStyle = dataGridViewCellStyle97;
-            this.vs.HeaderText = "";
-            this.vs.Name = "vs";
-            this.vs.ReadOnly = true;
-            this.vs.Width = 25;
-            // 
-            // gv
-            // 
-            dataGridViewCellStyle98.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle98.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle98.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle98.ForeColor = System.Drawing.Color.White;
-            this.gv.DefaultCellStyle = dataGridViewCellStyle98;
-            this.gv.HeaderText = "";
-            this.gv.Name = "gv";
-            this.gv.ReadOnly = true;
-            this.gv.Width = 25;
-            // 
-            // visita
-            // 
-            this.visita.HeaderText = "EQUIPO VISITA";
-            this.visita.Name = "visita";
-            this.visita.ReadOnly = true;
-            this.visita.Width = 245;
-            // 
-            // categoria_encuentro
-            // 
-            dataGridViewCellStyle99.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.categoria_encuentro.DefaultCellStyle = dataGridViewCellStyle99;
-            this.categoria_encuentro.HeaderText = "CATEG.";
-            this.categoria_encuentro.Name = "categoria_encuentro";
-            this.categoria_encuentro.ReadOnly = true;
-            this.categoria_encuentro.Width = 45;
-            // 
-            // zl
-            // 
-            dataGridViewCellStyle100.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.zl.DefaultCellStyle = dataGridViewCellStyle100;
-            this.zl.HeaderText = "Z1";
-            this.zl.Name = "zl";
-            this.zl.ReadOnly = true;
-            this.zl.Width = 25;
-            // 
-            // zv
-            // 
-            dataGridViewCellStyle101.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.zv.DefaultCellStyle = dataGridViewCellStyle101;
-            this.zv.HeaderText = "Z2";
-            this.zv.Name = "zv";
-            this.zv.ReadOnly = true;
-            this.zv.Width = 25;
-            // 
-            // fecha
-            // 
-            dataGridViewCellStyle102.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.fecha.DefaultCellStyle = dataGridViewCellStyle102;
-            this.fecha.HeaderText = "FECHA";
-            this.fecha.Name = "fecha";
-            this.fecha.ReadOnly = true;
-            this.fecha.Width = 80;
-            // 
-            // hora_encuentro
-            // 
-            dataGridViewCellStyle103.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.hora_encuentro.DefaultCellStyle = dataGridViewCellStyle103;
-            this.hora_encuentro.HeaderText = "HORA";
-            this.hora_encuentro.Name = "hora_encuentro";
-            this.hora_encuentro.ReadOnly = true;
-            this.hora_encuentro.Width = 45;
-            // 
-            // cancha_encuentro
-            // 
-            dataGridViewCellStyle104.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.cancha_encuentro.DefaultCellStyle = dataGridViewCellStyle104;
-            this.cancha_encuentro.HeaderText = "CANCHA";
-            this.cancha_encuentro.Name = "cancha_encuentro";
-            this.cancha_encuentro.ReadOnly = true;
-            this.cancha_encuentro.Width = 60;
-            // 
             // groupBox10
             // 
-            this.groupBox10.BackColor = System.Drawing.Color.LemonChiffon;
+            this.groupBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
+            this.groupBox10.Controls.Add(this.datePickerEnc1);
+            this.groupBox10.Controls.Add(this.label51);
+            this.groupBox10.Controls.Add(this.tbDriveEncuentro1);
+            this.groupBox10.Controls.Add(this.label50);
+            this.groupBox10.Controls.Add(this.tbYoutubeEncuentro1);
             this.groupBox10.Controls.Add(this.comboIDvisita);
             this.groupBox10.Controls.Add(this.comboIDlocal);
             this.groupBox10.Controls.Add(this.comboFechaEncuentro1);
@@ -1979,14 +2083,61 @@
             this.groupBox10.Controls.Add(this.label16);
             this.groupBox10.Controls.Add(this.comboCategoriaEncuentro);
             this.groupBox10.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox10.Location = new System.Drawing.Point(25, 32);
+            this.groupBox10.Location = new System.Drawing.Point(25, 26);
             this.groupBox10.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox10.Size = new System.Drawing.Size(453, 305);
+            this.groupBox10.Size = new System.Drawing.Size(453, 333);
             this.groupBox10.TabIndex = 44;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "NUEVO ENCUENTRO";
+            this.groupBox10.Enter += new System.EventHandler(this.groupBox10_Enter);
+            // 
+            // datePickerEnc1
+            // 
+            this.datePickerEnc1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datePickerEnc1.Location = new System.Drawing.Point(313, 157);
+            this.datePickerEnc1.Name = "datePickerEnc1";
+            this.datePickerEnc1.Size = new System.Drawing.Size(119, 21);
+            this.datePickerEnc1.TabIndex = 96;
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(7, 237);
+            this.label51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(84, 20);
+            this.label51.TabIndex = 71;
+            this.label51.Text = "URL Drive:";
+            // 
+            // tbDriveEncuentro1
+            // 
+            this.tbDriveEncuentro1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDriveEncuentro1.Location = new System.Drawing.Point(96, 234);
+            this.tbDriveEncuentro1.Name = "tbDriveEncuentro1";
+            this.tbDriveEncuentro1.Size = new System.Drawing.Size(336, 27);
+            this.tbDriveEncuentro1.TabIndex = 70;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(26, 198);
+            this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(64, 20);
+            this.label50.TabIndex = 69;
+            this.label50.Text = "URL YT:";
+            // 
+            // tbYoutubeEncuentro1
+            // 
+            this.tbYoutubeEncuentro1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbYoutubeEncuentro1.Location = new System.Drawing.Point(96, 194);
+            this.tbYoutubeEncuentro1.Name = "tbYoutubeEncuentro1";
+            this.tbYoutubeEncuentro1.Size = new System.Drawing.Size(336, 27);
+            this.tbYoutubeEncuentro1.TabIndex = 68;
             // 
             // comboIDvisita
             // 
@@ -1997,7 +2148,6 @@
             this.comboIDvisita.Name = "comboIDvisita";
             this.comboIDvisita.Size = new System.Drawing.Size(74, 28);
             this.comboIDvisita.TabIndex = 67;
-            this.comboIDvisita.Visible = false;
             // 
             // comboIDlocal
             // 
@@ -2008,7 +2158,6 @@
             this.comboIDlocal.Name = "comboIDlocal";
             this.comboIDlocal.Size = new System.Drawing.Size(74, 28);
             this.comboIDlocal.TabIndex = 66;
-            this.comboIDlocal.Visible = false;
             // 
             // comboFechaEncuentro1
             // 
@@ -2016,9 +2165,9 @@
             this.comboFechaEncuentro1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFechaEncuentro1.FormatString = "d";
             this.comboFechaEncuentro1.FormattingEnabled = true;
-            this.comboFechaEncuentro1.Location = new System.Drawing.Point(200, 179);
+            this.comboFechaEncuentro1.Location = new System.Drawing.Point(233, 152);
             this.comboFechaEncuentro1.Name = "comboFechaEncuentro1";
-            this.comboFechaEncuentro1.Size = new System.Drawing.Size(116, 28);
+            this.comboFechaEncuentro1.Size = new System.Drawing.Size(59, 28);
             this.comboFechaEncuentro1.TabIndex = 65;
             // 
             // label33
@@ -2026,7 +2175,7 @@
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label33.Location = new System.Drawing.Point(35, 240);
+            this.label33.Location = new System.Drawing.Point(24, 281);
             this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(225, 32);
@@ -2037,7 +2186,7 @@
             // btAgregarEncuentro
             // 
             this.btAgregarEncuentro.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAgregarEncuentro.Location = new System.Drawing.Point(282, 234);
+            this.btAgregarEncuentro.Location = new System.Drawing.Point(282, 281);
             this.btAgregarEncuentro.Name = "btAgregarEncuentro";
             this.btAgregarEncuentro.Size = new System.Drawing.Size(150, 40);
             this.btAgregarEncuentro.TabIndex = 44;
@@ -2050,50 +2199,52 @@
             this.comboCanchaEncuentro1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboCanchaEncuentro1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboCanchaEncuentro1.FormattingEnabled = true;
-            this.comboCanchaEncuentro1.Location = new System.Drawing.Point(370, 179);
+            this.comboCanchaEncuentro1.Location = new System.Drawing.Point(8, 82);
             this.comboCanchaEncuentro1.Name = "comboCanchaEncuentro1";
             this.comboCanchaEncuentro1.Size = new System.Drawing.Size(61, 28);
             this.comboCanchaEncuentro1.TabIndex = 49;
+            this.comboCanchaEncuentro1.Visible = false;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(369, 156);
+            this.label28.Location = new System.Drawing.Point(7, 59);
             this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(61, 20);
             this.label28.TabIndex = 48;
             this.label28.Text = "Cancha";
+            this.label28.Visible = false;
             // 
             // label27
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(234, 157);
+            this.label27.Location = new System.Drawing.Point(173, 156);
             this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(51, 20);
+            this.label27.Size = new System.Drawing.Size(59, 20);
             this.label27.TabIndex = 47;
-            this.label27.Text = "Fecha";
+            this.label27.Text = "Fecha: ";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(99, 157);
+            this.label26.Location = new System.Drawing.Point(46, 156);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(45, 20);
+            this.label26.Size = new System.Drawing.Size(49, 20);
             this.label26.TabIndex = 46;
-            this.label26.Text = "Hora";
+            this.label26.Text = "Hora:";
             // 
             // tbHoraEncuentro1
             // 
             this.tbHoraEncuentro1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbHoraEncuentro1.Location = new System.Drawing.Point(96, 179);
+            this.tbHoraEncuentro1.Location = new System.Drawing.Point(97, 153);
             this.tbHoraEncuentro1.Name = "tbHoraEncuentro1";
-            this.tbHoraEncuentro1.Size = new System.Drawing.Size(51, 27);
+            this.tbHoraEncuentro1.Size = new System.Drawing.Size(52, 27);
             this.tbHoraEncuentro1.TabIndex = 45;
             // 
             // label25
@@ -2111,7 +2262,7 @@
             this.comboVisitaEncuentro1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboVisitaEncuentro1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboVisitaEncuentro1.FormattingEnabled = true;
-            this.comboVisitaEncuentro1.Location = new System.Drawing.Point(96, 118);
+            this.comboVisitaEncuentro1.Location = new System.Drawing.Point(96, 107);
             this.comboVisitaEncuentro1.Name = "comboVisitaEncuentro1";
             this.comboVisitaEncuentro1.Size = new System.Drawing.Size(336, 28);
             this.comboVisitaEncuentro1.TabIndex = 42;
@@ -2122,7 +2273,7 @@
             this.comboLocalEncuentro1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboLocalEncuentro1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboLocalEncuentro1.FormattingEnabled = true;
-            this.comboLocalEncuentro1.Location = new System.Drawing.Point(96, 71);
+            this.comboLocalEncuentro1.Location = new System.Drawing.Point(96, 65);
             this.comboLocalEncuentro1.Name = "comboLocalEncuentro1";
             this.comboLocalEncuentro1.Size = new System.Drawing.Size(336, 28);
             this.comboLocalEncuentro1.TabIndex = 41;
@@ -2132,7 +2283,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(41, 122);
+            this.label24.Location = new System.Drawing.Point(41, 111);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(52, 20);
@@ -2143,7 +2294,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(43, 75);
+            this.label23.Location = new System.Drawing.Point(43, 69);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(51, 20);
@@ -2176,12 +2327,12 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(12, 29);
+            this.label16.Location = new System.Drawing.Point(23, 29);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(84, 20);
+            this.label16.Size = new System.Drawing.Size(70, 20);
             this.label16.TabIndex = 35;
-            this.label16.Text = "Categoría:";
+            this.label16.Text = "División:";
             // 
             // comboCategoriaEncuentro
             // 
@@ -2196,6 +2347,7 @@
             // 
             // gbCruces
             // 
+            this.gbCruces.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(244)))));
             this.gbCruces.Controls.Add(this.gbCruce);
             this.gbCruces.Controls.Add(this.dgvCruces);
             this.gbCruces.Controls.Add(this.comboCategoriaCruce);
@@ -2215,7 +2367,7 @@
             // 
             // gbCruce
             // 
-            this.gbCruce.BackColor = System.Drawing.Color.FloralWhite;
+            this.gbCruce.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
             this.gbCruce.Controls.Add(this.label15);
             this.gbCruce.Controls.Add(this.dgv16vosPlata);
             this.gbCruce.Controls.Add(this.dgvFinalesOro);
@@ -2279,10 +2431,10 @@
             // 
             // dataGridViewTextBoxColumn16
             // 
-            dataGridViewCellStyle105.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle105.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle105.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewTextBoxColumn16.DefaultCellStyle = dataGridViewCellStyle105;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewTextBoxColumn16.DefaultCellStyle = dataGridViewCellStyle20;
             this.dataGridViewTextBoxColumn16.HeaderText = "Código";
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
             this.dataGridViewTextBoxColumn16.ReadOnly = true;
@@ -2300,11 +2452,11 @@
             // 
             // dataGridViewTextBoxColumn18
             // 
-            dataGridViewCellStyle106.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle106.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle106.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle106.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn18.DefaultCellStyle = dataGridViewCellStyle106;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn18.DefaultCellStyle = dataGridViewCellStyle21;
             this.dataGridViewTextBoxColumn18.HeaderText = "vs";
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
             this.dataGridViewTextBoxColumn18.ReadOnly = true;
@@ -2372,10 +2524,10 @@
             // 
             // Codigo
             // 
-            dataGridViewCellStyle107.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle107.BackColor = System.Drawing.Color.Goldenrod;
-            dataGridViewCellStyle107.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Codigo.DefaultCellStyle = dataGridViewCellStyle107;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.Goldenrod;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Codigo.DefaultCellStyle = dataGridViewCellStyle22;
             this.Codigo.HeaderText = "Código";
             this.Codigo.Name = "Codigo";
             this.Codigo.ReadOnly = true;
@@ -2393,11 +2545,11 @@
             // 
             // dataGridViewTextBoxColumn36
             // 
-            dataGridViewCellStyle108.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle108.BackColor = System.Drawing.Color.PaleGoldenrod;
-            dataGridViewCellStyle108.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle108.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn36.DefaultCellStyle = dataGridViewCellStyle108;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.PaleGoldenrod;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn36.DefaultCellStyle = dataGridViewCellStyle23;
             this.dataGridViewTextBoxColumn36.HeaderText = "vs";
             this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
             this.dataGridViewTextBoxColumn36.ReadOnly = true;
@@ -2465,10 +2617,10 @@
             // 
             // dataGridViewTextBoxColumn21
             // 
-            dataGridViewCellStyle109.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle109.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle109.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewTextBoxColumn21.DefaultCellStyle = dataGridViewCellStyle109;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewTextBoxColumn21.DefaultCellStyle = dataGridViewCellStyle24;
             this.dataGridViewTextBoxColumn21.HeaderText = "Código";
             this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
             this.dataGridViewTextBoxColumn21.ReadOnly = true;
@@ -2486,11 +2638,11 @@
             // 
             // dataGridViewTextBoxColumn23
             // 
-            dataGridViewCellStyle110.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle110.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle110.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle110.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn23.DefaultCellStyle = dataGridViewCellStyle110;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn23.DefaultCellStyle = dataGridViewCellStyle25;
             this.dataGridViewTextBoxColumn23.HeaderText = "vs";
             this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
             this.dataGridViewTextBoxColumn23.ReadOnly = true;
@@ -2580,10 +2732,10 @@
             // 
             // dataGridViewTextBoxColumn26
             // 
-            dataGridViewCellStyle111.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle111.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle111.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewTextBoxColumn26.DefaultCellStyle = dataGridViewCellStyle111;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewTextBoxColumn26.DefaultCellStyle = dataGridViewCellStyle26;
             this.dataGridViewTextBoxColumn26.HeaderText = "Código";
             this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
             this.dataGridViewTextBoxColumn26.ReadOnly = true;
@@ -2601,11 +2753,11 @@
             // 
             // dataGridViewTextBoxColumn28
             // 
-            dataGridViewCellStyle112.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle112.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle112.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle112.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn28.DefaultCellStyle = dataGridViewCellStyle112;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn28.DefaultCellStyle = dataGridViewCellStyle27;
             this.dataGridViewTextBoxColumn28.HeaderText = "vs";
             this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
             this.dataGridViewTextBoxColumn28.ReadOnly = true;
@@ -2673,10 +2825,10 @@
             // 
             // dataGridViewTextBoxColumn1
             // 
-            dataGridViewCellStyle113.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle113.BackColor = System.Drawing.Color.Goldenrod;
-            dataGridViewCellStyle113.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle113;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.Goldenrod;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle28;
             this.dataGridViewTextBoxColumn1.HeaderText = "Código";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
@@ -2694,11 +2846,11 @@
             // 
             // dataGridViewTextBoxColumn3
             // 
-            dataGridViewCellStyle114.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle114.BackColor = System.Drawing.Color.PaleGoldenrod;
-            dataGridViewCellStyle114.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle114.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle114;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.PaleGoldenrod;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle29;
             this.dataGridViewTextBoxColumn3.HeaderText = "vs";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
@@ -2766,10 +2918,10 @@
             // 
             // dataGridViewTextBoxColumn11
             // 
-            dataGridViewCellStyle115.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle115.BackColor = System.Drawing.Color.Goldenrod;
-            dataGridViewCellStyle115.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewTextBoxColumn11.DefaultCellStyle = dataGridViewCellStyle115;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.Goldenrod;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewTextBoxColumn11.DefaultCellStyle = dataGridViewCellStyle30;
             this.dataGridViewTextBoxColumn11.HeaderText = "Código";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             this.dataGridViewTextBoxColumn11.ReadOnly = true;
@@ -2787,11 +2939,11 @@
             // 
             // dataGridViewTextBoxColumn13
             // 
-            dataGridViewCellStyle116.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle116.BackColor = System.Drawing.Color.PaleGoldenrod;
-            dataGridViewCellStyle116.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle116.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn13.DefaultCellStyle = dataGridViewCellStyle116;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.PaleGoldenrod;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn13.DefaultCellStyle = dataGridViewCellStyle31;
             this.dataGridViewTextBoxColumn13.HeaderText = "vs";
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             this.dataGridViewTextBoxColumn13.ReadOnly = true;
@@ -2881,10 +3033,10 @@
             // 
             // dataGridViewTextBoxColumn6
             // 
-            dataGridViewCellStyle117.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle117.BackColor = System.Drawing.Color.Goldenrod;
-            dataGridViewCellStyle117.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle117;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.Goldenrod;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle32;
             this.dataGridViewTextBoxColumn6.HeaderText = "Código";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
@@ -2902,11 +3054,11 @@
             // 
             // dataGridViewTextBoxColumn8
             // 
-            dataGridViewCellStyle118.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle118.BackColor = System.Drawing.Color.PaleGoldenrod;
-            dataGridViewCellStyle118.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle118.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle118;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.PaleGoldenrod;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle33;
             this.dataGridViewTextBoxColumn8.HeaderText = "vs";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
@@ -2985,10 +3137,10 @@
             // 
             // dataGridViewTextBoxColumn31
             // 
-            dataGridViewCellStyle119.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle119.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle119.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewTextBoxColumn31.DefaultCellStyle = dataGridViewCellStyle119;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewTextBoxColumn31.DefaultCellStyle = dataGridViewCellStyle34;
             this.dataGridViewTextBoxColumn31.HeaderText = "Código";
             this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
             this.dataGridViewTextBoxColumn31.ReadOnly = true;
@@ -3006,11 +3158,11 @@
             // 
             // dataGridViewTextBoxColumn33
             // 
-            dataGridViewCellStyle120.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle120.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle120.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle120.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn33.DefaultCellStyle = dataGridViewCellStyle120;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn33.DefaultCellStyle = dataGridViewCellStyle35;
             this.dataGridViewTextBoxColumn33.HeaderText = "vs";
             this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
             this.dataGridViewTextBoxColumn33.ReadOnly = true;
@@ -3112,7 +3264,7 @@
             // labelNingunCruce
             // 
             this.labelNingunCruce.AutoSize = true;
-            this.labelNingunCruce.BackColor = System.Drawing.Color.FloralWhite;
+            this.labelNingunCruce.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.labelNingunCruce.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNingunCruce.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.labelNingunCruce.Location = new System.Drawing.Point(317, 412);
@@ -3126,7 +3278,7 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.BackColor = System.Drawing.Color.FloralWhite;
+            this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.pictureBox10.Location = new System.Drawing.Point(69, 158);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
@@ -3136,7 +3288,7 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.FloralWhite;
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3151,7 +3303,7 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.FloralWhite;
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3173,6 +3325,7 @@
             this.dgvClub.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
             this.nombre,
+            this.nombrecorto,
             this.escudo});
             this.dgvClub.Location = new System.Drawing.Point(64, 112);
             this.dgvClub.Margin = new System.Windows.Forms.Padding(4);
@@ -3184,13 +3337,14 @@
             this.dgvClub.Size = new System.Drawing.Size(498, 648);
             this.dgvClub.TabIndex = 26;
             this.dgvClub.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClub_CellClick);
+            this.dgvClub.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClub_CellContentClick);
             // 
             // id
             // 
-            dataGridViewCellStyle121.BackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle121.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle121.ForeColor = System.Drawing.Color.White;
-            this.id.DefaultCellStyle = dataGridViewCellStyle121;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.White;
+            this.id.DefaultCellStyle = dataGridViewCellStyle36;
             this.id.HeaderText = "ID";
             this.id.Name = "id";
             this.id.ReadOnly = true;
@@ -3199,24 +3353,33 @@
             // 
             // nombre
             // 
-            dataGridViewCellStyle122.ForeColor = System.Drawing.Color.Black;
-            this.nombre.DefaultCellStyle = dataGridViewCellStyle122;
-            this.nombre.HeaderText = "NOMBRE";
+            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.Black;
+            this.nombre.DefaultCellStyle = dataGridViewCellStyle37;
+            this.nombre.HeaderText = "NOMBRE COMPLETO";
             this.nombre.Name = "nombre";
             this.nombre.ReadOnly = true;
-            this.nombre.Width = 390;
+            this.nombre.Width = 200;
+            // 
+            // nombrecorto
+            // 
+            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.Black;
+            this.nombrecorto.DefaultCellStyle = dataGridViewCellStyle38;
+            this.nombrecorto.HeaderText = "NOMBRE CORTO";
+            this.nombrecorto.Name = "nombrecorto";
+            this.nombrecorto.ReadOnly = true;
+            this.nombrecorto.Width = 200;
             // 
             // escudo
             // 
-            dataGridViewCellStyle123.ForeColor = System.Drawing.Color.Black;
-            this.escudo.DefaultCellStyle = dataGridViewCellStyle123;
             this.escudo.HeaderText = "ESCUDO";
             this.escudo.Name = "escudo";
             this.escudo.ReadOnly = true;
             // 
             // gbAgregarClub
             // 
-            this.gbAgregarClub.BackColor = System.Drawing.Color.LemonChiffon;
+            this.gbAgregarClub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
+            this.gbAgregarClub.Controls.Add(this.label48);
+            this.gbAgregarClub.Controls.Add(this.tbNombreCortoClub1);
             this.gbAgregarClub.Controls.Add(this.pbCancha1);
             this.gbAgregarClub.Controls.Add(this.label4);
             this.gbAgregarClub.Controls.Add(this.tbNombreClub1);
@@ -3232,13 +3395,39 @@
             this.gbAgregarClub.TabStop = false;
             this.gbAgregarClub.Text = "AGREGAR CLUB";
             // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.BackColor = System.Drawing.Color.White;
+            this.label48.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label48.Location = new System.Drawing.Point(21, 70);
+            this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(118, 20);
+            this.label48.TabIndex = 22;
+            this.label48.Text = "Nombre corto:";
+            this.label48.Click += new System.EventHandler(this.label48_Click);
+            // 
+            // tbNombreCortoClub1
+            // 
+            this.tbNombreCortoClub1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNombreCortoClub1.Location = new System.Drawing.Point(17, 67);
+            this.tbNombreCortoClub1.Margin = new System.Windows.Forms.Padding(4);
+            this.tbNombreCortoClub1.Name = "tbNombreCortoClub1";
+            this.tbNombreCortoClub1.Size = new System.Drawing.Size(314, 27);
+            this.tbNombreCortoClub1.TabIndex = 21;
+            this.tbNombreCortoClub1.TextChanged += new System.EventHandler(this.tbNombreCortoClub1_TextChanged);
+            this.tbNombreCortoClub1.Enter += new System.EventHandler(this.tbNombreCortoClub1_Enter);
+            this.tbNombreCortoClub1.Leave += new System.EventHandler(this.tbNombreCortoClub1_Leave);
+            // 
             // pbCancha1
             // 
             this.pbCancha1.Image = global::Torneo_Guillermito.Properties.Resources.nada;
-            this.pbCancha1.Location = new System.Drawing.Point(76, 67);
+            this.pbCancha1.Location = new System.Drawing.Point(103, 115);
             this.pbCancha1.Margin = new System.Windows.Forms.Padding(4);
             this.pbCancha1.Name = "pbCancha1";
-            this.pbCancha1.Size = new System.Drawing.Size(185, 185);
+            this.pbCancha1.Size = new System.Drawing.Size(139, 135);
             this.pbCancha1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCancha1.TabIndex = 19;
             this.pbCancha1.TabStop = false;
@@ -3253,9 +3442,9 @@
             this.label4.Location = new System.Drawing.Point(22, 30);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 20);
+            this.label4.Size = new System.Drawing.Size(149, 20);
             this.label4.TabIndex = 18;
-            this.label4.Text = "Nombre:";
+            this.label4.Text = "Nombre completo:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // tbNombreClub1
@@ -3266,6 +3455,7 @@
             this.tbNombreClub1.Name = "tbNombreClub1";
             this.tbNombreClub1.Size = new System.Drawing.Size(314, 27);
             this.tbNombreClub1.TabIndex = 17;
+            this.tbNombreClub1.TextChanged += new System.EventHandler(this.tbNombreClub1_TextChanged);
             this.tbNombreClub1.Enter += new System.EventHandler(this.tbNombreClub1_Enter);
             this.tbNombreClub1.Leave += new System.EventHandler(this.tbNombreClub1_Leave);
             // 
@@ -3298,7 +3488,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.LemonChiffon;
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
+            this.groupBox1.Controls.Add(this.label49);
+            this.groupBox1.Controls.Add(this.tbNombreCortoClub2);
             this.groupBox1.Controls.Add(this.pbCancha2);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.tbNombreClub2);
@@ -3313,13 +3505,40 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "MODIFICAR CLUB";
             // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.BackColor = System.Drawing.Color.White;
+            this.label49.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label49.Location = new System.Drawing.Point(24, 80);
+            this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(118, 20);
+            this.label49.TabIndex = 21;
+            this.label49.Text = "Nombre corto:";
+            this.label49.Click += new System.EventHandler(this.label49_Click);
+            // 
+            // tbNombreCortoClub2
+            // 
+            this.tbNombreCortoClub2.Enabled = false;
+            this.tbNombreCortoClub2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNombreCortoClub2.Location = new System.Drawing.Point(21, 77);
+            this.tbNombreCortoClub2.Margin = new System.Windows.Forms.Padding(4);
+            this.tbNombreCortoClub2.Name = "tbNombreCortoClub2";
+            this.tbNombreCortoClub2.Size = new System.Drawing.Size(310, 27);
+            this.tbNombreCortoClub2.TabIndex = 20;
+            this.tbNombreCortoClub2.TextChanged += new System.EventHandler(this.tbNombreCortoClub2_TextChanged);
+            this.tbNombreCortoClub2.Enter += new System.EventHandler(this.tbNombreCortoClub2_Enter);
+            this.tbNombreCortoClub2.Leave += new System.EventHandler(this.tbNombreCortoClub2_Leave);
+            // 
             // pbCancha2
             // 
             this.pbCancha2.Image = global::Torneo_Guillermito.Properties.Resources.nada;
-            this.pbCancha2.Location = new System.Drawing.Point(72, 73);
+            this.pbCancha2.Location = new System.Drawing.Point(103, 119);
             this.pbCancha2.Margin = new System.Windows.Forms.Padding(4);
             this.pbCancha2.Name = "pbCancha2";
-            this.pbCancha2.Size = new System.Drawing.Size(185, 185);
+            this.pbCancha2.Size = new System.Drawing.Size(139, 135);
             this.pbCancha2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCancha2.TabIndex = 19;
             this.pbCancha2.TabStop = false;
@@ -3334,9 +3553,9 @@
             this.label2.Location = new System.Drawing.Point(22, 36);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 20);
+            this.label2.Size = new System.Drawing.Size(149, 20);
             this.label2.TabIndex = 18;
-            this.label2.Text = "Nombre:";
+            this.label2.Text = "Nombre completo:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // tbNombreClub2
@@ -3358,7 +3577,7 @@
             this.btModificarClub.Enabled = false;
             this.btModificarClub.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btModificarClub.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btModificarClub.Location = new System.Drawing.Point(89, 268);
+            this.btModificarClub.Location = new System.Drawing.Point(98, 268);
             this.btModificarClub.Margin = new System.Windows.Forms.Padding(4);
             this.btModificarClub.Name = "btModificarClub";
             this.btModificarClub.Size = new System.Drawing.Size(150, 40);
@@ -3418,6 +3637,7 @@
             // 
             // gbClubes
             // 
+            this.gbClubes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(244)))));
             this.gbClubes.Controls.Add(this.gbAgregarClub);
             this.gbClubes.Controls.Add(this.pbCancha2Control);
             this.gbClubes.Controls.Add(this.groupBox1);
@@ -3427,7 +3647,7 @@
             this.gbClubes.Controls.Add(this.btEliminarClub);
             this.gbClubes.Controls.Add(this.dgvClub);
             this.gbClubes.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.gbClubes.Location = new System.Drawing.Point(287, 38);
+            this.gbClubes.Location = new System.Drawing.Point(287, 43);
             this.gbClubes.Margin = new System.Windows.Forms.Padding(4);
             this.gbClubes.Name = "gbClubes";
             this.gbClubes.Padding = new System.Windows.Forms.Padding(4);
@@ -3448,23 +3668,218 @@
             this.pbCancha2Control.TabStop = false;
             this.pbCancha2Control.Visible = false;
             // 
-            // btSeleccionar
+            // pictureBox14
             // 
-            this.btSeleccionar.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSeleccionar.Location = new System.Drawing.Point(905, 818);
-            this.btSeleccionar.Name = "btSeleccionar";
-            this.btSeleccionar.Size = new System.Drawing.Size(150, 40);
-            this.btSeleccionar.TabIndex = 73;
-            this.btSeleccionar.Text = "Seleccionar todo";
-            this.btSeleccionar.UseVisualStyleBackColor = true;
-            this.btSeleccionar.Click += new System.EventHandler(this.btSeleccionar_Click);
+            this.pictureBox14.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.pictureBox14.Location = new System.Drawing.Point(171, 117);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 96;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.pictureBox16.Location = new System.Drawing.Point(171, 156);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 98;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.pictureBox17.Location = new System.Drawing.Point(355, 156);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox17.TabIndex = 102;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.pictureBox18.Location = new System.Drawing.Point(356, 120);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox18.TabIndex = 101;
+            this.pictureBox18.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.pictureBox19.Location = new System.Drawing.Point(356, 83);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox19.TabIndex = 100;
+            this.pictureBox19.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::Torneo_Guillermito.Properties.Resources.minus;
+            this.pictureBox13.Location = new System.Drawing.Point(121, 117);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 103;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::Torneo_Guillermito.Properties.Resources.minus;
+            this.pictureBox15.Location = new System.Drawing.Point(121, 156);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 104;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = global::Torneo_Guillermito.Properties.Resources.minus;
+            this.pictureBox20.Location = new System.Drawing.Point(403, 156);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox20.TabIndex = 107;
+            this.pictureBox20.TabStop = false;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Image = global::Torneo_Guillermito.Properties.Resources.minus;
+            this.pictureBox21.Location = new System.Drawing.Point(403, 117);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox21.TabIndex = 106;
+            this.pictureBox21.TabStop = false;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = global::Torneo_Guillermito.Properties.Resources.minus;
+            this.pictureBox22.Location = new System.Drawing.Point(403, 80);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox22.TabIndex = 105;
+            this.pictureBox22.TabStop = false;
+            // 
+            // id_partido
+            // 
+            this.id_partido.HeaderText = "ID";
+            this.id_partido.Name = "id_partido";
+            this.id_partido.ReadOnly = true;
+            this.id_partido.Visible = false;
+            // 
+            // local
+            // 
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.local.DefaultCellStyle = dataGridViewCellStyle13;
+            this.local.HeaderText = "EQUIPO LOCAL";
+            this.local.Name = "local";
+            this.local.ReadOnly = true;
+            this.local.Width = 245;
+            // 
+            // gl
+            // 
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            this.gl.DefaultCellStyle = dataGridViewCellStyle14;
+            this.gl.HeaderText = "";
+            this.gl.Name = "gl";
+            this.gl.ReadOnly = true;
+            this.gl.Width = 25;
+            // 
+            // vs
+            // 
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
+            this.vs.DefaultCellStyle = dataGridViewCellStyle15;
+            this.vs.HeaderText = "";
+            this.vs.Name = "vs";
+            this.vs.ReadOnly = true;
+            this.vs.Width = 25;
+            // 
+            // gv
+            // 
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
+            this.gv.DefaultCellStyle = dataGridViewCellStyle16;
+            this.gv.HeaderText = "";
+            this.gv.Name = "gv";
+            this.gv.ReadOnly = true;
+            this.gv.Width = 25;
+            // 
+            // visita
+            // 
+            this.visita.HeaderText = "EQUIPO VISITA";
+            this.visita.Name = "visita";
+            this.visita.ReadOnly = true;
+            this.visita.Width = 245;
+            // 
+            // categoria_encuentro
+            // 
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.categoria_encuentro.DefaultCellStyle = dataGridViewCellStyle17;
+            this.categoria_encuentro.HeaderText = "DIV.";
+            this.categoria_encuentro.Name = "categoria_encuentro";
+            this.categoria_encuentro.ReadOnly = true;
+            this.categoria_encuentro.Width = 80;
+            // 
+            // fecha
+            // 
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.fecha.DefaultCellStyle = dataGridViewCellStyle18;
+            this.fecha.HeaderText = "FECHA";
+            this.fecha.Name = "fecha";
+            this.fecha.ReadOnly = true;
+            this.fecha.Width = 45;
+            // 
+            // fechaCalendario
+            // 
+            this.fechaCalendario.HeaderText = "DIA";
+            this.fechaCalendario.Name = "fechaCalendario";
+            this.fechaCalendario.ReadOnly = true;
+            // 
+            // hora_encuentro
+            // 
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.hora_encuentro.DefaultCellStyle = dataGridViewCellStyle19;
+            this.hora_encuentro.HeaderText = "HORA";
+            this.hora_encuentro.Name = "hora_encuentro";
+            this.hora_encuentro.ReadOnly = true;
+            this.hora_encuentro.Width = 55;
+            // 
+            // url_transmicion
+            // 
+            this.url_transmicion.HeaderText = "URL_TRANSMICION";
+            this.url_transmicion.Name = "url_transmicion";
+            this.url_transmicion.ReadOnly = true;
+            this.url_transmicion.Visible = false;
+            // 
+            // url_imagenes
+            // 
+            this.url_imagenes.HeaderText = "URL_IMAGENES";
+            this.url_imagenes.Name = "url_imagenes";
+            this.url_imagenes.ReadOnly = true;
+            this.url_imagenes.Visible = false;
             // 
             // gbEncuentros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.Khaki;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(1360, 922);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox7);
@@ -3530,6 +3945,8 @@
             this.groupBox12.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEncuentros)).EndInit();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
@@ -3556,6 +3973,16 @@
             this.gbClubes.ResumeLayout(false);
             this.gbClubes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCancha2Control)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3651,7 +4078,6 @@
         private System.Windows.Forms.Label lbAdvertencia;
         private System.Windows.Forms.TextBox tbNombreClubFiltro;
         private System.Windows.Forms.GroupBox gbClubes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn asd;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DataGridView dgvCruces;
         private System.Windows.Forms.GroupBox gbCruce;
@@ -3720,16 +4146,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_partido_cruce_7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn escudo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idZona;
-        private System.Windows.Forms.DataGridViewTextBoxColumn categoriaZona;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zona;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idEquipoCreado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreEquipoCreado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn categoriaEquipoCreado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zonaEquipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn idEquipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreClub;
         private System.Windows.Forms.DataGridViewTextBoxColumn escudoClub;
@@ -3746,18 +4162,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn id_partido_cruce_2;
         private System.Windows.Forms.Button btEliminarEncuentro;
         private System.Windows.Forms.DataGridView dgvEncuentros;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id_partido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn local;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gl;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vs;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn visita;
-        private System.Windows.Forms.DataGridViewTextBoxColumn categoria_encuentro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zl;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fecha;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hora_encuentro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cancha_encuentro;
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Button button1;
@@ -3775,10 +4179,8 @@
         private System.Windows.Forms.TextBox tbZonaEncuentro2;
         private System.Windows.Forms.TextBox tbVisitaEncuentro2;
         private System.Windows.Forms.TextBox tbLocalEncuentro2;
-        private System.Windows.Forms.Label label40;
         private System.Windows.Forms.TextBox tbGolesVisita;
         private System.Windows.Forms.TextBox tbGolesLocal;
-        private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Button btModificarPartido;
@@ -3812,6 +4214,63 @@
         private System.Windows.Forms.Button btPDF;
         private System.Windows.Forms.CheckBox cbCruces;
         private System.Windows.Forms.Button btSeleccionar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombrecorto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn escudo;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.TextBox tbNombreCortoClub1;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.TextBox tbNombreCortoClub2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idZona;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoriaZona;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zona;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDivision;
+        private System.Windows.Forms.DataGridViewTextBoxColumn asd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idEquipoCreado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreEquipoCreado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoriaEquipoCreado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zonaEquipo;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.TextBox tbDriveEncuentro1;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.TextBox tbYoutubeEncuentro1;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.TextBox tbDriveEncuentro2;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.TextBox tbYoutubeEncuentro2;
+        private System.Windows.Forms.DateTimePicker datePickerEn2;
+        private System.Windows.Forms.DateTimePicker datePickerEnc1;
+        private System.Windows.Forms.PictureBox pictureBox20;
+        private System.Windows.Forms.PictureBox pictureBox21;
+        private System.Windows.Forms.PictureBox pictureBox22;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_partido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn local;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gl;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vs;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gv;
+        private System.Windows.Forms.DataGridViewTextBoxColumn visita;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoria_encuentro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaCalendario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hora_encuentro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn url_transmicion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn url_imagenes;
     }
 }
 

@@ -238,9 +238,6 @@
     <None Include="Resources\nada.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Canchas.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Categorias.png" />
   </ItemGroup>
   <ItemGroup>
@@ -293,6 +290,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo2024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_google_play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\minus.png" />
+    <None Include="Resources\minus1.png" />
+    <Content Include="Resources\plus.png" />
+    <None Include="Resources\plus1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
