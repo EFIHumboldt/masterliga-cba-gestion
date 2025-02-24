@@ -42,6 +42,13 @@ namespace Torneo_Guillermito
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -61,13 +68,6 @@ namespace Torneo_Guillermito
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -165,6 +165,16 @@ namespace Torneo_Guillermito
             this.cbPartidos = new System.Windows.Forms.CheckBox();
             this.btEliminarEncuentro = new System.Windows.Forms.Button();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.datePickerEn2 = new System.Windows.Forms.DateTimePicker();
             this.label54 = new System.Windows.Forms.Label();
             this.tbDriveEncuentro2 = new System.Windows.Forms.TextBox();
@@ -196,6 +206,18 @@ namespace Torneo_Guillermito
             this.label32 = new System.Windows.Forms.Label();
             this.tbCategoriaEncuentro2 = new System.Windows.Forms.TextBox();
             this.dgvEncuentros = new System.Windows.Forms.DataGridView();
+            this.id_partido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.local = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vs = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.visita = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoria_encuentro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaCalendario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hora_encuentro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.url_transmicion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.url_imagenes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.datePickerEnc1 = new System.Windows.Forms.DateTimePicker();
             this.label51 = new System.Windows.Forms.Label();
@@ -328,28 +350,6 @@ namespace Torneo_Guillermito
             this.tbNombreClubFiltro = new System.Windows.Forms.TextBox();
             this.gbClubes = new System.Windows.Forms.GroupBox();
             this.pbCancha2Control = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.id_partido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.local = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gl = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vs = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.visita = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoria_encuentro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaCalendario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hora_encuentro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.url_transmicion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.url_imagenes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -377,6 +377,16 @@ namespace Torneo_Guillermito
             this.gbPartidos.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEncuentros)).BeginInit();
@@ -400,16 +410,6 @@ namespace Torneo_Guillermito
             ((System.ComponentModel.ISupportInitialize)(this.pbCancha2)).BeginInit();
             this.gbClubes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCancha2Control)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -1721,6 +1721,116 @@ namespace Torneo_Guillermito
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "MODIFICAR ENCUENTRO";
             // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = global::Torneo_Guillermito.Properties.Resources.minus;
+            this.pictureBox20.Location = new System.Drawing.Point(403, 156);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox20.TabIndex = 107;
+            this.pictureBox20.TabStop = false;
+            this.pictureBox20.Click += new System.EventHandler(this.pictureBox20_Click);
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Image = global::Torneo_Guillermito.Properties.Resources.minus;
+            this.pictureBox21.Location = new System.Drawing.Point(403, 117);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox21.TabIndex = 106;
+            this.pictureBox21.TabStop = false;
+            this.pictureBox21.Click += new System.EventHandler(this.pictureBox21_Click);
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = global::Torneo_Guillermito.Properties.Resources.minus;
+            this.pictureBox22.Location = new System.Drawing.Point(403, 80);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox22.TabIndex = 105;
+            this.pictureBox22.TabStop = false;
+            this.pictureBox22.Click += new System.EventHandler(this.pictureBox22_Click);
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::Torneo_Guillermito.Properties.Resources.minus;
+            this.pictureBox15.Location = new System.Drawing.Point(121, 156);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 104;
+            this.pictureBox15.TabStop = false;
+            this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::Torneo_Guillermito.Properties.Resources.minus;
+            this.pictureBox13.Location = new System.Drawing.Point(121, 117);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 103;
+            this.pictureBox13.TabStop = false;
+            this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click_1);
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.pictureBox17.Location = new System.Drawing.Point(355, 156);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox17.TabIndex = 102;
+            this.pictureBox17.TabStop = false;
+            this.pictureBox17.Click += new System.EventHandler(this.pictureBox17_Click);
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.pictureBox18.Location = new System.Drawing.Point(356, 120);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox18.TabIndex = 101;
+            this.pictureBox18.TabStop = false;
+            this.pictureBox18.Click += new System.EventHandler(this.pictureBox18_Click);
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.pictureBox19.Location = new System.Drawing.Point(356, 83);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox19.TabIndex = 100;
+            this.pictureBox19.TabStop = false;
+            this.pictureBox19.Click += new System.EventHandler(this.pictureBox19_Click);
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.pictureBox16.Location = new System.Drawing.Point(171, 156);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 98;
+            this.pictureBox16.TabStop = false;
+            this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.pictureBox14.Location = new System.Drawing.Point(171, 117);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 96;
+            this.pictureBox14.TabStop = false;
+            this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click_1);
+            // 
             // datePickerEn2
             // 
             this.datePickerEn2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -1776,6 +1886,7 @@ namespace Torneo_Guillermito
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 84;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
             // 
             // pictureBox11
             // 
@@ -1786,10 +1897,12 @@ namespace Torneo_Guillermito
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 83;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // textBox10
             // 
             this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.textBox10.Enabled = false;
             this.textBox10.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox10.Location = new System.Drawing.Point(321, 153);
             this.textBox10.Name = "textBox10";
@@ -1799,6 +1912,7 @@ namespace Torneo_Guillermito
             // textBox11
             // 
             this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.textBox11.Enabled = false;
             this.textBox11.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox11.Location = new System.Drawing.Point(214, 153);
             this.textBox11.Name = "textBox11";
@@ -1819,6 +1933,7 @@ namespace Torneo_Guillermito
             // textBox8
             // 
             this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.textBox8.Enabled = false;
             this.textBox8.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox8.Location = new System.Drawing.Point(321, 117);
             this.textBox8.Name = "textBox8";
@@ -1828,6 +1943,7 @@ namespace Torneo_Guillermito
             // textBox9
             // 
             this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.textBox9.Enabled = false;
             this.textBox9.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox9.Location = new System.Drawing.Point(214, 117);
             this.textBox9.Name = "textBox9";
@@ -1904,6 +2020,7 @@ namespace Torneo_Guillermito
             // 
             // tbGolesVisita
             // 
+            this.tbGolesVisita.Enabled = false;
             this.tbGolesVisita.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbGolesVisita.Location = new System.Drawing.Point(321, 80);
             this.tbGolesVisita.Name = "tbGolesVisita";
@@ -1912,6 +2029,7 @@ namespace Torneo_Guillermito
             // 
             // tbGolesLocal
             // 
+            this.tbGolesLocal.Enabled = false;
             this.tbGolesLocal.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbGolesLocal.Location = new System.Drawing.Point(214, 80);
             this.tbGolesLocal.Name = "tbGolesLocal";
@@ -2054,6 +2172,113 @@ namespace Torneo_Guillermito
             this.dgvEncuentros.Size = new System.Drawing.Size(852, 490);
             this.dgvEncuentros.TabIndex = 0;
             this.dgvEncuentros.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEncuentros_CellClick);
+            this.dgvEncuentros.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEncuentros_CellContentClick);
+            // 
+            // id_partido
+            // 
+            this.id_partido.HeaderText = "ID";
+            this.id_partido.Name = "id_partido";
+            this.id_partido.ReadOnly = true;
+            this.id_partido.Visible = false;
+            // 
+            // local
+            // 
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.local.DefaultCellStyle = dataGridViewCellStyle13;
+            this.local.HeaderText = "EQUIPO LOCAL";
+            this.local.Name = "local";
+            this.local.ReadOnly = true;
+            this.local.Width = 245;
+            // 
+            // gl
+            // 
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            this.gl.DefaultCellStyle = dataGridViewCellStyle14;
+            this.gl.HeaderText = "";
+            this.gl.Name = "gl";
+            this.gl.ReadOnly = true;
+            this.gl.Width = 25;
+            // 
+            // vs
+            // 
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
+            this.vs.DefaultCellStyle = dataGridViewCellStyle15;
+            this.vs.HeaderText = "";
+            this.vs.Name = "vs";
+            this.vs.ReadOnly = true;
+            this.vs.Width = 25;
+            // 
+            // gv
+            // 
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
+            this.gv.DefaultCellStyle = dataGridViewCellStyle16;
+            this.gv.HeaderText = "";
+            this.gv.Name = "gv";
+            this.gv.ReadOnly = true;
+            this.gv.Width = 25;
+            // 
+            // visita
+            // 
+            this.visita.HeaderText = "EQUIPO VISITA";
+            this.visita.Name = "visita";
+            this.visita.ReadOnly = true;
+            this.visita.Width = 245;
+            // 
+            // categoria_encuentro
+            // 
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.categoria_encuentro.DefaultCellStyle = dataGridViewCellStyle17;
+            this.categoria_encuentro.HeaderText = "DIV.";
+            this.categoria_encuentro.Name = "categoria_encuentro";
+            this.categoria_encuentro.ReadOnly = true;
+            this.categoria_encuentro.Width = 80;
+            // 
+            // fecha
+            // 
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.fecha.DefaultCellStyle = dataGridViewCellStyle18;
+            this.fecha.HeaderText = "FECHA";
+            this.fecha.Name = "fecha";
+            this.fecha.ReadOnly = true;
+            this.fecha.Width = 45;
+            // 
+            // fechaCalendario
+            // 
+            this.fechaCalendario.HeaderText = "DIA";
+            this.fechaCalendario.Name = "fechaCalendario";
+            this.fechaCalendario.ReadOnly = true;
+            // 
+            // hora_encuentro
+            // 
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.hora_encuentro.DefaultCellStyle = dataGridViewCellStyle19;
+            this.hora_encuentro.HeaderText = "HORA";
+            this.hora_encuentro.Name = "hora_encuentro";
+            this.hora_encuentro.ReadOnly = true;
+            this.hora_encuentro.Width = 55;
+            // 
+            // url_transmicion
+            // 
+            this.url_transmicion.HeaderText = "URL_TRANSMICION";
+            this.url_transmicion.Name = "url_transmicion";
+            this.url_transmicion.ReadOnly = true;
+            this.url_transmicion.Visible = false;
+            // 
+            // url_imagenes
+            // 
+            this.url_imagenes.HeaderText = "URL_IMAGENES";
+            this.url_imagenes.Name = "url_imagenes";
+            this.url_imagenes.ReadOnly = true;
+            this.url_imagenes.Visible = false;
             // 
             // groupBox10
             // 
@@ -3668,212 +3893,6 @@ namespace Torneo_Guillermito
             this.pbCancha2Control.TabStop = false;
             this.pbCancha2Control.Visible = false;
             // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = global::Torneo_Guillermito.Properties.Resources.plus;
-            this.pictureBox14.Location = new System.Drawing.Point(171, 117);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(33, 24);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 96;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::Torneo_Guillermito.Properties.Resources.plus;
-            this.pictureBox16.Location = new System.Drawing.Point(171, 156);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(33, 24);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 98;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = global::Torneo_Guillermito.Properties.Resources.plus;
-            this.pictureBox17.Location = new System.Drawing.Point(355, 156);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(33, 24);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox17.TabIndex = 102;
-            this.pictureBox17.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Image = global::Torneo_Guillermito.Properties.Resources.plus;
-            this.pictureBox18.Location = new System.Drawing.Point(356, 120);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(33, 24);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox18.TabIndex = 101;
-            this.pictureBox18.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Image = global::Torneo_Guillermito.Properties.Resources.plus;
-            this.pictureBox19.Location = new System.Drawing.Point(356, 83);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(33, 24);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox19.TabIndex = 100;
-            this.pictureBox19.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::Torneo_Guillermito.Properties.Resources.minus;
-            this.pictureBox13.Location = new System.Drawing.Point(121, 117);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(33, 24);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 103;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::Torneo_Guillermito.Properties.Resources.minus;
-            this.pictureBox15.Location = new System.Drawing.Point(121, 156);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(33, 24);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 104;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Image = global::Torneo_Guillermito.Properties.Resources.minus;
-            this.pictureBox20.Location = new System.Drawing.Point(403, 156);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(33, 24);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox20.TabIndex = 107;
-            this.pictureBox20.TabStop = false;
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.Image = global::Torneo_Guillermito.Properties.Resources.minus;
-            this.pictureBox21.Location = new System.Drawing.Point(403, 117);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(33, 24);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox21.TabIndex = 106;
-            this.pictureBox21.TabStop = false;
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Image = global::Torneo_Guillermito.Properties.Resources.minus;
-            this.pictureBox22.Location = new System.Drawing.Point(403, 80);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(33, 24);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox22.TabIndex = 105;
-            this.pictureBox22.TabStop = false;
-            // 
-            // id_partido
-            // 
-            this.id_partido.HeaderText = "ID";
-            this.id_partido.Name = "id_partido";
-            this.id_partido.ReadOnly = true;
-            this.id_partido.Visible = false;
-            // 
-            // local
-            // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.local.DefaultCellStyle = dataGridViewCellStyle13;
-            this.local.HeaderText = "EQUIPO LOCAL";
-            this.local.Name = "local";
-            this.local.ReadOnly = true;
-            this.local.Width = 245;
-            // 
-            // gl
-            // 
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            this.gl.DefaultCellStyle = dataGridViewCellStyle14;
-            this.gl.HeaderText = "";
-            this.gl.Name = "gl";
-            this.gl.ReadOnly = true;
-            this.gl.Width = 25;
-            // 
-            // vs
-            // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
-            this.vs.DefaultCellStyle = dataGridViewCellStyle15;
-            this.vs.HeaderText = "";
-            this.vs.Name = "vs";
-            this.vs.ReadOnly = true;
-            this.vs.Width = 25;
-            // 
-            // gv
-            // 
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
-            this.gv.DefaultCellStyle = dataGridViewCellStyle16;
-            this.gv.HeaderText = "";
-            this.gv.Name = "gv";
-            this.gv.ReadOnly = true;
-            this.gv.Width = 25;
-            // 
-            // visita
-            // 
-            this.visita.HeaderText = "EQUIPO VISITA";
-            this.visita.Name = "visita";
-            this.visita.ReadOnly = true;
-            this.visita.Width = 245;
-            // 
-            // categoria_encuentro
-            // 
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.categoria_encuentro.DefaultCellStyle = dataGridViewCellStyle17;
-            this.categoria_encuentro.HeaderText = "DIV.";
-            this.categoria_encuentro.Name = "categoria_encuentro";
-            this.categoria_encuentro.ReadOnly = true;
-            this.categoria_encuentro.Width = 80;
-            // 
-            // fecha
-            // 
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.fecha.DefaultCellStyle = dataGridViewCellStyle18;
-            this.fecha.HeaderText = "FECHA";
-            this.fecha.Name = "fecha";
-            this.fecha.ReadOnly = true;
-            this.fecha.Width = 45;
-            // 
-            // fechaCalendario
-            // 
-            this.fechaCalendario.HeaderText = "DIA";
-            this.fechaCalendario.Name = "fechaCalendario";
-            this.fechaCalendario.ReadOnly = true;
-            // 
-            // hora_encuentro
-            // 
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.hora_encuentro.DefaultCellStyle = dataGridViewCellStyle19;
-            this.hora_encuentro.HeaderText = "HORA";
-            this.hora_encuentro.Name = "hora_encuentro";
-            this.hora_encuentro.ReadOnly = true;
-            this.hora_encuentro.Width = 55;
-            // 
-            // url_transmicion
-            // 
-            this.url_transmicion.HeaderText = "URL_TRANSMICION";
-            this.url_transmicion.Name = "url_transmicion";
-            this.url_transmicion.ReadOnly = true;
-            this.url_transmicion.Visible = false;
-            // 
-            // url_imagenes
-            // 
-            this.url_imagenes.HeaderText = "URL_IMAGENES";
-            this.url_imagenes.Name = "url_imagenes";
-            this.url_imagenes.ReadOnly = true;
-            this.url_imagenes.Visible = false;
-            // 
             // gbEncuentros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -3945,6 +3964,16 @@ namespace Torneo_Guillermito
             this.groupBox12.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEncuentros)).EndInit();
@@ -3973,16 +4002,6 @@ namespace Torneo_Guillermito
             this.gbClubes.ResumeLayout(false);
             this.gbClubes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCancha2Control)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Users\\Usuario\\Desktop\\Facundo\\Gestiones\\masterliga-cba-gestion\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2F48DE89-6F2E-474D-8B24-78B22C5BBB0D}|Torneo Guillermito\\Torneo Guillermito.csproj|e:\\users\\usuario\\desktop\\facundo\\gestiones\\masterliga-cba-gestion\\torneo guillermito\\addstat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F48DE89-6F2E-474D-8B24-78B22C5BBB0D}|Torneo Guillermito\\Torneo Guillermito.csproj|solutionrelative:torneo guillermito\\addstat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F48DE89-6F2E-474D-8B24-78B22C5BBB0D}|Torneo Guillermito\\Torneo Guillermito.csproj|E:\\Users\\Usuario\\Desktop\\Facundo\\Gestiones\\masterliga-cba-gestion\\torneo guillermito\\querys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F48DE89-6F2E-474D-8B24-78B22C5BBB0D}|Torneo Guillermito\\Torneo Guillermito.csproj|solutionrelative:torneo guillermito\\querys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F48DE89-6F2E-474D-8B24-78B22C5BBB0D}|Torneo Guillermito\\Torneo Guillermito.csproj|e:\\users\\usuario\\desktop\\facundo\\gestiones\\masterliga-cba-gestion\\torneo guillermito\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F48DE89-6F2E-474D-8B24-78B22C5BBB0D}|Torneo Guillermito\\Torneo Guillermito.csproj|solutionrelative:torneo guillermito\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F48DE89-6F2E-474D-8B24-78B22C5BBB0D}|Torneo Guillermito\\Torneo Guillermito.csproj|e:\\users\\usuario\\desktop\\facundo\\gestiones\\masterliga-cba-gestion\\torneo guillermito\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F48DE89-6F2E-474D-8B24-78B22C5BBB0D}|Torneo Guillermito\\Torneo Guillermito.csproj|solutionrelative:torneo guillermito\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F48DE89-6F2E-474D-8B24-78B22C5BBB0D}|Torneo Guillermito\\Torneo Guillermito.csproj|e:\\users\\usuario\\desktop\\facundo\\gestiones\\masterliga-cba-gestion\\torneo guillermito\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F48DE89-6F2E-474D-8B24-78B22C5BBB0D}|Torneo Guillermito\\Torneo Guillermito.csproj|solutionrelative:torneo guillermito\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F48DE89-6F2E-474D-8B24-78B22C5BBB0D}|Torneo Guillermito\\Torneo Guillermito.csproj|e:\\users\\usuario\\desktop\\facundo\\gestiones\\masterliga-cba-gestion\\torneo guillermito\\addstat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F48DE89-6F2E-474D-8B24-78B22C5BBB0D}|Torneo Guillermito\\Torneo Guillermito.csproj|solutionrelative:torneo guillermito\\addstat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddStat.cs",
+              "DocumentMoniker": "E:\\Users\\Usuario\\Desktop\\Facundo\\Gestiones\\masterliga-cba-gestion\\Torneo Guillermito\\AddStat.cs",
+              "RelativeDocumentMoniker": "Torneo Guillermito\\AddStat.cs",
+              "ToolTip": "E:\\Users\\Usuario\\Desktop\\Facundo\\Gestiones\\masterliga-cba-gestion\\Torneo Guillermito\\AddStat.cs",
+              "RelativeToolTip": "Torneo Guillermito\\AddStat.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAowIkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T17:13:40.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddStat.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Users\\Usuario\\Desktop\\Facundo\\Gestiones\\masterliga-cba-gestion\\Torneo Guillermito\\AddStat.cs",
+              "RelativeDocumentMoniker": "Torneo Guillermito\\AddStat.cs",
+              "ToolTip": "E:\\Users\\Usuario\\Desktop\\Facundo\\Gestiones\\masterliga-cba-gestion\\Torneo Guillermito\\AddStat.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Torneo Guillermito\\AddStat.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T17:13:29.501Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "20f81c63-2034-4a3d-9a0f-506a53710c63",
+        "Display": 1,
+        "X": 557,
+        "Y": 210,
+        "Width": 1600,
+        "Height": 880,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Menu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Users\\Usuario\\Desktop\\Facundo\\Gestiones\\masterliga-cba-gestion\\Torneo Guillermito\\Menu.cs",
+              "RelativeDocumentMoniker": "Torneo Guillermito\\Menu.cs",
+              "ToolTip": "E:\\Users\\Usuario\\Desktop\\Facundo\\Gestiones\\masterliga-cba-gestion\\Torneo Guillermito\\Menu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Torneo Guillermito\\Menu.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T17:52:49.511Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "E:\\Users\\Usuario\\Desktop\\Facundo\\Gestiones\\masterliga-cba-gestion\\Torneo Guillermito\\Conexion.cs",
+              "RelativeDocumentMoniker": "Torneo Guillermito\\Conexion.cs",
+              "ToolTip": "E:\\Users\\Usuario\\Desktop\\Facundo\\Gestiones\\masterliga-cba-gestion\\Torneo Guillermito\\Conexion.cs",
+              "RelativeToolTip": "Torneo Guillermito\\Conexion.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T17:30:13.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "E:\\Users\\Usuario\\Desktop\\Facundo\\Gestiones\\masterliga-cba-gestion\\Torneo Guillermito\\Menu.cs",
+              "RelativeDocumentMoniker": "Torneo Guillermito\\Menu.cs",
+              "ToolTip": "E:\\Users\\Usuario\\Desktop\\Facundo\\Gestiones\\masterliga-cba-gestion\\Torneo Guillermito\\Menu.cs",
+              "RelativeToolTip": "Torneo Guillermito\\Menu.cs",
+              "ViewState": "AgIAAFIJAAAAAAAAAAAYwHwJAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T16:36:49.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Querys.cs",
+              "DocumentMoniker": "E:\\Users\\Usuario\\Desktop\\Facundo\\Gestiones\\masterliga-cba-gestion\\Torneo Guillermito\\Querys.cs",
+              "RelativeDocumentMoniker": "Torneo Guillermito\\Querys.cs",
+              "ToolTip": "E:\\Users\\Usuario\\Desktop\\Facundo\\Gestiones\\masterliga-cba-gestion\\Torneo Guillermito\\Querys.cs",
+              "RelativeToolTip": "Torneo Guillermito\\Querys.cs",
+              "ViewState": "AgIAAIABAAAAAAAAAAAAAKgBAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T16:36:49.876Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

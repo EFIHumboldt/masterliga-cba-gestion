@@ -142,6 +142,93 @@ namespace Torneo_Guillermito
 
         }
 
+        public DataTable LlenarTablaJugadores(string id_partido, string value)
+        {
+            string argument = "";
+            if (value == "local") { argument = "(SELECT equipoLocal FROM partido where ID = '" + id_partido + "')"; }
+            else if (value == "visit") { argument = "(SELECT equipoVisita FROM partido where ID = " + id_partido + ")";  }
+            try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
+
+            string cadena = "SELECT j.ID, j.nombreCompleto, j.dorsal FROM jugador as j" +
+                " WHERE equipoID = " + argument + " ORDER BY j.dorsal";
+
+            Console.WriteLine(id_partido, "   ", cadena);
+
+            MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
+            DataSet ds = new DataSet();
+            adapter.Fill(ds, "tabla_resultados_canchas");
+            cn.cerrarconexion();
+            return ds.Tables["tabla_resultados_canchas"];
+
+        }
+
+        public DataTable LlenarTablaStats(string id_partido, string value)
+        {
+            string cadena = "";
+            switch(value)
+            {
+                case "add-goal-local":
+                    cadena = "SELECT g.ID, j.ID, j.nombreCompleto, j.dorsal FROM gol as g INNER JOIN jugador as j ON g.jugadorID = j.ID WHERE g.partido = '" +
+                    id_partido + "' and g.lado = 'L'";
+                    break;
+                case "add-goal-visit":
+                    cadena = "SELECT g.ID, j.ID, j.nombreCompleto, j.dorsal FROM gol as g INNER JOIN jugador as j ON g.jugadorID = j.ID WHERE g.partido = '" +
+                    id_partido + "' and g.lado = 'V'";
+                    break;
+                case "rest-goal-local":
+                    cadena = "SELECT g.ID, j.ID, j.nombreCompleto, j.dorsal FROM gol as g INNER JOIN jugador as j ON g.jugadorID = j.ID WHERE g.partido = '" +
+                    id_partido + "' and g.lado = 'L'";
+                    break;
+                case "rest-goal-visit":
+                    cadena = "SELECT g.ID, j.ID, j.nombreCompleto, j.dorsal FROM gol as g INNER JOIN jugador as j ON g.jugadorID = j.ID WHERE g.partido = '" +
+                    id_partido + "' and g.lado = 'V'";
+                    break;
+                case "add-yc-local":
+                    cadena = "SELECT t.ID, j.ID, j.nombreCompleto, j.dorsal FROM tarjeta as t INNER JOIN jugador as j ON t.jugadorID = j.ID WHERE t.partido = '" +
+                    id_partido + "' and t.lado = 'L' and t.tipo = 'Y'";
+                    break;
+                case "add-yc-visit":
+                    cadena = "SELECT t.ID, j.ID, j.nombreCompleto, j.dorsal FROM tarjeta as t INNER JOIN jugador as j ON t.jugadorID = j.ID WHERE t.partido = '" +
+                    id_partido + "' and t.lado = 'V' and t.tipo = 'Y'";
+                    break;
+                case "rest-yc-local":
+                    cadena = "SELECT t.ID, j.ID, j.nombreCompleto, j.dorsal FROM tarjeta as t INNER JOIN jugador as j ON t.jugadorID = j.ID WHERE t.partido = '" +
+                    id_partido + "' and t.lado = 'L' and t.tipo = 'Y'";
+                    break;
+                case "rest-yc-visit":
+                    cadena = "SELECT t.ID, j.ID, j.nombreCompleto, j.dorsal FROM tarjeta as t INNER JOIN jugador as j ON t.jugadorID = j.ID WHERE t.partido = '" +
+                    id_partido + "' and t.lado = 'V' and t.tipo = 'Y'";
+                    break;
+                case "add-rc-local":
+                    cadena = "SELECT t.ID, j.ID, j.nombreCompleto, j.dorsal FROM tarjeta as t INNER JOIN jugador as j ON t.jugadorID = j.ID WHERE t.partido = '" +
+                    id_partido + "' and t.lado = 'L' and t.tipo = 'R'";
+                    break;
+                case "add-rc-visit":
+                    cadena = "SELECT t.ID, j.ID, j.nombreCompleto, j.dorsal FROM tarjeta as t INNER JOIN jugador as j ON t.jugadorID = j.ID WHERE t.partido = '" +
+                    id_partido + "' and t.lado = 'V' and t.tipo = 'R'";
+                    break;
+                case "rest-rc-local":
+                    cadena = "SELECT t.ID, j.ID, j.nombreCompleto, j.dorsal FROM tarjeta as t INNER JOIN jugador as j ON t.jugadorID = j.ID WHERE t.partido = '" +
+                    id_partido + "' and t.lado = 'L' and t.tipo = 'R'";
+                    break;
+                case "rest-rc-visit":
+                    cadena = "SELECT t.ID, j.ID, j.nombreCompleto, j.dorsal FROM tarjeta as t INNER JOIN jugador as j ON t.jugadorID = j.ID WHERE t.partido = '" +
+                    id_partido + "' and t.lado = 'V' and t.tipo = 'R'";
+                    break;
+            }
+            Console.WriteLine(cadena);
+            try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
+
+            MySqlCommand comando = new MySqlCommand(cadena, cn.conectarbd);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
+            DataSet ds = new DataSet();
+            adapter.Fill(ds, "tabla_resultados_canchas");
+            cn.cerrarconexion();
+            return ds.Tables["tabla_resultados_canchas"];
+
+        }
+
         public DataTable LlenarTablaFechas()
         {
 
@@ -193,6 +280,66 @@ namespace Torneo_Guillermito
             cn.cerrarconexion();
         }
 
+        public void InsertarAccion(string id_partido, string id_jugador, string value)
+        {
+            string cadena1 = "";
+            string cadena2 = "";
+            string cadena3 = "";
+            switch (value)
+            {
+                case "add-goal-local":
+                    cadena1 = "INSERT INTO gol(partido, lado, jugadorID) Values ('" + id_partido + "', 'L', '" + id_jugador + "');";
+                    cadena2 = "UPDATE jugador set goles = goles + 1 where ID = '" + id_jugador + "'";
+                    cadena3 = "UPDATE partido set golesLocal = golesLocal + 1 where ID = '" + id_partido + "'";
+                    break;
+                case "add-goal-visit":
+                    cadena1 = "INSERT INTO gol(partido, lado, jugadorID) Values ('" + id_partido + "', 'V', '" + id_jugador + "');";
+                    cadena2 = "UPDATE jugador set goles = goles + 1 where ID = '" + id_jugador + "'";
+                    cadena3 = "UPDATE partido set golesVisita = golesVisita + 1 where ID = '" + id_partido + "'";
+                    break;
+                case "add-yc-local":
+                    cadena1 = "INSERT INTO tarjeta(partido, lado, tipo, jugadorID) Values ('" + id_partido + "', 'L', 'Y', '" + id_jugador + "');";
+                    cadena2 = "UPDATE jugador set tarjetasAmarillas = tarjetasAmarillas + 1 where ID = '" + id_jugador + "'";
+                    break;
+                case "add-yc-visit":
+                    cadena1 = "INSERT INTO tarjeta(partido, lado, tipo, jugadorID) Values ('" + id_partido + "', 'V', 'Y', '" + id_jugador + "');";
+                    cadena2 = "UPDATE jugador set tarjetasAmarillas = tarjetasAmarillas + 1 where ID = '" + id_jugador + "'";
+                    break;
+                case "add-rc-local":
+                    cadena1 = "INSERT INTO tarjeta(partido, lado, tipo, jugadorID) Values ('" + id_partido + "', 'L', 'R', '" + id_jugador + "');";
+                    cadena2 = "UPDATE jugador set tarjetasRojas = tarjetasRojas + 1 where ID = '" + id_jugador + "'";
+                    break;
+                case "add-rc-visit":
+                    cadena1 = "INSERT INTO tarjeta(partido, lado, tipo, jugadorID) Values ('" + id_partido + "', 'V', 'R', '" + id_jugador + "');";
+                    cadena2 = "UPDATE jugador set tarjetasRojas = tarjetasRojas + 1 where ID = '" + id_jugador + "'";
+                    break;
+            }
+            Console.WriteLine(cadena1); 
+            try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
+            try
+            {
+                MySqlCommand command1 = new MySqlCommand(cadena1, cn.conectarbd);
+                command1.ExecuteNonQuery();
+                MySqlCommand command2 = new MySqlCommand(cadena2, cn.conectarbd);
+                command2.ExecuteNonQuery();
+                
+                if (cadena3 != "")
+                {
+                    MySqlCommand command3 = new MySqlCommand(cadena3, cn.conectarbd);
+                    command3.ExecuteNonQuery();
+                }
+                
+                MessageBox.Show("Acción insertada correctamente", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception e)
+            {
+                //MessageBox.Show(e.Message);
+                MessageBox.Show("Error al insertar la acción", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            cn.cerrarconexion();
+        }
+
         public void InsertarCategoria(string numero)
         {
             String cadena = "INSERT INTO division (nombre, torneo, duracionPartido, orden, tablaGeneral) Values ('" + numero + "', 1, 45, 1, 0);";
@@ -227,6 +374,90 @@ namespace Torneo_Guillermito
             catch (Exception e) { MessageBox.Show("Se ha producido un error al intentar eliminar la cancha seleccionada, este error se puede deber a que existen partidos asociados a la misma.", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
             cn.cerrarconexion();
+        }
+
+
+        public void EliminarAccion(string id_partido, string id_accion, string id_jugador, string value)
+        {
+            string cadena1 = "";
+            string cadena2 = "";
+            string cadena3 = "";
+            switch (value)
+            {
+                case "add-goal-local":
+                    cadena1 = "DELETE FROM gol WHERE ID = '"+id_accion+"';";
+                    cadena2 = "UPDATE jugador SET goles=goles-1 WHERE ID = '" + id_jugador + "'";
+                    cadena3 = "UPDATE partido set golesLocal=golesLocal-1 where ID = '" + id_partido + "'";
+                    break;
+                case "add-goal-visit":
+                    cadena1 = "DELETE FROM gol WHERE ID = '" + id_accion + "';";
+                    cadena2 = "UPDATE jugador SET goles=goles-1 WHERE ID = '" + id_jugador + "'";
+                    cadena3 = "UPDATE partido set golesVisita=golesVisita-1 where ID = '" + id_partido + "'";
+                    break;
+                case "add-yc-local":
+                    cadena1 = "DELETE FROM tarjeta WHERE ID = '" + id_accion + "';";
+                    cadena2 = "UPDATE jugador SET tarjetasAmarillas=tarjetasamarillas-1 WHERE ID = '" + id_jugador + "'";
+                    break;
+                case "add-yc-visit":
+                    cadena1 = "DELETE FROM tarjeta WHERE ID = '" + id_accion + "';";
+                    cadena2 = "UPDATE jugador SET tarjetasAmarillas=tarjetasamarillas-1 WHERE ID = '" + id_jugador + "'";
+                    break;
+                case "add-rc-local":
+                    cadena1 = "DELETE FROM tarjeta WHERE ID = '" + id_accion + "';";
+                    cadena2 = "UPDATE jugador SET tarjetasRojas=tarjetasRojas-1 WHERE ID = '" + id_jugador + "'";
+                    break;
+                case "add-rc-visit":
+                    cadena1 = "DELETE FROM tarjeta WHERE ID = '" + id_accion + "';";
+                    cadena2 = "UPDATE jugador SET tarjetasRojas=tarjetasRojas-1 WHERE ID = '" + id_jugador + "'";
+                    break;
+                case "rest-goal-local":
+                    cadena1 = "DELETE FROM gol WHERE ID = '" + id_accion + "';";
+                    cadena2 = "UPDATE jugador SET goles=goles-1 WHERE ID = '" + id_jugador + "'";
+                    cadena3 = "UPDATE partido set golesLocal=golesLocal-1 where ID = '" + id_partido + "'";
+                    break;
+                case "rest-goal-visit":
+                    cadena1 = "DELETE FROM gol WHERE ID = '" + id_accion + "';";
+                    cadena2 = "UPDATE jugador SET goles=goles-1 WHERE ID = '" + id_jugador + "'";
+                    cadena3 = "UPDATE partido set golesVisita=golesVisita-1 where ID = '" + id_partido + "'";
+                    break;
+                case "rest-yc-local":
+                    cadena1 = "DELETE FROM tarjeta WHERE ID = '" + id_accion + "';";
+                    cadena2 = "UPDATE jugador SET tarjetasAmarillas=tarjetasamarillas-1 WHERE ID = '" + id_jugador + "'";
+                    break;
+                case "rest-yc-visit":
+                    cadena1 = "DELETE FROM tarjeta WHERE ID = '" + id_accion + "';";
+                    cadena2 = "UPDATE jugador SET tarjetasAmarillas=tarjetasamarillas-1 WHERE ID = '" + id_jugador + "'";
+                    break;
+                case "rest-rc-local":
+                    cadena1 = "DELETE FROM tarjeta WHERE ID = '" + id_accion + "';";
+                    cadena2 = "UPDATE jugador SET tarjetasRojas=tarjetasRojas-1 WHERE ID = '" + id_jugador + "'";
+                    break;
+                case "rest-rc-visit":
+                    cadena1 = "DELETE FROM tarjeta WHERE ID = '" + id_accion + "';";
+                    cadena2 = "UPDATE jugador SET tarjetasRojas=tarjetasRojas-1 WHERE ID = '" + id_jugador + "'";
+                    break;
+            }
+
+            Console.WriteLine(cadena1);
+            Console.WriteLine(cadena2);
+            Console.WriteLine(cadena3);
+
+            try { cn.abrirconexion(); } catch (Exception e) { MessageBox.Show(e.Message); }
+            try
+            {
+                MySqlCommand command1 = new MySqlCommand(cadena1, cn.conectarbd);
+                command1.ExecuteNonQuery();
+                MySqlCommand command2 = new MySqlCommand(cadena2, cn.conectarbd);
+                command2.ExecuteNonQuery();
+                if (cadena3 != "") { 
+                    MySqlCommand command3 = new MySqlCommand(cadena3, cn.conectarbd);
+                    command3.ExecuteNonQuery();
+                }
+                MessageBox.Show("Acción eliminada correctamente", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+                catch (Exception e) { MessageBox.Show("Se ha producido un error al intentar eliminar la cancha seleccionada, este error se puede deber a que existen partidos asociados a la misma.", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+
+               cn.cerrarconexion();
         }
 
         public void EliminarZona(String codigo)

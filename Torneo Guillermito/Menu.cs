@@ -1378,7 +1378,11 @@ namespace Torneo_Guillermito
             tbVisitaEncuentro2.Text = fila.Cells[5].Value.ToString();
             tbCategoriaEncuentro2.Text = "División " + fila.Cells[6].Value.ToString();
             comboFechaEncuentro2.SelectedItem = fila.Cells[7].Value.ToString();
-            datePickerEn2.Value = Convert.ToDateTime(fila.Cells[8].Value);
+            if(fila.Cells[8].Value != "")
+            {
+                datePickerEn2.Value = Convert.ToDateTime(fila.Cells[8].Value);
+            }
+           
             tbHoraEncuentro2.Text = fila.Cells[9].Value.ToString();
             tbYoutubeEncuentro2.Text = fila.Cells[10].Value.ToString();
             tbDriveEncuentro2.Text = fila.Cells[11].Value.ToString();
@@ -2347,6 +2351,95 @@ namespace Torneo_Guillermito
         private void pictureBox13_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
+            AddStat addStat = new AddStat(id_partido, "add-goal-local");
+            addStat.Show();
+        }
+
+        private void dgvEncuentros_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
+            AddStat addStat = new AddStat(id_partido, "rest-goal-local");
+            addStat.Show();
+        }
+
+        private void pictureBox19_Click(object sender, EventArgs e)
+        {
+            string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
+            AddStat addStat = new AddStat(id_partido, "add-goal-visit");
+            addStat.Show();
+        }
+
+        private void pictureBox22_Click(object sender, EventArgs e)
+        {
+            string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
+            AddStat addStat = new AddStat(id_partido, "rest-goal-visit");
+            addStat.Show();
+        }
+
+        private void pictureBox14_Click_1(object sender, EventArgs e)
+        {
+            string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
+            AddStat addStat = new AddStat(id_partido, "add-yc-local");
+            addStat.Show();
+        }
+
+        private void pictureBox13_Click_1(object sender, EventArgs e)
+        {
+            string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
+            AddStat addStat = new AddStat(id_partido, "rest-yc-local");
+            addStat.Show();
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+            string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
+            AddStat addStat = new AddStat(id_partido, "add-yc-visit");
+            addStat.Show();
+        }
+
+        private void pictureBox21_Click(object sender, EventArgs e)
+        {
+            string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
+            AddStat addStat = new AddStat(id_partido, "rest-yc-visit");
+            addStat.Show();
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+            string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
+            AddStat addStat = new AddStat(id_partido, "add-rc-local");
+            addStat.Show();
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
+            AddStat addStat = new AddStat(id_partido, "rest-rc-local");
+            addStat.Show();
+        }
+
+        private void pictureBox17_Click(object sender, EventArgs e)
+        {
+            string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
+            AddStat addStat = new AddStat(id_partido, "add-rc-visit");
+            addStat.Show();
+        }
+
+        private void pictureBox20_Click(object sender, EventArgs e)
+        {
+            string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
+            AddStat addStat = new AddStat(id_partido, "rest-rc-visit");
+            addStat.Show();
         }
     }
 }
