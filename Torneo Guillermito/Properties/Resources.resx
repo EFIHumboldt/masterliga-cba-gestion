@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="URL" xml:space="preserve">
-    <value>http://vps-3666997-x.dattaweb.com</value>
+    <value>http://vps-4677860-x.dattaweb.com/lipa</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Encuentros" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -161,7 +161,7 @@
     <value>..\Resources\nada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="carpetaFotosServer" xml:space="preserve">
-    <value>http://vps-3666997-x.dattaweb.com/ESCUDOS/</value>
+    <value>http://vps-4677860-x.dattaweb.com/lipa/imagenes/</value>
   </data>
   <data name="Categorias" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Categorias.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

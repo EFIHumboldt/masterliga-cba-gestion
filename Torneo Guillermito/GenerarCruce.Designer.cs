@@ -1,4 +1,4 @@
-﻿namespace Torneo_Guillermito
+﻿namespace LIPa
 {
     partial class GenerarCruce
     {
@@ -218,7 +218,7 @@
             // 
             // flechaArriba
             // 
-            this.flechaArriba.Image = global::Torneo_Guillermito.Properties.Resources.arriba;
+            this.flechaArriba.Image = global::LIPa.Properties.Resources.arriba;
             this.flechaArriba.Location = new System.Drawing.Point(850, 454);
             this.flechaArriba.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.flechaArriba.Name = "flechaArriba";
@@ -230,7 +230,7 @@
             // 
             // flechaAbajo
             // 
-            this.flechaAbajo.Image = global::Torneo_Guillermito.Properties.Resources.abajo;
+            this.flechaAbajo.Image = global::LIPa.Properties.Resources.abajo;
             this.flechaAbajo.Location = new System.Drawing.Point(850, 586);
             this.flechaAbajo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.flechaAbajo.Name = "flechaAbajo";

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Torneo_Guillermito
+namespace LIPa
 {
     public partial class Carga : Form
     {

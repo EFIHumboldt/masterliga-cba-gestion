@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Torneo_Guillermito.Properties {
+namespace LIPa.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Torneo_Guillermito.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Torneo_Guillermito.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LIPa.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -91,7 +91,7 @@ namespace Torneo_Guillermito.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a http://vps-3666997-x.dattaweb.com/ESCUDOS/.
+        ///   Busca una cadena traducida similar a http://vps-4677860-x.dattaweb.com/lipa/imagenes/.
         /// </summary>
         internal static string carpetaFotosServer {
             get {
@@ -260,7 +260,7 @@ namespace Torneo_Guillermito.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a http://vps-3666997-x.dattaweb.com.
+        ///   Busca una cadena traducida similar a http://vps-4677860-x.dattaweb.com/lipa.
         /// </summary>
         internal static string URL {
             get {

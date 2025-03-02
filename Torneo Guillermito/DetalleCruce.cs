@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Torneo_Guillermito
+namespace LIPa
 {
     public partial class DetalleCruce : Form
     {
@@ -94,9 +94,9 @@ namespace Torneo_Guillermito
         {
             if ((tbGolesVisita.Text != "" && tbGolesLocal.Text == "") || (tbGolesVisita.Text == "" && tbGolesLocal.Text != "") || (tbGolesLocal.Text == tbGolesVisita.Text && tbGolesLocal.Text != "" && (tbPenalesLocal.Text == "" || tbPenalesVisita.Text == "")) || (tbGolesLocal.Text != tbGolesVisita.Text && (tbPenalesLocal.Text != "" || tbPenalesVisita.Text != "")) || tbHoraEncuentro.Text == "" || comboFechaEncuentro.Text == "" || comboCanchaEncuentro.Text == "")
             {
-                MessageBox.Show("Los datos son inválidos, revise e intente nuevamente", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Los datos son inválidos, revise e intente nuevamente", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (MessageBox.Show("¿Seguro que desea modificar el cruce?", "Torneo Guillermito", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            else if (MessageBox.Show("¿Seguro que desea modificar el cruce?", "Liga Infantil del Paraná", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 Querys q = new Querys();
                 q.ModificarYRellenarCruce(idPartido, tipoNumero, tbHoraEncuentro.Text, comboFechaEncuentro.SelectedItem.ToString(), comboCanchaEncuentro.SelectedItem.ToString()

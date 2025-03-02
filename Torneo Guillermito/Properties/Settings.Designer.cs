@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Torneo_Guillermito.Properties {
+namespace LIPa.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

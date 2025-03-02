@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
-namespace Torneo_Guillermito
+namespace LIPa
 {
     public partial class PlantillaCruce : Form
     {
@@ -636,7 +636,7 @@ namespace Torneo_Guillermito
                 carga.progress.Value = 64;
                 carga.Close();
 
-                MessageBox.Show("Planilla creada correctamente", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Planilla creada correctamente", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             else
@@ -647,7 +647,7 @@ namespace Torneo_Guillermito
                     "\n\nb) Si algun cruce tiene algún dato, el mismo debe tener todos completos." +
                     "\n\nc) El nombre de los equipos deben pertenecer a los nombres ya existentes." +
                     "\n\nd) Cada nombre debe ser ingresado solo una vez, es decir, no se permiten duplicados." +
-                    "\n\ne) En caso de ingresar GANADOR/PEREDOR 'X', el partido 'X' debe estar completo.", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    "\n\ne) En caso de ingresar GANADOR/PEREDOR 'X', el partido 'X' debe estar completo.", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
 

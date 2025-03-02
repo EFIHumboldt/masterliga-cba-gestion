@@ -1,4 +1,4 @@
-﻿namespace Torneo_Guillermito
+﻿namespace LIPa
 {
     partial class DetalleCruce
     {

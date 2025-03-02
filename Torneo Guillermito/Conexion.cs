@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Torneo_Guillermito
+namespace LIPa
 {
     internal class conexion
     {

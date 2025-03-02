@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace Torneo_Guillermito
+namespace LIPa
 {
     partial class gbEncuentros
     {
@@ -68,6 +68,15 @@ namespace Torneo_Guillermito
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gbEncuentros));
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -106,27 +115,27 @@ namespace Torneo_Guillermito
             this.idDivision = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.asd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbEquipos = new System.Windows.Forms.GroupBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.label52 = new System.Windows.Forms.Label();
             this.dgvEquipo2 = new System.Windows.Forms.DataGridView();
-            this.idEquipoCreado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreEquipoCreado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoriaEquipoCreado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zonaEquipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tbEquipos3 = new System.Windows.Forms.TextBox();
             this.btEliminarEquipo = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.label53 = new System.Windows.Forms.Label();
             this.dgvEquipo1 = new System.Windows.Forms.DataGridView();
-            this.idEquipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreClub = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.escudoClub = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbEquipos1 = new System.Windows.Forms.TextBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
             this.btEquipos1 = new System.Windows.Forms.Button();
             this.tbEquipos2 = new System.Windows.Forms.TextBox();
             this.comboEquipo1 = new System.Windows.Forms.ComboBox();
@@ -165,6 +174,9 @@ namespace Torneo_Guillermito
             this.cbPartidos = new System.Windows.Forms.CheckBox();
             this.btEliminarEncuentro = new System.Windows.Forms.Button();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.checkPartidoTerminado = new System.Windows.Forms.CheckBox();
+            this.checkFechaEncuentro = new System.Windows.Forms.CheckBox();
+            this.tbYoutubeEncuentro2 = new System.Windows.Forms.TextBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
@@ -179,14 +191,13 @@ namespace Torneo_Guillermito
             this.label54 = new System.Windows.Forms.Label();
             this.tbDriveEncuentro2 = new System.Windows.Forms.TextBox();
             this.label55 = new System.Windows.Forms.Label();
-            this.tbYoutubeEncuentro2 = new System.Windows.Forms.TextBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.tbRojasVisita = new System.Windows.Forms.TextBox();
+            this.tbRojasLocal = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tbAmarillasVisita = new System.Windows.Forms.TextBox();
+            this.tbAmarillasLocal = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
             this.comboFechaEncuentro2 = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
@@ -218,7 +229,9 @@ namespace Torneo_Guillermito
             this.hora_encuentro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.url_transmicion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.url_imagenes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.checkFechaNuevoEncuentro = new System.Windows.Forms.CheckBox();
             this.datePickerEnc1 = new System.Windows.Forms.DateTimePicker();
             this.label51 = new System.Windows.Forms.Label();
             this.tbDriveEncuentro1 = new System.Windows.Forms.TextBox();
@@ -244,6 +257,13 @@ namespace Torneo_Guillermito
             this.label16 = new System.Windows.Forms.Label();
             this.comboCategoriaEncuentro = new System.Windows.Forms.ComboBox();
             this.gbCruces = new System.Windows.Forms.GroupBox();
+            this.dgvCruces = new System.Windows.Forms.DataGridView();
+            this.comboCategoriaCruce = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.labelNingunCruce = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.gbCruce = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
             this.dgv16vosPlata = new System.Windows.Forms.DataGridView();
@@ -317,13 +337,6 @@ namespace Torneo_Guillermito
             this.id_partido_cruce_6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label44 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
-            this.dgvCruces = new System.Windows.Forms.DataGridView();
-            this.comboCategoriaCruce = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.labelNingunCruce = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.dgvClub = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -350,6 +363,59 @@ namespace Torneo_Guillermito
             this.tbNombreClubFiltro = new System.Windows.Forms.TextBox();
             this.gbClubes = new System.Windows.Forms.GroupBox();
             this.pbCancha2Control = new System.Windows.Forms.PictureBox();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.btJugadores = new System.Windows.Forms.Button();
+            this.gbJugadores = new System.Windows.Forms.GroupBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label61 = new System.Windows.Forms.Label();
+            this.tbEquipoJugador3 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dgvJugador2 = new System.Windows.Forms.DataGridView();
+            this.idEquipoCreado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreEquipoCreado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoriaEquipoCreado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zonaEquipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.foto_jugador = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tbNombreJugador3 = new System.Windows.Forms.TextBox();
+            this.btEliminarJugador = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btAgregarJugador = new System.Windows.Forms.Button();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.tbFiltrarEquipoJugador1 = new System.Windows.Forms.TextBox();
+            this.tbEquipoJugador1 = new System.Windows.Forms.TextBox();
+            this.pbJugador1 = new System.Windows.Forms.PictureBox();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.tbDNIJugador1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tbDorsalJugador1 = new System.Windows.Forms.TextBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.tbNombreJugador1 = new System.Windows.Forms.TextBox();
+            this.dgvJugador1 = new System.Windows.Forms.DataGridView();
+            this.idEquipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreClub = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.division1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.cbCambiarEquipoJugador = new System.Windows.Forms.CheckBox();
+            this.pbJugador2Control = new System.Windows.Forms.PictureBox();
+            this.pbJugador2 = new System.Windows.Forms.PictureBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tbEquipoJugador2 = new System.Windows.Forms.TextBox();
+            this.label66 = new System.Windows.Forms.Label();
+            this.tbDNIJugador2 = new System.Windows.Forms.TextBox();
+            this.tbFiltroEquipoJugador2 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.tbDorsalJugador2 = new System.Windows.Forms.TextBox();
+            this.btModificarJugador = new System.Windows.Forms.Button();
+            this.tbNombreJugador2 = new System.Windows.Forms.TextBox();
+            this.dgvJugador3 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.division2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -365,11 +431,11 @@ namespace Torneo_Guillermito
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoria)).BeginInit();
             this.gbEquipos.SuspendLayout();
-            this.groupBox6.SuspendLayout();
+            this.groupBox13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEquipo2)).BeginInit();
-            this.groupBox4.SuspendLayout();
+            this.groupBox14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEquipo1)).BeginInit();
-            this.groupBox5.SuspendLayout();
+            this.groupBox15.SuspendLayout();
             this.gbCanchas.SuspendLayout();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCanchas)).BeginInit();
@@ -392,6 +458,8 @@ namespace Torneo_Guillermito
             ((System.ComponentModel.ISupportInitialize)(this.dgvEncuentros)).BeginInit();
             this.groupBox10.SuspendLayout();
             this.gbCruces.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCruces)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.gbCruce.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv16vosPlata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFinalesOro)).BeginInit();
@@ -401,8 +469,6 @@ namespace Torneo_Guillermito
             ((System.ComponentModel.ISupportInitialize)(this.dgv16vosOro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv8vosOro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFinalesPlata)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCruces)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClub)).BeginInit();
             this.gbAgregarClub.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCancha1)).BeginInit();
@@ -410,6 +476,17 @@ namespace Torneo_Guillermito
             ((System.ComponentModel.ISupportInitialize)(this.pbCancha2)).BeginInit();
             this.gbClubes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCancha2Control)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            this.gbJugadores.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJugador2)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJugador1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJugador1)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJugador2Control)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJugador2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJugador3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -439,7 +516,7 @@ namespace Torneo_Guillermito
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
-            this.pictureBox2.Image = global::Torneo_Guillermito.Properties.Resources.icon_google_play;
+            this.pictureBox2.Image = global::LIPa.Properties.Resources.icon_google_play;
             this.pictureBox2.Location = new System.Drawing.Point(-2, 60);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
@@ -459,7 +536,7 @@ namespace Torneo_Guillermito
             this.btClubes.Margin = new System.Windows.Forms.Padding(4);
             this.btClubes.Name = "btClubes";
             this.btClubes.Size = new System.Drawing.Size(298, 64);
-            this.btClubes.TabIndex = 13;
+            this.btClubes.TabIndex = 1;
             this.btClubes.Text = "Clubes";
             this.btClubes.UseVisualStyleBackColor = false;
             this.btClubes.Click += new System.EventHandler(this.btClubes_Click);
@@ -477,7 +554,7 @@ namespace Torneo_Guillermito
             this.btCyZ.Margin = new System.Windows.Forms.Padding(4);
             this.btCyZ.Name = "btCyZ";
             this.btCyZ.Size = new System.Drawing.Size(298, 64);
-            this.btCyZ.TabIndex = 14;
+            this.btCyZ.TabIndex = 2;
             this.btCyZ.Text = "        Div. y zonas";
             this.btCyZ.UseVisualStyleBackColor = false;
             this.btCyZ.Click += new System.EventHandler(this.btCyZ_Click);
@@ -495,7 +572,7 @@ namespace Torneo_Guillermito
             this.btEquipos.Margin = new System.Windows.Forms.Padding(4);
             this.btEquipos.Name = "btEquipos";
             this.btEquipos.Size = new System.Drawing.Size(298, 64);
-            this.btEquipos.TabIndex = 15;
+            this.btEquipos.TabIndex = 3;
             this.btEquipos.Text = "  Equipos";
             this.btEquipos.UseVisualStyleBackColor = false;
             this.btEquipos.Click += new System.EventHandler(this.btEquipos_Click);
@@ -509,7 +586,7 @@ namespace Torneo_Guillermito
             this.btCruces.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCruces.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCruces.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btCruces.Location = new System.Drawing.Point(-1, 645);
+            this.btCruces.Location = new System.Drawing.Point(-1, 734);
             this.btCruces.Margin = new System.Windows.Forms.Padding(4);
             this.btCruces.Name = "btCruces";
             this.btCruces.Size = new System.Drawing.Size(298, 64);
@@ -532,7 +609,7 @@ namespace Torneo_Guillermito
             this.btEncuentros.Margin = new System.Windows.Forms.Padding(4);
             this.btEncuentros.Name = "btEncuentros";
             this.btEncuentros.Size = new System.Drawing.Size(298, 64);
-            this.btEncuentros.TabIndex = 17;
+            this.btEncuentros.TabIndex = 4;
             this.btEncuentros.Text = "       Encuentros";
             this.btEncuentros.UseVisualStyleBackColor = false;
             this.btEncuentros.Click += new System.EventHandler(this.btEncuentros_Click);
@@ -546,7 +623,7 @@ namespace Torneo_Guillermito
             this.btCanchas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCanchas.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCanchas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btCanchas.Location = new System.Drawing.Point(-1, 709);
+            this.btCanchas.Location = new System.Drawing.Point(-1, 798);
             this.btCanchas.Margin = new System.Windows.Forms.Padding(4);
             this.btCanchas.Name = "btCanchas";
             this.btCanchas.Size = new System.Drawing.Size(298, 64);
@@ -561,7 +638,7 @@ namespace Torneo_Guillermito
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.WindowText;
-            this.pictureBox3.Location = new System.Drawing.Point(275, -4);
+            this.pictureBox3.Location = new System.Drawing.Point(295, -2);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(1084, 57);
@@ -571,7 +648,7 @@ namespace Torneo_Guillermito
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
-            this.pictureBox4.Image = global::Torneo_Guillermito.Properties.Resources.soccer;
+            this.pictureBox4.Image = global::LIPa.Properties.Resources.soccer;
             this.pictureBox4.Location = new System.Drawing.Point(33, 392);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
@@ -586,7 +663,7 @@ namespace Torneo_Guillermito
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
-            this.pictureBox5.Image = global::Torneo_Guillermito.Properties.Resources.categorization;
+            this.pictureBox5.Image = global::LIPa.Properties.Resources.categorization;
             this.pictureBox5.Location = new System.Drawing.Point(33, 457);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
@@ -601,7 +678,7 @@ namespace Torneo_Guillermito
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
-            this.pictureBox6.Image = global::Torneo_Guillermito.Properties.Resources.team;
+            this.pictureBox6.Image = global::LIPa.Properties.Resources.team;
             this.pictureBox6.Location = new System.Drawing.Point(33, 524);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
@@ -616,8 +693,8 @@ namespace Torneo_Guillermito
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
-            this.pictureBox7.Image = global::Torneo_Guillermito.Properties.Resources.tournament;
-            this.pictureBox7.Location = new System.Drawing.Point(35, 652);
+            this.pictureBox7.Image = global::LIPa.Properties.Resources.tournament;
+            this.pictureBox7.Location = new System.Drawing.Point(35, 741);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(47, 49);
@@ -632,7 +709,7 @@ namespace Torneo_Guillermito
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
-            this.pictureBox8.Image = global::Torneo_Guillermito.Properties.Resources.football_pitch;
+            this.pictureBox8.Image = global::LIPa.Properties.Resources.football_pitch;
             this.pictureBox8.Location = new System.Drawing.Point(33, 588);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
@@ -647,8 +724,8 @@ namespace Torneo_Guillermito
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
-            this.pictureBox9.Image = global::Torneo_Guillermito.Properties.Resources.location_pin;
-            this.pictureBox9.Location = new System.Drawing.Point(36, 716);
+            this.pictureBox9.Image = global::LIPa.Properties.Resources.location_pin;
+            this.pictureBox9.Location = new System.Drawing.Point(36, 805);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(47, 49);
@@ -723,7 +800,7 @@ namespace Torneo_Guillermito
             this.comboZona1.Margin = new System.Windows.Forms.Padding(5);
             this.comboZona1.Name = "comboZona1";
             this.comboZona1.Size = new System.Drawing.Size(116, 28);
-            this.comboZona1.TabIndex = 22;
+            this.comboZona1.TabIndex = 1;
             // 
             // comboZona2
             // 
@@ -734,7 +811,7 @@ namespace Torneo_Guillermito
             this.comboZona2.Margin = new System.Windows.Forms.Padding(5);
             this.comboZona2.Name = "comboZona2";
             this.comboZona2.Size = new System.Drawing.Size(116, 28);
-            this.comboZona2.TabIndex = 21;
+            this.comboZona2.TabIndex = 2;
             // 
             // btEliminarZona
             // 
@@ -745,7 +822,7 @@ namespace Torneo_Guillermito
             this.btEliminarZona.Margin = new System.Windows.Forms.Padding(5);
             this.btEliminarZona.Name = "btEliminarZona";
             this.btEliminarZona.Size = new System.Drawing.Size(150, 40);
-            this.btEliminarZona.TabIndex = 20;
+            this.btEliminarZona.TabIndex = 4;
             this.btEliminarZona.Text = "Eliminar zona";
             this.btEliminarZona.UseVisualStyleBackColor = false;
             this.btEliminarZona.Click += new System.EventHandler(this.btEliminarZona_Click);
@@ -757,7 +834,7 @@ namespace Torneo_Guillermito
             this.btAgregarZona.Margin = new System.Windows.Forms.Padding(5);
             this.btAgregarZona.Name = "btAgregarZona";
             this.btAgregarZona.Size = new System.Drawing.Size(150, 40);
-            this.btAgregarZona.TabIndex = 14;
+            this.btAgregarZona.TabIndex = 3;
             this.btAgregarZona.Text = "Agregar zona";
             this.btAgregarZona.UseVisualStyleBackColor = true;
             this.btAgregarZona.Click += new System.EventHandler(this.btAgregarZona_Click);
@@ -837,7 +914,7 @@ namespace Torneo_Guillermito
             this.btEliminarCategoria.Margin = new System.Windows.Forms.Padding(5);
             this.btEliminarCategoria.Name = "btEliminarCategoria";
             this.btEliminarCategoria.Size = new System.Drawing.Size(150, 40);
-            this.btEliminarCategoria.TabIndex = 20;
+            this.btEliminarCategoria.TabIndex = 5;
             this.btEliminarCategoria.Text = "Eliminar div.";
             this.btEliminarCategoria.UseVisualStyleBackColor = false;
             this.btEliminarCategoria.Click += new System.EventHandler(this.btEliminarCategoria_Click);
@@ -850,7 +927,7 @@ namespace Torneo_Guillermito
             this.tbModificarCategoria.Margin = new System.Windows.Forms.Padding(5);
             this.tbModificarCategoria.Name = "tbModificarCategoria";
             this.tbModificarCategoria.Size = new System.Drawing.Size(149, 27);
-            this.tbModificarCategoria.TabIndex = 19;
+            this.tbModificarCategoria.TabIndex = 3;
             // 
             // btModificarCategoria
             // 
@@ -861,7 +938,7 @@ namespace Torneo_Guillermito
             this.btModificarCategoria.Margin = new System.Windows.Forms.Padding(5);
             this.btModificarCategoria.Name = "btModificarCategoria";
             this.btModificarCategoria.Size = new System.Drawing.Size(150, 40);
-            this.btModificarCategoria.TabIndex = 18;
+            this.btModificarCategoria.TabIndex = 4;
             this.btModificarCategoria.Text = "Modificar div.";
             this.btModificarCategoria.UseVisualStyleBackColor = false;
             this.btModificarCategoria.Click += new System.EventHandler(this.btModificarCategoria_Click);
@@ -873,7 +950,7 @@ namespace Torneo_Guillermito
             this.tbAgregarCategoria.Margin = new System.Windows.Forms.Padding(5);
             this.tbAgregarCategoria.Name = "tbAgregarCategoria";
             this.tbAgregarCategoria.Size = new System.Drawing.Size(150, 27);
-            this.tbAgregarCategoria.TabIndex = 17;
+            this.tbAgregarCategoria.TabIndex = 1;
             // 
             // btAgregarCategoria
             // 
@@ -882,7 +959,7 @@ namespace Torneo_Guillermito
             this.btAgregarCategoria.Margin = new System.Windows.Forms.Padding(5);
             this.btAgregarCategoria.Name = "btAgregarCategoria";
             this.btAgregarCategoria.Size = new System.Drawing.Size(150, 40);
-            this.btAgregarCategoria.TabIndex = 14;
+            this.btAgregarCategoria.TabIndex = 2;
             this.btAgregarCategoria.Text = "Agregar div.";
             this.btAgregarCategoria.UseVisualStyleBackColor = true;
             this.btAgregarCategoria.Click += new System.EventHandler(this.btAgregarCategoria_Click);
@@ -928,10 +1005,10 @@ namespace Torneo_Guillermito
             // gbEquipos
             // 
             this.gbEquipos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(244)))));
-            this.gbEquipos.Controls.Add(this.groupBox6);
-            this.gbEquipos.Controls.Add(this.groupBox4);
-            this.gbEquipos.Controls.Add(this.groupBox5);
-            this.gbEquipos.Location = new System.Drawing.Point(287, 38);
+            this.gbEquipos.Controls.Add(this.groupBox13);
+            this.gbEquipos.Controls.Add(this.groupBox14);
+            this.gbEquipos.Controls.Add(this.groupBox15);
+            this.gbEquipos.Location = new System.Drawing.Point(292, 31);
             this.gbEquipos.Margin = new System.Windows.Forms.Padding(4);
             this.gbEquipos.Name = "gbEquipos";
             this.gbEquipos.Padding = new System.Windows.Forms.Padding(4);
@@ -941,33 +1018,33 @@ namespace Torneo_Guillermito
             this.gbEquipos.Visible = false;
             this.gbEquipos.Enter += new System.EventHandler(this.gbEquipos_Enter);
             // 
-            // groupBox6
+            // groupBox13
             // 
-            this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
-            this.groupBox6.Controls.Add(this.label5);
-            this.groupBox6.Controls.Add(this.dgvEquipo2);
-            this.groupBox6.Controls.Add(this.textBox2);
-            this.groupBox6.Controls.Add(this.btEliminarEquipo);
-            this.groupBox6.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(544, 69);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox6.Size = new System.Drawing.Size(501, 767);
-            this.groupBox6.TabIndex = 43;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "EQUIPOS CREADOS";
+            this.groupBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
+            this.groupBox13.Controls.Add(this.label52);
+            this.groupBox13.Controls.Add(this.dgvEquipo2);
+            this.groupBox13.Controls.Add(this.tbEquipos3);
+            this.groupBox13.Controls.Add(this.btEliminarEquipo);
+            this.groupBox13.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox13.Location = new System.Drawing.Point(537, 56);
+            this.groupBox13.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox13.Size = new System.Drawing.Size(501, 767);
+            this.groupBox13.TabIndex = 45;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "EQUIPOS CREADOS";
             // 
-            // label5
+            // label52
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(20, 38);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 20);
-            this.label5.TabIndex = 37;
-            this.label5.Text = "Filtar por nombre:";
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(20, 38);
+            this.label52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(141, 20);
+            this.label52.TabIndex = 37;
+            this.label52.Text = "Filtar por nombre:";
             // 
             // dgvEquipo2
             // 
@@ -976,10 +1053,10 @@ namespace Torneo_Guillermito
             this.dgvEquipo2.AllowUserToResizeRows = false;
             this.dgvEquipo2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEquipo2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idEquipoCreado,
-            this.nombreEquipoCreado,
-            this.categoriaEquipoCreado,
-            this.zonaEquipo});
+            this.dataGridViewTextBoxColumn37,
+            this.dataGridViewTextBoxColumn38,
+            this.dataGridViewTextBoxColumn39,
+            this.dataGridViewTextBoxColumn40});
             this.dgvEquipo2.Location = new System.Drawing.Point(25, 84);
             this.dgvEquipo2.Margin = new System.Windows.Forms.Padding(4);
             this.dgvEquipo2.MultiSelect = false;
@@ -989,56 +1066,56 @@ namespace Torneo_Guillermito
             this.dgvEquipo2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEquipo2.Size = new System.Drawing.Size(457, 599);
             this.dgvEquipo2.TabIndex = 40;
+            this.dgvEquipo2.TabStop = false;
             this.dgvEquipo2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEquipo2_CellClick);
-            this.dgvEquipo2.Leave += new System.EventHandler(this.dgvEquipo2_Leave);
             // 
-            // idEquipoCreado
+            // dataGridViewTextBoxColumn37
             // 
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkSlateGray;
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            this.idEquipoCreado.DefaultCellStyle = dataGridViewCellStyle3;
-            this.idEquipoCreado.HeaderText = "ID";
-            this.idEquipoCreado.Name = "idEquipoCreado";
-            this.idEquipoCreado.ReadOnly = true;
-            this.idEquipoCreado.Visible = false;
-            this.idEquipoCreado.Width = 40;
+            this.dataGridViewTextBoxColumn37.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewTextBoxColumn37.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
+            this.dataGridViewTextBoxColumn37.ReadOnly = true;
+            this.dataGridViewTextBoxColumn37.Visible = false;
+            this.dataGridViewTextBoxColumn37.Width = 40;
             // 
-            // nombreEquipoCreado
+            // dataGridViewTextBoxColumn38
             // 
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombreEquipoCreado.DefaultCellStyle = dataGridViewCellStyle4;
-            this.nombreEquipoCreado.HeaderText = "NOMBRE";
-            this.nombreEquipoCreado.Name = "nombreEquipoCreado";
-            this.nombreEquipoCreado.ReadOnly = true;
-            this.nombreEquipoCreado.Width = 300;
+            this.dataGridViewTextBoxColumn38.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewTextBoxColumn38.HeaderText = "NOMBRE";
+            this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
+            this.dataGridViewTextBoxColumn38.ReadOnly = true;
+            this.dataGridViewTextBoxColumn38.Width = 300;
             // 
-            // categoriaEquipoCreado
+            // dataGridViewTextBoxColumn39
             // 
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoriaEquipoCreado.DefaultCellStyle = dataGridViewCellStyle5;
-            this.categoriaEquipoCreado.HeaderText = "DIVISIÓN";
-            this.categoriaEquipoCreado.Name = "categoriaEquipoCreado";
-            this.categoriaEquipoCreado.ReadOnly = true;
-            this.categoriaEquipoCreado.Width = 90;
+            this.dataGridViewTextBoxColumn39.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridViewTextBoxColumn39.HeaderText = "DIVISIÓN";
+            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
+            this.dataGridViewTextBoxColumn39.ReadOnly = true;
+            this.dataGridViewTextBoxColumn39.Width = 90;
             // 
-            // zonaEquipo
+            // dataGridViewTextBoxColumn40
             // 
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.zonaEquipo.DefaultCellStyle = dataGridViewCellStyle6;
-            this.zonaEquipo.HeaderText = "ZONA";
-            this.zonaEquipo.Name = "zonaEquipo";
-            this.zonaEquipo.ReadOnly = true;
-            this.zonaEquipo.Width = 60;
+            this.dataGridViewTextBoxColumn40.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewTextBoxColumn40.HeaderText = "ZONA";
+            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
+            this.dataGridViewTextBoxColumn40.ReadOnly = true;
+            this.dataGridViewTextBoxColumn40.Width = 60;
             // 
-            // textBox2
+            // tbEquipos3
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(161, 35);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(321, 27);
-            this.textBox2.TabIndex = 36;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.tbEquipos3.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEquipos3.Location = new System.Drawing.Point(161, 35);
+            this.tbEquipos3.Margin = new System.Windows.Forms.Padding(4);
+            this.tbEquipos3.Name = "tbEquipos3";
+            this.tbEquipos3.Size = new System.Drawing.Size(321, 27);
+            this.tbEquipos3.TabIndex = 1;
+            this.tbEquipos3.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // btEliminarEquipo
             // 
@@ -1050,37 +1127,37 @@ namespace Torneo_Guillermito
             this.btEliminarEquipo.Margin = new System.Windows.Forms.Padding(4);
             this.btEliminarEquipo.Name = "btEliminarEquipo";
             this.btEliminarEquipo.Size = new System.Drawing.Size(150, 40);
-            this.btEliminarEquipo.TabIndex = 41;
+            this.btEliminarEquipo.TabIndex = 2;
             this.btEliminarEquipo.Text = "Eliminar equipo";
             this.btEliminarEquipo.UseVisualStyleBackColor = false;
             this.btEliminarEquipo.Click += new System.EventHandler(this.btEliminarEquipo_Click);
             // 
-            // groupBox4
+            // groupBox14
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
-            this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Controls.Add(this.dgvEquipo1);
-            this.groupBox4.Controls.Add(this.tbEquipos1);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(41, 72);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(475, 529);
-            this.groupBox4.TabIndex = 42;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "LISTAR Y FILTRAR CLUB";
+            this.groupBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
+            this.groupBox14.Controls.Add(this.label53);
+            this.groupBox14.Controls.Add(this.dgvEquipo1);
+            this.groupBox14.Controls.Add(this.tbEquipos1);
+            this.groupBox14.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox14.Location = new System.Drawing.Point(34, 59);
+            this.groupBox14.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox14.Size = new System.Drawing.Size(475, 529);
+            this.groupBox14.TabIndex = 44;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "LISTAR Y FILTRAR CLUB";
             // 
-            // label6
+            // label53
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(13, 39);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(109, 20);
-            this.label6.TabIndex = 35;
-            this.label6.Text = "Nombre club:";
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(13, 39);
+            this.label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(109, 20);
+            this.label53.TabIndex = 35;
+            this.label53.Text = "Nombre club:";
             // 
             // dgvEquipo1
             // 
@@ -1089,50 +1166,50 @@ namespace Torneo_Guillermito
             this.dgvEquipo1.AllowUserToResizeRows = false;
             this.dgvEquipo1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEquipo1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idEquipo,
-            this.nombreClub,
-            this.escudoClub});
-            this.dgvEquipo1.Location = new System.Drawing.Point(19, 89);
+            this.dataGridViewTextBoxColumn41,
+            this.dataGridViewTextBoxColumn42,
+            this.dataGridViewTextBoxColumn43});
+            this.dgvEquipo1.Location = new System.Drawing.Point(19, 85);
             this.dgvEquipo1.Margin = new System.Windows.Forms.Padding(4);
             this.dgvEquipo1.MultiSelect = false;
             this.dgvEquipo1.Name = "dgvEquipo1";
             this.dgvEquipo1.ReadOnly = true;
             this.dgvEquipo1.RowHeadersVisible = false;
             this.dgvEquipo1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEquipo1.Size = new System.Drawing.Size(435, 414);
+            this.dgvEquipo1.Size = new System.Drawing.Size(435, 418);
             this.dgvEquipo1.TabIndex = 28;
+            this.dgvEquipo1.TabStop = false;
             this.dgvEquipo1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEquipo1_CellClick);
-            this.dgvEquipo1.Leave += new System.EventHandler(this.dgvEquipo1_Leave);
             // 
-            // idEquipo
+            // dataGridViewTextBoxColumn41
             // 
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.DarkSlateGray;
             dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            this.idEquipo.DefaultCellStyle = dataGridViewCellStyle7;
-            this.idEquipo.HeaderText = "ID";
-            this.idEquipo.Name = "idEquipo";
-            this.idEquipo.ReadOnly = true;
-            this.idEquipo.Visible = false;
-            this.idEquipo.Width = 40;
+            this.dataGridViewTextBoxColumn41.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridViewTextBoxColumn41.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
+            this.dataGridViewTextBoxColumn41.ReadOnly = true;
+            this.dataGridViewTextBoxColumn41.Visible = false;
+            this.dataGridViewTextBoxColumn41.Width = 40;
             // 
-            // nombreClub
+            // dataGridViewTextBoxColumn42
             // 
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombreClub.DefaultCellStyle = dataGridViewCellStyle8;
-            this.nombreClub.HeaderText = "CLUB";
-            this.nombreClub.Name = "nombreClub";
-            this.nombreClub.ReadOnly = true;
-            this.nombreClub.Width = 310;
+            this.dataGridViewTextBoxColumn42.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridViewTextBoxColumn42.HeaderText = "CLUB";
+            this.dataGridViewTextBoxColumn42.Name = "dataGridViewTextBoxColumn42";
+            this.dataGridViewTextBoxColumn42.ReadOnly = true;
+            this.dataGridViewTextBoxColumn42.Width = 310;
             // 
-            // escudoClub
+            // dataGridViewTextBoxColumn43
             // 
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.escudoClub.DefaultCellStyle = dataGridViewCellStyle9;
-            this.escudoClub.HeaderText = "ESCUDO";
-            this.escudoClub.Name = "escudoClub";
-            this.escudoClub.ReadOnly = true;
-            this.escudoClub.Width = 120;
+            this.dataGridViewTextBoxColumn43.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridViewTextBoxColumn43.HeaderText = "ESCUDO";
+            this.dataGridViewTextBoxColumn43.Name = "dataGridViewTextBoxColumn43";
+            this.dataGridViewTextBoxColumn43.ReadOnly = true;
+            this.dataGridViewTextBoxColumn43.Width = 120;
             // 
             // tbEquipos1
             // 
@@ -1141,75 +1218,76 @@ namespace Torneo_Guillermito
             this.tbEquipos1.Margin = new System.Windows.Forms.Padding(4);
             this.tbEquipos1.Name = "tbEquipos1";
             this.tbEquipos1.Size = new System.Drawing.Size(330, 27);
-            this.tbEquipos1.TabIndex = 34;
+            this.tbEquipos1.TabIndex = 1;
+            this.tbEquipos1.Click += new System.EventHandler(this.tbEquipos1_TextChanged);
             this.tbEquipos1.TextChanged += new System.EventHandler(this.tbEquipos1_TextChanged);
             // 
-            // groupBox5
+            // groupBox15
             // 
-            this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
-            this.groupBox5.Controls.Add(this.label7);
-            this.groupBox5.Controls.Add(this.label8);
-            this.groupBox5.Controls.Add(this.label9);
-            this.groupBox5.Controls.Add(this.label10);
-            this.groupBox5.Controls.Add(this.btEquipos1);
-            this.groupBox5.Controls.Add(this.tbEquipos2);
-            this.groupBox5.Controls.Add(this.comboEquipo1);
-            this.groupBox5.Controls.Add(this.comboEquipo2);
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(41, 627);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox5.Size = new System.Drawing.Size(475, 209);
-            this.groupBox5.TabIndex = 43;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "CREAR EQUIPO";
+            this.groupBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
+            this.groupBox15.Controls.Add(this.label56);
+            this.groupBox15.Controls.Add(this.label57);
+            this.groupBox15.Controls.Add(this.label58);
+            this.groupBox15.Controls.Add(this.label59);
+            this.groupBox15.Controls.Add(this.btEquipos1);
+            this.groupBox15.Controls.Add(this.tbEquipos2);
+            this.groupBox15.Controls.Add(this.comboEquipo1);
+            this.groupBox15.Controls.Add(this.comboEquipo2);
+            this.groupBox15.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox15.Location = new System.Drawing.Point(34, 614);
+            this.groupBox15.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox15.Size = new System.Drawing.Size(475, 209);
+            this.groupBox15.TabIndex = 46;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "CREAR EQUIPO";
             // 
-            // label7
+            // label56
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label7.Location = new System.Drawing.Point(20, 153);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(223, 34);
-            this.label7.TabIndex = 40;
-            this.label7.Text = "(La zona y la categoria deben estar\r\npreviamente creadas)";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label56.Location = new System.Drawing.Point(20, 153);
+            this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(223, 34);
+            this.label56.TabIndex = 40;
+            this.label56.Text = "(La zona y la categoria deben estar\r\npreviamente creadas)";
+            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label8
+            // label57
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(299, 95);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 20);
-            this.label8.TabIndex = 38;
-            this.label8.Text = "Zona:";
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(299, 95);
+            this.label57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(49, 20);
+            this.label57.TabIndex = 38;
+            this.label57.Text = "Zona:";
             // 
-            // label9
+            // label58
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(48, 94);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 20);
-            this.label9.TabIndex = 37;
-            this.label9.Text = "División:";
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(48, 94);
+            this.label58.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(70, 20);
+            this.label58.TabIndex = 37;
+            this.label58.Text = "División:";
             // 
-            // label10
+            // label59
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(9, 38);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(109, 20);
-            this.label10.TabIndex = 36;
-            this.label10.Text = "Nombre club:";
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(9, 38);
+            this.label59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(109, 20);
+            this.label59.TabIndex = 36;
+            this.label59.Text = "Nombre club:";
             // 
             // btEquipos1
             // 
@@ -1218,7 +1296,7 @@ namespace Torneo_Guillermito
             this.btEquipos1.Margin = new System.Windows.Forms.Padding(4);
             this.btEquipos1.Name = "btEquipos1";
             this.btEquipos1.Size = new System.Drawing.Size(150, 40);
-            this.btEquipos1.TabIndex = 36;
+            this.btEquipos1.TabIndex = 4;
             this.btEquipos1.Text = "Agregar equipo";
             this.btEquipos1.UseVisualStyleBackColor = true;
             this.btEquipos1.Click += new System.EventHandler(this.btEquipos1_Click);
@@ -1231,7 +1309,7 @@ namespace Torneo_Guillermito
             this.tbEquipos2.Margin = new System.Windows.Forms.Padding(4);
             this.tbEquipos2.Name = "tbEquipos2";
             this.tbEquipos2.Size = new System.Drawing.Size(330, 27);
-            this.tbEquipos2.TabIndex = 29;
+            this.tbEquipos2.TabIndex = 1;
             // 
             // comboEquipo1
             // 
@@ -1242,7 +1320,7 @@ namespace Torneo_Guillermito
             this.comboEquipo1.Margin = new System.Windows.Forms.Padding(4);
             this.comboEquipo1.Name = "comboEquipo1";
             this.comboEquipo1.Size = new System.Drawing.Size(93, 28);
-            this.comboEquipo1.TabIndex = 26;
+            this.comboEquipo1.TabIndex = 2;
             this.comboEquipo1.SelectedIndexChanged += new System.EventHandler(this.comboEquipo1_SelectedIndexChanged);
             // 
             // comboEquipo2
@@ -1254,7 +1332,7 @@ namespace Torneo_Guillermito
             this.comboEquipo2.Margin = new System.Windows.Forms.Padding(4);
             this.comboEquipo2.Name = "comboEquipo2";
             this.comboEquipo2.Size = new System.Drawing.Size(100, 28);
-            this.comboEquipo2.TabIndex = 25;
+            this.comboEquipo2.TabIndex = 3;
             // 
             // gbCanchas
             // 
@@ -1301,6 +1379,7 @@ namespace Torneo_Guillermito
             this.dgvCanchas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCanchas.Size = new System.Drawing.Size(341, 297);
             this.dgvCanchas.TabIndex = 41;
+            this.dgvCanchas.TabStop = false;
             // 
             // nroCancha
             // 
@@ -1336,7 +1415,7 @@ namespace Torneo_Guillermito
             this.btEliminarCancha.Margin = new System.Windows.Forms.Padding(5);
             this.btEliminarCancha.Name = "btEliminarCancha";
             this.btEliminarCancha.Size = new System.Drawing.Size(150, 40);
-            this.btEliminarCancha.TabIndex = 42;
+            this.btEliminarCancha.TabIndex = 1;
             this.btEliminarCancha.Text = "Eliminar cancha";
             this.btEliminarCancha.UseVisualStyleBackColor = false;
             this.btEliminarCancha.Click += new System.EventHandler(this.btEliminarCancha_Click);
@@ -1383,7 +1462,7 @@ namespace Torneo_Guillermito
             this.tbLongitud.Margin = new System.Windows.Forms.Padding(5);
             this.tbLongitud.Name = "tbLongitud";
             this.tbLongitud.Size = new System.Drawing.Size(250, 27);
-            this.tbLongitud.TabIndex = 5;
+            this.tbLongitud.TabIndex = 4;
             // 
             // btLimpiarCancha
             // 
@@ -1392,7 +1471,7 @@ namespace Torneo_Guillermito
             this.btLimpiarCancha.Margin = new System.Windows.Forms.Padding(5);
             this.btLimpiarCancha.Name = "btLimpiarCancha";
             this.btLimpiarCancha.Size = new System.Drawing.Size(150, 40);
-            this.btLimpiarCancha.TabIndex = 12;
+            this.btLimpiarCancha.TabIndex = 5;
             this.btLimpiarCancha.Text = "Limpiar";
             this.btLimpiarCancha.UseVisualStyleBackColor = true;
             this.btLimpiarCancha.Click += new System.EventHandler(this.btLimpiarCancha_Click);
@@ -1404,7 +1483,7 @@ namespace Torneo_Guillermito
             this.tbLatitud.Margin = new System.Windows.Forms.Padding(5);
             this.tbLatitud.Name = "tbLatitud";
             this.tbLatitud.Size = new System.Drawing.Size(250, 27);
-            this.tbLatitud.TabIndex = 7;
+            this.tbLatitud.TabIndex = 3;
             // 
             // btAgregarCancha1
             // 
@@ -1413,7 +1492,7 @@ namespace Torneo_Guillermito
             this.btAgregarCancha1.Margin = new System.Windows.Forms.Padding(5);
             this.btAgregarCancha1.Name = "btAgregarCancha1";
             this.btAgregarCancha1.Size = new System.Drawing.Size(150, 40);
-            this.btAgregarCancha1.TabIndex = 4;
+            this.btAgregarCancha1.TabIndex = 6;
             this.btAgregarCancha1.Text = "Agregar cancha";
             this.btAgregarCancha1.UseVisualStyleBackColor = true;
             this.btAgregarCancha1.Click += new System.EventHandler(this.btAgregarCancha1_Click);
@@ -1436,7 +1515,7 @@ namespace Torneo_Guillermito
             this.tbNumero.Margin = new System.Windows.Forms.Padding(5);
             this.tbNumero.Name = "tbNumero";
             this.tbNumero.Size = new System.Drawing.Size(250, 27);
-            this.tbNumero.TabIndex = 8;
+            this.tbNumero.TabIndex = 2;
             // 
             // label13
             // 
@@ -1519,7 +1598,7 @@ namespace Torneo_Guillermito
             this.groupBox12.Controls.Add(this.comboFiltroEncuentros1);
             this.groupBox12.Controls.Add(this.cbPartidos);
             this.groupBox12.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox12.Location = new System.Drawing.Point(25, 373);
+            this.groupBox12.Location = new System.Drawing.Point(25, 412);
             this.groupBox12.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Padding = new System.Windows.Forms.Padding(4);
@@ -1560,7 +1639,7 @@ namespace Torneo_Guillermito
             this.button1.Location = new System.Drawing.Point(9, 135);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 40);
-            this.button1.TabIndex = 68;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Limpiar flitro";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -1578,12 +1657,13 @@ namespace Torneo_Guillermito
             // 
             // comboFiltroEncuentros3
             // 
+            this.comboFiltroEncuentros3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboFiltroEncuentros3.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFiltroEncuentros3.FormattingEnabled = true;
             this.comboFiltroEncuentros3.Location = new System.Drawing.Point(72, 29);
             this.comboFiltroEncuentros3.Name = "comboFiltroEncuentros3";
             this.comboFiltroEncuentros3.Size = new System.Drawing.Size(87, 28);
-            this.comboFiltroEncuentros3.TabIndex = 70;
+            this.comboFiltroEncuentros3.TabIndex = 1;
             this.comboFiltroEncuentros3.SelectedIndexChanged += new System.EventHandler(this.comboFiltroEncuentros3_SelectedIndexChanged);
             // 
             // label36
@@ -1649,7 +1729,7 @@ namespace Torneo_Guillermito
             this.cbPartidos.Location = new System.Drawing.Point(23, 82);
             this.cbPartidos.Name = "cbPartidos";
             this.cbPartidos.Size = new System.Drawing.Size(133, 24);
-            this.cbPartidos.TabIndex = 1;
+            this.cbPartidos.TabIndex = 2;
             this.cbPartidos.Text = "Mostrar todos";
             this.cbPartidos.UseVisualStyleBackColor = true;
             this.cbPartidos.CheckedChanged += new System.EventHandler(this.cbPartidos_CheckedChanged);
@@ -1663,7 +1743,7 @@ namespace Torneo_Guillermito
             this.btEliminarEncuentro.Margin = new System.Windows.Forms.Padding(4);
             this.btEliminarEncuentro.Name = "btEliminarEncuentro";
             this.btEliminarEncuentro.Size = new System.Drawing.Size(164, 44);
-            this.btEliminarEncuentro.TabIndex = 66;
+            this.btEliminarEncuentro.TabIndex = 12;
             this.btEliminarEncuentro.Text = "Eliminar encuentro";
             this.btEliminarEncuentro.UseVisualStyleBackColor = false;
             this.btEliminarEncuentro.Click += new System.EventHandler(this.btEliminarEncuentro_Click);
@@ -1671,6 +1751,9 @@ namespace Torneo_Guillermito
             // groupBox11
             // 
             this.groupBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
+            this.groupBox11.Controls.Add(this.checkPartidoTerminado);
+            this.groupBox11.Controls.Add(this.checkFechaEncuentro);
+            this.groupBox11.Controls.Add(this.tbYoutubeEncuentro2);
             this.groupBox11.Controls.Add(this.pictureBox20);
             this.groupBox11.Controls.Add(this.pictureBox21);
             this.groupBox11.Controls.Add(this.pictureBox22);
@@ -1685,14 +1768,13 @@ namespace Torneo_Guillermito
             this.groupBox11.Controls.Add(this.label54);
             this.groupBox11.Controls.Add(this.tbDriveEncuentro2);
             this.groupBox11.Controls.Add(this.label55);
-            this.groupBox11.Controls.Add(this.tbYoutubeEncuentro2);
             this.groupBox11.Controls.Add(this.pictureBox12);
             this.groupBox11.Controls.Add(this.pictureBox11);
-            this.groupBox11.Controls.Add(this.textBox10);
-            this.groupBox11.Controls.Add(this.textBox11);
+            this.groupBox11.Controls.Add(this.tbRojasVisita);
+            this.groupBox11.Controls.Add(this.tbRojasLocal);
             this.groupBox11.Controls.Add(this.label40);
-            this.groupBox11.Controls.Add(this.textBox8);
-            this.groupBox11.Controls.Add(this.textBox9);
+            this.groupBox11.Controls.Add(this.tbAmarillasVisita);
+            this.groupBox11.Controls.Add(this.tbAmarillasLocal);
             this.groupBox11.Controls.Add(this.label39);
             this.groupBox11.Controls.Add(this.comboFechaEncuentro2);
             this.groupBox11.Controls.Add(this.label34);
@@ -1716,14 +1798,45 @@ namespace Torneo_Guillermito
             this.groupBox11.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox11.Size = new System.Drawing.Size(562, 326);
+            this.groupBox11.Size = new System.Drawing.Size(562, 367);
             this.groupBox11.TabIndex = 51;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "MODIFICAR ENCUENTRO";
             // 
+            // checkPartidoTerminado
+            // 
+            this.checkPartidoTerminado.AutoSize = true;
+            this.checkPartidoTerminado.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkPartidoTerminado.Location = new System.Drawing.Point(18, 322);
+            this.checkPartidoTerminado.Name = "checkPartidoTerminado";
+            this.checkPartidoTerminado.Size = new System.Drawing.Size(151, 24);
+            this.checkPartidoTerminado.TabIndex = 7;
+            this.checkPartidoTerminado.Text = "Terminar partido";
+            this.checkPartidoTerminado.UseVisualStyleBackColor = true;
+            this.checkPartidoTerminado.Click += new System.EventHandler(this.checkPartidoTerminado_CheckedChanged);
+            // 
+            // checkFechaEncuentro
+            // 
+            this.checkFechaEncuentro.AutoSize = true;
+            this.checkFechaEncuentro.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkFechaEncuentro.Location = new System.Drawing.Point(18, 287);
+            this.checkFechaEncuentro.Name = "checkFechaEncuentro";
+            this.checkFechaEncuentro.Size = new System.Drawing.Size(15, 14);
+            this.checkFechaEncuentro.TabIndex = 6;
+            this.checkFechaEncuentro.UseVisualStyleBackColor = true;
+            this.checkFechaEncuentro.CheckedChanged += new System.EventHandler(this.checkFechaEncuentro_CheckedChanged);
+            // 
+            // tbYoutubeEncuentro2
+            // 
+            this.tbYoutubeEncuentro2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbYoutubeEncuentro2.Location = new System.Drawing.Point(245, 199);
+            this.tbYoutubeEncuentro2.Name = "tbYoutubeEncuentro2";
+            this.tbYoutubeEncuentro2.Size = new System.Drawing.Size(306, 27);
+            this.tbYoutubeEncuentro2.TabIndex = 8;
+            // 
             // pictureBox20
             // 
-            this.pictureBox20.Image = global::Torneo_Guillermito.Properties.Resources.minus;
+            this.pictureBox20.Image = global::LIPa.Properties.Resources.minus;
             this.pictureBox20.Location = new System.Drawing.Point(403, 156);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(33, 24);
@@ -1734,7 +1847,7 @@ namespace Torneo_Guillermito
             // 
             // pictureBox21
             // 
-            this.pictureBox21.Image = global::Torneo_Guillermito.Properties.Resources.minus;
+            this.pictureBox21.Image = global::LIPa.Properties.Resources.minus;
             this.pictureBox21.Location = new System.Drawing.Point(403, 117);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(33, 24);
@@ -1745,7 +1858,7 @@ namespace Torneo_Guillermito
             // 
             // pictureBox22
             // 
-            this.pictureBox22.Image = global::Torneo_Guillermito.Properties.Resources.minus;
+            this.pictureBox22.Image = global::LIPa.Properties.Resources.minus;
             this.pictureBox22.Location = new System.Drawing.Point(403, 80);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(33, 24);
@@ -1756,7 +1869,7 @@ namespace Torneo_Guillermito
             // 
             // pictureBox15
             // 
-            this.pictureBox15.Image = global::Torneo_Guillermito.Properties.Resources.minus;
+            this.pictureBox15.Image = global::LIPa.Properties.Resources.minus;
             this.pictureBox15.Location = new System.Drawing.Point(121, 156);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(33, 24);
@@ -1767,7 +1880,7 @@ namespace Torneo_Guillermito
             // 
             // pictureBox13
             // 
-            this.pictureBox13.Image = global::Torneo_Guillermito.Properties.Resources.minus;
+            this.pictureBox13.Image = global::LIPa.Properties.Resources.minus;
             this.pictureBox13.Location = new System.Drawing.Point(121, 117);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(33, 24);
@@ -1778,7 +1891,7 @@ namespace Torneo_Guillermito
             // 
             // pictureBox17
             // 
-            this.pictureBox17.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.pictureBox17.Image = global::LIPa.Properties.Resources.plus;
             this.pictureBox17.Location = new System.Drawing.Point(355, 156);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(33, 24);
@@ -1789,7 +1902,7 @@ namespace Torneo_Guillermito
             // 
             // pictureBox18
             // 
-            this.pictureBox18.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.pictureBox18.Image = global::LIPa.Properties.Resources.plus;
             this.pictureBox18.Location = new System.Drawing.Point(356, 120);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(33, 24);
@@ -1800,7 +1913,7 @@ namespace Torneo_Guillermito
             // 
             // pictureBox19
             // 
-            this.pictureBox19.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.pictureBox19.Image = global::LIPa.Properties.Resources.plus;
             this.pictureBox19.Location = new System.Drawing.Point(356, 83);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(33, 24);
@@ -1811,7 +1924,7 @@ namespace Torneo_Guillermito
             // 
             // pictureBox16
             // 
-            this.pictureBox16.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.pictureBox16.Image = global::LIPa.Properties.Resources.plus;
             this.pictureBox16.Location = new System.Drawing.Point(171, 156);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(33, 24);
@@ -1822,7 +1935,7 @@ namespace Torneo_Guillermito
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.pictureBox14.Image = global::LIPa.Properties.Resources.plus;
             this.pictureBox14.Location = new System.Drawing.Point(171, 117);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(33, 24);
@@ -1833,17 +1946,18 @@ namespace Torneo_Guillermito
             // 
             // datePickerEn2
             // 
+            this.datePickerEn2.Enabled = false;
             this.datePickerEn2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datePickerEn2.Location = new System.Drawing.Point(13, 242);
+            this.datePickerEn2.Location = new System.Drawing.Point(37, 283);
             this.datePickerEn2.Name = "datePickerEn2";
-            this.datePickerEn2.Size = new System.Drawing.Size(116, 21);
-            this.datePickerEn2.TabIndex = 95;
+            this.datePickerEn2.Size = new System.Drawing.Size(128, 21);
+            this.datePickerEn2.TabIndex = 5;
             // 
             // label54
             // 
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(161, 240);
+            this.label54.Location = new System.Drawing.Point(192, 240);
             this.label54.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(51, 20);
@@ -1853,33 +1967,25 @@ namespace Torneo_Guillermito
             // tbDriveEncuentro2
             // 
             this.tbDriveEncuentro2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbDriveEncuentro2.Location = new System.Drawing.Point(215, 236);
+            this.tbDriveEncuentro2.Location = new System.Drawing.Point(245, 236);
             this.tbDriveEncuentro2.Name = "tbDriveEncuentro2";
-            this.tbDriveEncuentro2.Size = new System.Drawing.Size(336, 27);
-            this.tbDriveEncuentro2.TabIndex = 76;
+            this.tbDriveEncuentro2.Size = new System.Drawing.Size(306, 27);
+            this.tbDriveEncuentro2.TabIndex = 9;
             // 
             // label55
             // 
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(139, 203);
+            this.label55.Location = new System.Drawing.Point(169, 203);
             this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(75, 20);
             this.label55.TabIndex = 75;
             this.label55.Text = "Youtube:";
             // 
-            // tbYoutubeEncuentro2
-            // 
-            this.tbYoutubeEncuentro2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbYoutubeEncuentro2.Location = new System.Drawing.Point(215, 199);
-            this.tbYoutubeEncuentro2.Name = "tbYoutubeEncuentro2";
-            this.tbYoutubeEncuentro2.Size = new System.Drawing.Size(336, 27);
-            this.tbYoutubeEncuentro2.TabIndex = 74;
-            // 
             // pictureBox12
             // 
-            this.pictureBox12.Image = global::Torneo_Guillermito.Properties.Resources.minus;
+            this.pictureBox12.Image = global::LIPa.Properties.Resources.minus;
             this.pictureBox12.Location = new System.Drawing.Point(121, 80);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(33, 24);
@@ -1890,7 +1996,7 @@ namespace Torneo_Guillermito
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.pictureBox11.Image = global::LIPa.Properties.Resources.plus;
             this.pictureBox11.Location = new System.Drawing.Point(171, 80);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(33, 24);
@@ -1899,25 +2005,27 @@ namespace Torneo_Guillermito
             this.pictureBox11.TabStop = false;
             this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
-            // textBox10
+            // tbRojasVisita
             // 
-            this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.textBox10.Enabled = false;
-            this.textBox10.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(321, 153);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(26, 27);
-            this.textBox10.TabIndex = 82;
+            this.tbRojasVisita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.tbRojasVisita.Enabled = false;
+            this.tbRojasVisita.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbRojasVisita.Location = new System.Drawing.Point(321, 153);
+            this.tbRojasVisita.Name = "tbRojasVisita";
+            this.tbRojasVisita.Size = new System.Drawing.Size(26, 27);
+            this.tbRojasVisita.TabIndex = 82;
+            this.tbRojasVisita.TabStop = false;
             // 
-            // textBox11
+            // tbRojasLocal
             // 
-            this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.textBox11.Enabled = false;
-            this.textBox11.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(214, 153);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(26, 27);
-            this.textBox11.TabIndex = 81;
+            this.tbRojasLocal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.tbRojasLocal.Enabled = false;
+            this.tbRojasLocal.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbRojasLocal.Location = new System.Drawing.Point(214, 153);
+            this.tbRojasLocal.Name = "tbRojasLocal";
+            this.tbRojasLocal.Size = new System.Drawing.Size(26, 27);
+            this.tbRojasLocal.TabIndex = 81;
+            this.tbRojasLocal.TabStop = false;
             // 
             // label40
             // 
@@ -1930,25 +2038,27 @@ namespace Torneo_Guillermito
             this.label40.TabIndex = 80;
             this.label40.Text = "Rojas";
             // 
-            // textBox8
+            // tbAmarillasVisita
             // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBox8.Enabled = false;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(321, 117);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(26, 27);
-            this.textBox8.TabIndex = 79;
+            this.tbAmarillasVisita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.tbAmarillasVisita.Enabled = false;
+            this.tbAmarillasVisita.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAmarillasVisita.Location = new System.Drawing.Point(321, 117);
+            this.tbAmarillasVisita.Name = "tbAmarillasVisita";
+            this.tbAmarillasVisita.Size = new System.Drawing.Size(26, 27);
+            this.tbAmarillasVisita.TabIndex = 79;
+            this.tbAmarillasVisita.TabStop = false;
             // 
-            // textBox9
+            // tbAmarillasLocal
             // 
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBox9.Enabled = false;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(214, 117);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(26, 27);
-            this.textBox9.TabIndex = 78;
+            this.tbAmarillasLocal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.tbAmarillasLocal.Enabled = false;
+            this.tbAmarillasLocal.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAmarillasLocal.Location = new System.Drawing.Point(214, 117);
+            this.tbAmarillasLocal.Name = "tbAmarillasLocal";
+            this.tbAmarillasLocal.Size = new System.Drawing.Size(26, 27);
+            this.tbAmarillasLocal.TabIndex = 78;
+            this.tbAmarillasLocal.TabStop = false;
             // 
             // label39
             // 
@@ -1969,15 +2079,15 @@ namespace Torneo_Guillermito
             this.comboFechaEncuentro2.FormattingEnabled = true;
             this.comboFechaEncuentro2.Location = new System.Drawing.Point(64, 199);
             this.comboFechaEncuentro2.Name = "comboFechaEncuentro2";
-            this.comboFechaEncuentro2.Size = new System.Drawing.Size(65, 28);
-            this.comboFechaEncuentro2.TabIndex = 51;
+            this.comboFechaEncuentro2.Size = new System.Drawing.Size(100, 28);
+            this.comboFechaEncuentro2.TabIndex = 3;
             // 
             // label34
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label34.Location = new System.Drawing.Point(250, 283);
+            this.label34.Location = new System.Drawing.Point(404, 279);
             this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(145, 32);
@@ -2004,7 +2114,7 @@ namespace Torneo_Guillermito
             this.tbVisitaEncuentro2.Multiline = true;
             this.tbVisitaEncuentro2.Name = "tbVisitaEncuentro2";
             this.tbVisitaEncuentro2.Size = new System.Drawing.Size(230, 44);
-            this.tbVisitaEncuentro2.TabIndex = 62;
+            this.tbVisitaEncuentro2.TabIndex = 2;
             this.tbVisitaEncuentro2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbLocalEncuentro2
@@ -2015,7 +2125,7 @@ namespace Torneo_Guillermito
             this.tbLocalEncuentro2.Multiline = true;
             this.tbLocalEncuentro2.Name = "tbLocalEncuentro2";
             this.tbLocalEncuentro2.Size = new System.Drawing.Size(230, 43);
-            this.tbLocalEncuentro2.TabIndex = 61;
+            this.tbLocalEncuentro2.TabIndex = 1;
             this.tbLocalEncuentro2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbGolesVisita
@@ -2026,6 +2136,7 @@ namespace Torneo_Guillermito
             this.tbGolesVisita.Name = "tbGolesVisita";
             this.tbGolesVisita.Size = new System.Drawing.Size(26, 27);
             this.tbGolesVisita.TabIndex = 57;
+            this.tbGolesVisita.TabStop = false;
             // 
             // tbGolesLocal
             // 
@@ -2035,6 +2146,7 @@ namespace Torneo_Guillermito
             this.tbGolesLocal.Name = "tbGolesLocal";
             this.tbGolesLocal.Size = new System.Drawing.Size(26, 27);
             this.tbGolesLocal.TabIndex = 56;
+            this.tbGolesLocal.TabStop = false;
             // 
             // label38
             // 
@@ -2061,10 +2173,10 @@ namespace Torneo_Guillermito
             // btModificarPartido
             // 
             this.btModificarPartido.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btModificarPartido.Location = new System.Drawing.Point(401, 279);
+            this.btModificarPartido.Location = new System.Drawing.Point(403, 317);
             this.btModificarPartido.Name = "btModificarPartido";
             this.btModificarPartido.Size = new System.Drawing.Size(150, 40);
-            this.btModificarPartido.TabIndex = 44;
+            this.btModificarPartido.TabIndex = 10;
             this.btModificarPartido.Text = "Modificar partido";
             this.btModificarPartido.UseVisualStyleBackColor = true;
             this.btModificarPartido.Click += new System.EventHandler(this.btModificarPartido_Click);
@@ -2107,7 +2219,7 @@ namespace Torneo_Guillermito
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(15, 283);
+            this.label31.Location = new System.Drawing.Point(14, 245);
             this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(49, 20);
@@ -2117,10 +2229,10 @@ namespace Torneo_Guillermito
             // tbHoraEncuentro2
             // 
             this.tbHoraEncuentro2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbHoraEncuentro2.Location = new System.Drawing.Point(65, 279);
+            this.tbHoraEncuentro2.Location = new System.Drawing.Point(64, 241);
             this.tbHoraEncuentro2.Name = "tbHoraEncuentro2";
-            this.tbHoraEncuentro2.Size = new System.Drawing.Size(64, 27);
-            this.tbHoraEncuentro2.TabIndex = 45;
+            this.tbHoraEncuentro2.Size = new System.Drawing.Size(100, 27);
+            this.tbHoraEncuentro2.TabIndex = 4;
             // 
             // label32
             // 
@@ -2162,17 +2274,18 @@ namespace Torneo_Guillermito
             this.fechaCalendario,
             this.hora_encuentro,
             this.url_transmicion,
-            this.url_imagenes});
+            this.url_imagenes,
+            this.estado});
             this.dgvEncuentros.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvEncuentros.Location = new System.Drawing.Point(203, 368);
+            this.dgvEncuentros.Location = new System.Drawing.Point(203, 406);
             this.dgvEncuentros.Name = "dgvEncuentros";
             this.dgvEncuentros.ReadOnly = true;
             this.dgvEncuentros.RowHeadersVisible = false;
             this.dgvEncuentros.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEncuentros.Size = new System.Drawing.Size(852, 490);
+            this.dgvEncuentros.Size = new System.Drawing.Size(852, 452);
             this.dgvEncuentros.TabIndex = 0;
+            this.dgvEncuentros.TabStop = false;
             this.dgvEncuentros.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEncuentros_CellClick);
-            this.dgvEncuentros.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEncuentros_CellContentClick);
             // 
             // id_partido
             // 
@@ -2280,9 +2393,16 @@ namespace Torneo_Guillermito
             this.url_imagenes.ReadOnly = true;
             this.url_imagenes.Visible = false;
             // 
+            // estado
+            // 
+            this.estado.HeaderText = "[ESTADO]";
+            this.estado.Name = "estado";
+            this.estado.ReadOnly = true;
+            // 
             // groupBox10
             // 
             this.groupBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
+            this.groupBox10.Controls.Add(this.checkFechaNuevoEncuentro);
             this.groupBox10.Controls.Add(this.datePickerEnc1);
             this.groupBox10.Controls.Add(this.label51);
             this.groupBox10.Controls.Add(this.tbDriveEncuentro1);
@@ -2312,19 +2432,31 @@ namespace Torneo_Guillermito
             this.groupBox10.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox10.Size = new System.Drawing.Size(453, 333);
+            this.groupBox10.Size = new System.Drawing.Size(453, 373);
             this.groupBox10.TabIndex = 44;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "NUEVO ENCUENTRO";
             this.groupBox10.Enter += new System.EventHandler(this.groupBox10_Enter);
             // 
+            // checkFechaNuevoEncuentro
+            // 
+            this.checkFechaNuevoEncuentro.AutoSize = true;
+            this.checkFechaNuevoEncuentro.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkFechaNuevoEncuentro.Location = new System.Drawing.Point(412, 159);
+            this.checkFechaNuevoEncuentro.Name = "checkFechaNuevoEncuentro";
+            this.checkFechaNuevoEncuentro.Size = new System.Drawing.Size(15, 14);
+            this.checkFechaNuevoEncuentro.TabIndex = 8;
+            this.checkFechaNuevoEncuentro.UseVisualStyleBackColor = true;
+            this.checkFechaNuevoEncuentro.CheckedChanged += new System.EventHandler(this.checkFechaNuevoEncuentro_CheckedChanged);
+            // 
             // datePickerEnc1
             // 
+            this.datePickerEnc1.Enabled = false;
             this.datePickerEnc1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datePickerEnc1.Location = new System.Drawing.Point(313, 157);
+            this.datePickerEnc1.Location = new System.Drawing.Point(282, 156);
             this.datePickerEnc1.Name = "datePickerEnc1";
-            this.datePickerEnc1.Size = new System.Drawing.Size(119, 21);
-            this.datePickerEnc1.TabIndex = 96;
+            this.datePickerEnc1.Size = new System.Drawing.Size(109, 21);
+            this.datePickerEnc1.TabIndex = 7;
             // 
             // label51
             // 
@@ -2343,7 +2475,7 @@ namespace Torneo_Guillermito
             this.tbDriveEncuentro1.Location = new System.Drawing.Point(96, 234);
             this.tbDriveEncuentro1.Name = "tbDriveEncuentro1";
             this.tbDriveEncuentro1.Size = new System.Drawing.Size(336, 27);
-            this.tbDriveEncuentro1.TabIndex = 70;
+            this.tbDriveEncuentro1.TabIndex = 10;
             // 
             // label50
             // 
@@ -2362,7 +2494,7 @@ namespace Torneo_Guillermito
             this.tbYoutubeEncuentro1.Location = new System.Drawing.Point(96, 194);
             this.tbYoutubeEncuentro1.Name = "tbYoutubeEncuentro1";
             this.tbYoutubeEncuentro1.Size = new System.Drawing.Size(336, 27);
-            this.tbYoutubeEncuentro1.TabIndex = 68;
+            this.tbYoutubeEncuentro1.TabIndex = 9;
             // 
             // comboIDvisita
             // 
@@ -2373,6 +2505,7 @@ namespace Torneo_Guillermito
             this.comboIDvisita.Name = "comboIDvisita";
             this.comboIDvisita.Size = new System.Drawing.Size(74, 28);
             this.comboIDvisita.TabIndex = 67;
+            this.comboIDvisita.Visible = false;
             // 
             // comboIDlocal
             // 
@@ -2383,6 +2516,7 @@ namespace Torneo_Guillermito
             this.comboIDlocal.Name = "comboIDlocal";
             this.comboIDlocal.Size = new System.Drawing.Size(74, 28);
             this.comboIDlocal.TabIndex = 66;
+            this.comboIDlocal.Visible = false;
             // 
             // comboFechaEncuentro1
             // 
@@ -2390,10 +2524,10 @@ namespace Torneo_Guillermito
             this.comboFechaEncuentro1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFechaEncuentro1.FormatString = "d";
             this.comboFechaEncuentro1.FormattingEnabled = true;
-            this.comboFechaEncuentro1.Location = new System.Drawing.Point(233, 152);
+            this.comboFechaEncuentro1.Location = new System.Drawing.Point(209, 152);
             this.comboFechaEncuentro1.Name = "comboFechaEncuentro1";
             this.comboFechaEncuentro1.Size = new System.Drawing.Size(59, 28);
-            this.comboFechaEncuentro1.TabIndex = 65;
+            this.comboFechaEncuentro1.TabIndex = 6;
             // 
             // label33
             // 
@@ -2414,7 +2548,7 @@ namespace Torneo_Guillermito
             this.btAgregarEncuentro.Location = new System.Drawing.Point(282, 281);
             this.btAgregarEncuentro.Name = "btAgregarEncuentro";
             this.btAgregarEncuentro.Size = new System.Drawing.Size(150, 40);
-            this.btAgregarEncuentro.TabIndex = 44;
+            this.btAgregarEncuentro.TabIndex = 11;
             this.btAgregarEncuentro.Text = "Agregar partido";
             this.btAgregarEncuentro.UseVisualStyleBackColor = true;
             this.btAgregarEncuentro.Click += new System.EventHandler(this.btAgregarEncuentro_Click);
@@ -2446,7 +2580,7 @@ namespace Torneo_Guillermito
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(173, 156);
+            this.label27.Location = new System.Drawing.Point(155, 156);
             this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(59, 20);
@@ -2470,7 +2604,7 @@ namespace Torneo_Guillermito
             this.tbHoraEncuentro1.Location = new System.Drawing.Point(97, 153);
             this.tbHoraEncuentro1.Name = "tbHoraEncuentro1";
             this.tbHoraEncuentro1.Size = new System.Drawing.Size(52, 27);
-            this.tbHoraEncuentro1.TabIndex = 45;
+            this.tbHoraEncuentro1.TabIndex = 5;
             // 
             // label25
             // 
@@ -2490,7 +2624,7 @@ namespace Torneo_Guillermito
             this.comboVisitaEncuentro1.Location = new System.Drawing.Point(96, 107);
             this.comboVisitaEncuentro1.Name = "comboVisitaEncuentro1";
             this.comboVisitaEncuentro1.Size = new System.Drawing.Size(336, 28);
-            this.comboVisitaEncuentro1.TabIndex = 42;
+            this.comboVisitaEncuentro1.TabIndex = 4;
             this.comboVisitaEncuentro1.SelectedIndexChanged += new System.EventHandler(this.comboVisitaEncuentro1_SelectedIndexChanged);
             // 
             // comboLocalEncuentro1
@@ -2501,7 +2635,7 @@ namespace Torneo_Guillermito
             this.comboLocalEncuentro1.Location = new System.Drawing.Point(96, 65);
             this.comboLocalEncuentro1.Name = "comboLocalEncuentro1";
             this.comboLocalEncuentro1.Size = new System.Drawing.Size(336, 28);
-            this.comboLocalEncuentro1.TabIndex = 41;
+            this.comboLocalEncuentro1.TabIndex = 3;
             this.comboLocalEncuentro1.SelectedIndexChanged += new System.EventHandler(this.comboLocalEncuentro1_SelectedIndexChanged);
             // 
             // label24
@@ -2545,7 +2679,7 @@ namespace Torneo_Guillermito
             this.comboZonaEncuentro.Location = new System.Drawing.Point(299, 25);
             this.comboZonaEncuentro.Name = "comboZonaEncuentro";
             this.comboZonaEncuentro.Size = new System.Drawing.Size(133, 28);
-            this.comboZonaEncuentro.TabIndex = 37;
+            this.comboZonaEncuentro.TabIndex = 2;
             this.comboZonaEncuentro.SelectedIndexChanged += new System.EventHandler(this.comboZonaEncuentro_SelectedIndexChanged);
             // 
             // label16
@@ -2567,13 +2701,12 @@ namespace Torneo_Guillermito
             this.comboCategoriaEncuentro.Location = new System.Drawing.Point(96, 25);
             this.comboCategoriaEncuentro.Name = "comboCategoriaEncuentro";
             this.comboCategoriaEncuentro.Size = new System.Drawing.Size(133, 28);
-            this.comboCategoriaEncuentro.TabIndex = 36;
+            this.comboCategoriaEncuentro.TabIndex = 1;
             this.comboCategoriaEncuentro.SelectedIndexChanged += new System.EventHandler(this.comboCategoriaEncuentro_SelectedIndexChanged);
             // 
             // gbCruces
             // 
             this.gbCruces.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(244)))));
-            this.gbCruces.Controls.Add(this.gbCruce);
             this.gbCruces.Controls.Add(this.dgvCruces);
             this.gbCruces.Controls.Add(this.comboCategoriaCruce);
             this.gbCruces.Controls.Add(this.label17);
@@ -2581,6 +2714,7 @@ namespace Torneo_Guillermito
             this.gbCruces.Controls.Add(this.pictureBox10);
             this.gbCruces.Controls.Add(this.button5);
             this.gbCruces.Controls.Add(this.button4);
+            this.gbCruces.Controls.Add(this.gbCruce);
             this.gbCruces.Location = new System.Drawing.Point(287, 38);
             this.gbCruces.Margin = new System.Windows.Forms.Padding(4);
             this.gbCruces.Name = "gbCruces";
@@ -2589,6 +2723,99 @@ namespace Torneo_Guillermito
             this.gbCruces.TabIndex = 31;
             this.gbCruces.TabStop = false;
             this.gbCruces.Visible = false;
+            // 
+            // dgvCruces
+            // 
+            this.dgvCruces.AllowUserToAddRows = false;
+            this.dgvCruces.AllowUserToDeleteRows = false;
+            this.dgvCruces.AllowUserToResizeColumns = false;
+            this.dgvCruces.AllowUserToResizeRows = false;
+            this.dgvCruces.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCruces.Location = new System.Drawing.Point(72, 827);
+            this.dgvCruces.Name = "dgvCruces";
+            this.dgvCruces.Size = new System.Drawing.Size(924, 51);
+            this.dgvCruces.TabIndex = 37;
+            this.dgvCruces.Visible = false;
+            // 
+            // comboCategoriaCruce
+            // 
+            this.comboCategoriaCruce.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboCategoriaCruce.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboCategoriaCruce.FormattingEnabled = true;
+            this.comboCategoriaCruce.Location = new System.Drawing.Point(181, 77);
+            this.comboCategoriaCruce.Name = "comboCategoriaCruce";
+            this.comboCategoriaCruce.Size = new System.Drawing.Size(167, 28);
+            this.comboCategoriaCruce.TabIndex = 35;
+            this.comboCategoriaCruce.SelectedIndexChanged += new System.EventHandler(this.comboCategoriaCruce_SelectedIndexChanged);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Khaki;
+            this.label17.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label17.Location = new System.Drawing.Point(86, 80);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(88, 20);
+            this.label17.TabIndex = 34;
+            this.label17.Text = "Categoría: ";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelNingunCruce
+            // 
+            this.labelNingunCruce.AutoSize = true;
+            this.labelNingunCruce.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
+            this.labelNingunCruce.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNingunCruce.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelNingunCruce.Location = new System.Drawing.Point(317, 412);
+            this.labelNingunCruce.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNingunCruce.Name = "labelNingunCruce";
+            this.labelNingunCruce.Size = new System.Drawing.Size(510, 25);
+            this.labelNingunCruce.TabIndex = 33;
+            this.labelNingunCruce.Text = "(No se ha generado ningun cruce para esta categoría)";
+            this.labelNingunCruce.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelNingunCruce.Visible = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
+            this.pictureBox10.Location = new System.Drawing.Point(69, 158);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(965, 577);
+            this.pictureBox10.TabIndex = 32;
+            this.pictureBox10.TabStop = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(754, 56);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(280, 64);
+            this.button5.TabIndex = 21;
+            this.button5.Text = "Generar Cruces";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(410, 56);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(280, 64);
+            this.button4.TabIndex = 20;
+            this.button4.Text = "Crear Plantilla";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // gbCruce
             // 
@@ -3448,99 +3675,6 @@ namespace Torneo_Guillermito
             this.label42.Text = "INSTANCIAS FINALES - COPA PLATA";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dgvCruces
-            // 
-            this.dgvCruces.AllowUserToAddRows = false;
-            this.dgvCruces.AllowUserToDeleteRows = false;
-            this.dgvCruces.AllowUserToResizeColumns = false;
-            this.dgvCruces.AllowUserToResizeRows = false;
-            this.dgvCruces.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCruces.Location = new System.Drawing.Point(72, 827);
-            this.dgvCruces.Name = "dgvCruces";
-            this.dgvCruces.Size = new System.Drawing.Size(924, 51);
-            this.dgvCruces.TabIndex = 37;
-            this.dgvCruces.Visible = false;
-            // 
-            // comboCategoriaCruce
-            // 
-            this.comboCategoriaCruce.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboCategoriaCruce.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboCategoriaCruce.FormattingEnabled = true;
-            this.comboCategoriaCruce.Location = new System.Drawing.Point(181, 77);
-            this.comboCategoriaCruce.Name = "comboCategoriaCruce";
-            this.comboCategoriaCruce.Size = new System.Drawing.Size(167, 28);
-            this.comboCategoriaCruce.TabIndex = 35;
-            this.comboCategoriaCruce.SelectedIndexChanged += new System.EventHandler(this.comboCategoriaCruce_SelectedIndexChanged);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Khaki;
-            this.label17.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label17.Location = new System.Drawing.Point(86, 80);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(88, 20);
-            this.label17.TabIndex = 34;
-            this.label17.Text = "Categoría: ";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelNingunCruce
-            // 
-            this.labelNingunCruce.AutoSize = true;
-            this.labelNingunCruce.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
-            this.labelNingunCruce.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNingunCruce.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelNingunCruce.Location = new System.Drawing.Point(317, 412);
-            this.labelNingunCruce.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelNingunCruce.Name = "labelNingunCruce";
-            this.labelNingunCruce.Size = new System.Drawing.Size(510, 25);
-            this.labelNingunCruce.TabIndex = 33;
-            this.labelNingunCruce.Text = "(No se ha generado ningun cruce para esta categoría)";
-            this.labelNingunCruce.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelNingunCruce.Visible = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
-            this.pictureBox10.Location = new System.Drawing.Point(69, 158);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(965, 577);
-            this.pictureBox10.TabIndex = 32;
-            this.pictureBox10.TabStop = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(754, 56);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(280, 64);
-            this.button5.TabIndex = 21;
-            this.button5.Text = "Generar Cruces";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(410, 56);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(280, 64);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "Crear Plantilla";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // dgvClub
             // 
             this.dgvClub.AllowUserToAddRows = false;
@@ -3641,14 +3775,14 @@ namespace Torneo_Guillermito
             this.tbNombreCortoClub1.Margin = new System.Windows.Forms.Padding(4);
             this.tbNombreCortoClub1.Name = "tbNombreCortoClub1";
             this.tbNombreCortoClub1.Size = new System.Drawing.Size(314, 27);
-            this.tbNombreCortoClub1.TabIndex = 21;
+            this.tbNombreCortoClub1.TabIndex = 2;
             this.tbNombreCortoClub1.TextChanged += new System.EventHandler(this.tbNombreCortoClub1_TextChanged);
             this.tbNombreCortoClub1.Enter += new System.EventHandler(this.tbNombreCortoClub1_Enter);
             this.tbNombreCortoClub1.Leave += new System.EventHandler(this.tbNombreCortoClub1_Leave);
             // 
             // pbCancha1
             // 
-            this.pbCancha1.Image = global::Torneo_Guillermito.Properties.Resources.nada;
+            this.pbCancha1.Image = global::LIPa.Properties.Resources.nada;
             this.pbCancha1.Location = new System.Drawing.Point(103, 115);
             this.pbCancha1.Margin = new System.Windows.Forms.Padding(4);
             this.pbCancha1.Name = "pbCancha1";
@@ -3679,7 +3813,7 @@ namespace Torneo_Guillermito
             this.tbNombreClub1.Margin = new System.Windows.Forms.Padding(4);
             this.tbNombreClub1.Name = "tbNombreClub1";
             this.tbNombreClub1.Size = new System.Drawing.Size(314, 27);
-            this.tbNombreClub1.TabIndex = 17;
+            this.tbNombreClub1.TabIndex = 1;
             this.tbNombreClub1.TextChanged += new System.EventHandler(this.tbNombreClub1_TextChanged);
             this.tbNombreClub1.Enter += new System.EventHandler(this.tbNombreClub1_Enter);
             this.tbNombreClub1.Leave += new System.EventHandler(this.tbNombreClub1_Leave);
@@ -3692,7 +3826,7 @@ namespace Torneo_Guillermito
             this.btLimpiarCanchas.Margin = new System.Windows.Forms.Padding(4);
             this.btLimpiarCanchas.Name = "btLimpiarCanchas";
             this.btLimpiarCanchas.Size = new System.Drawing.Size(150, 40);
-            this.btLimpiarCanchas.TabIndex = 20;
+            this.btLimpiarCanchas.TabIndex = 4;
             this.btLimpiarCanchas.Text = "Limpiar";
             this.btLimpiarCanchas.UseVisualStyleBackColor = true;
             this.btLimpiarCanchas.Click += new System.EventHandler(this.btLimpiarCanchas_Click_1);
@@ -3706,7 +3840,7 @@ namespace Torneo_Guillermito
             this.btAgregarCancha.Margin = new System.Windows.Forms.Padding(4);
             this.btAgregarCancha.Name = "btAgregarCancha";
             this.btAgregarCancha.Size = new System.Drawing.Size(150, 40);
-            this.btAgregarCancha.TabIndex = 14;
+            this.btAgregarCancha.TabIndex = 3;
             this.btAgregarCancha.Text = "Agregar club";
             this.btAgregarCancha.UseVisualStyleBackColor = false;
             this.btAgregarCancha.Click += new System.EventHandler(this.btAgregarCancha_Click);
@@ -3752,14 +3886,14 @@ namespace Torneo_Guillermito
             this.tbNombreCortoClub2.Margin = new System.Windows.Forms.Padding(4);
             this.tbNombreCortoClub2.Name = "tbNombreCortoClub2";
             this.tbNombreCortoClub2.Size = new System.Drawing.Size(310, 27);
-            this.tbNombreCortoClub2.TabIndex = 20;
+            this.tbNombreCortoClub2.TabIndex = 2;
             this.tbNombreCortoClub2.TextChanged += new System.EventHandler(this.tbNombreCortoClub2_TextChanged);
             this.tbNombreCortoClub2.Enter += new System.EventHandler(this.tbNombreCortoClub2_Enter);
             this.tbNombreCortoClub2.Leave += new System.EventHandler(this.tbNombreCortoClub2_Leave);
             // 
             // pbCancha2
             // 
-            this.pbCancha2.Image = global::Torneo_Guillermito.Properties.Resources.nada;
+            this.pbCancha2.Image = global::LIPa.Properties.Resources.nada;
             this.pbCancha2.Location = new System.Drawing.Point(103, 119);
             this.pbCancha2.Margin = new System.Windows.Forms.Padding(4);
             this.pbCancha2.Name = "pbCancha2";
@@ -3791,7 +3925,7 @@ namespace Torneo_Guillermito
             this.tbNombreClub2.Margin = new System.Windows.Forms.Padding(4);
             this.tbNombreClub2.Name = "tbNombreClub2";
             this.tbNombreClub2.Size = new System.Drawing.Size(310, 27);
-            this.tbNombreClub2.TabIndex = 17;
+            this.tbNombreClub2.TabIndex = 1;
             this.tbNombreClub2.TextChanged += new System.EventHandler(this.tbNombreClub2_TextChanged);
             this.tbNombreClub2.Enter += new System.EventHandler(this.tbNombreClub2_Enter);
             this.tbNombreClub2.Leave += new System.EventHandler(this.tbNombreClub2_Leave);
@@ -3806,7 +3940,7 @@ namespace Torneo_Guillermito
             this.btModificarClub.Margin = new System.Windows.Forms.Padding(4);
             this.btModificarClub.Name = "btModificarClub";
             this.btModificarClub.Size = new System.Drawing.Size(150, 40);
-            this.btModificarClub.TabIndex = 14;
+            this.btModificarClub.TabIndex = 3;
             this.btModificarClub.Text = "Modificar club";
             this.btModificarClub.UseVisualStyleBackColor = false;
             this.btModificarClub.Click += new System.EventHandler(this.btModificarClub_Click);
@@ -3820,7 +3954,7 @@ namespace Torneo_Guillermito
             this.btEliminarClub.Margin = new System.Windows.Forms.Padding(4);
             this.btEliminarClub.Name = "btEliminarClub";
             this.btEliminarClub.Size = new System.Drawing.Size(138, 44);
-            this.btEliminarClub.TabIndex = 30;
+            this.btEliminarClub.TabIndex = 2;
             this.btEliminarClub.Text = "Eliminar club";
             this.btEliminarClub.UseVisualStyleBackColor = false;
             this.btEliminarClub.Click += new System.EventHandler(this.btEliminarClub_Click);
@@ -3857,7 +3991,7 @@ namespace Torneo_Guillermito
             this.tbNombreClubFiltro.Margin = new System.Windows.Forms.Padding(4);
             this.tbNombreClubFiltro.Name = "tbNombreClubFiltro";
             this.tbNombreClubFiltro.Size = new System.Drawing.Size(342, 27);
-            this.tbNombreClubFiltro.TabIndex = 21;
+            this.tbNombreClubFiltro.TabIndex = 1;
             this.tbNombreClubFiltro.TextChanged += new System.EventHandler(this.tbNombreClubFiltro_TextChanged);
             // 
             // gbClubes
@@ -3883,7 +4017,7 @@ namespace Torneo_Guillermito
             // 
             // pbCancha2Control
             // 
-            this.pbCancha2Control.Image = global::Torneo_Guillermito.Properties.Resources.nada;
+            this.pbCancha2Control.Image = global::LIPa.Properties.Resources.nada;
             this.pbCancha2Control.Location = new System.Drawing.Point(566, 599);
             this.pbCancha2Control.Margin = new System.Windows.Forms.Padding(4);
             this.pbCancha2Control.Name = "pbCancha2Control";
@@ -3893,6 +4027,642 @@ namespace Torneo_Guillermito
             this.pbCancha2Control.TabStop = false;
             this.pbCancha2Control.Visible = false;
             // 
+            // pictureBox23
+            // 
+            this.pictureBox23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
+            this.pictureBox23.Image = global::LIPa.Properties.Resources.football_pitch;
+            this.pictureBox23.Location = new System.Drawing.Point(35, 652);
+            this.pictureBox23.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(47, 49);
+            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox23.TabIndex = 33;
+            this.pictureBox23.TabStop = false;
+            // 
+            // btJugadores
+            // 
+            this.btJugadores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(15)))), ((int)(((byte)(21)))));
+            this.btJugadores.FlatAppearance.BorderSize = 0;
+            this.btJugadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btJugadores.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btJugadores.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btJugadores.Location = new System.Drawing.Point(-1, 645);
+            this.btJugadores.Margin = new System.Windows.Forms.Padding(4);
+            this.btJugadores.Name = "btJugadores";
+            this.btJugadores.Size = new System.Drawing.Size(298, 64);
+            this.btJugadores.TabIndex = 5;
+            this.btJugadores.Text = "     Jugadores";
+            this.btJugadores.UseVisualStyleBackColor = false;
+            this.btJugadores.Click += new System.EventHandler(this.btJugadores_Click);
+            // 
+            // gbJugadores
+            // 
+            this.gbJugadores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(244)))));
+            this.gbJugadores.Controls.Add(this.groupBox6);
+            this.gbJugadores.Controls.Add(this.groupBox4);
+            this.gbJugadores.Controls.Add(this.groupBox5);
+            this.gbJugadores.Location = new System.Drawing.Point(283, 39);
+            this.gbJugadores.Margin = new System.Windows.Forms.Padding(4);
+            this.gbJugadores.Name = "gbJugadores";
+            this.gbJugadores.Padding = new System.Windows.Forms.Padding(4);
+            this.gbJugadores.Size = new System.Drawing.Size(1072, 878);
+            this.gbJugadores.TabIndex = 34;
+            this.gbJugadores.TabStop = false;
+            this.gbJugadores.Visible = false;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
+            this.groupBox6.Controls.Add(this.label61);
+            this.groupBox6.Controls.Add(this.tbEquipoJugador3);
+            this.groupBox6.Controls.Add(this.label5);
+            this.groupBox6.Controls.Add(this.dgvJugador2);
+            this.groupBox6.Controls.Add(this.tbNombreJugador3);
+            this.groupBox6.Controls.Add(this.btEliminarJugador);
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.Location = new System.Drawing.Point(623, 26);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox6.Size = new System.Drawing.Size(409, 539);
+            this.groupBox6.TabIndex = 45;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "JUGADORES CREADOS";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Location = new System.Drawing.Point(45, 86);
+            this.label61.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(114, 20);
+            this.label61.TabIndex = 43;
+            this.label61.Text = "Filtar por club:";
+            // 
+            // tbEquipoJugador3
+            // 
+            this.tbEquipoJugador3.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEquipoJugador3.Location = new System.Drawing.Point(167, 82);
+            this.tbEquipoJugador3.Margin = new System.Windows.Forms.Padding(4);
+            this.tbEquipoJugador3.Name = "tbEquipoJugador3";
+            this.tbEquipoJugador3.Size = new System.Drawing.Size(222, 27);
+            this.tbEquipoJugador3.TabIndex = 2;
+            this.tbEquipoJugador3.TextChanged += new System.EventHandler(this.tbEquipoJugador3_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(21, 39);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(141, 20);
+            this.label5.TabIndex = 37;
+            this.label5.Text = "Filtar por nombre:";
+            // 
+            // dgvJugador2
+            // 
+            this.dgvJugador2.AllowUserToAddRows = false;
+            this.dgvJugador2.AllowUserToDeleteRows = false;
+            this.dgvJugador2.AllowUserToResizeRows = false;
+            this.dgvJugador2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvJugador2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idEquipoCreado,
+            this.nombreEquipoCreado,
+            this.categoriaEquipoCreado,
+            this.zonaEquipo,
+            this.foto_jugador});
+            this.dgvJugador2.Location = new System.Drawing.Point(21, 140);
+            this.dgvJugador2.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvJugador2.MultiSelect = false;
+            this.dgvJugador2.Name = "dgvJugador2";
+            this.dgvJugador2.ReadOnly = true;
+            this.dgvJugador2.RowHeadersVisible = false;
+            this.dgvJugador2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvJugador2.Size = new System.Drawing.Size(368, 329);
+            this.dgvJugador2.TabIndex = 40;
+            this.dgvJugador2.TabStop = false;
+            this.dgvJugador2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvJugador2_CellClick);
+            // 
+            // idEquipoCreado
+            // 
+            dataGridViewCellStyle39.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.White;
+            this.idEquipoCreado.DefaultCellStyle = dataGridViewCellStyle39;
+            this.idEquipoCreado.HeaderText = "ID";
+            this.idEquipoCreado.Name = "idEquipoCreado";
+            this.idEquipoCreado.ReadOnly = true;
+            this.idEquipoCreado.Visible = false;
+            this.idEquipoCreado.Width = 40;
+            // 
+            // nombreEquipoCreado
+            // 
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreEquipoCreado.DefaultCellStyle = dataGridViewCellStyle40;
+            this.nombreEquipoCreado.HeaderText = "NOMBRE";
+            this.nombreEquipoCreado.Name = "nombreEquipoCreado";
+            this.nombreEquipoCreado.ReadOnly = true;
+            this.nombreEquipoCreado.Width = 200;
+            // 
+            // categoriaEquipoCreado
+            // 
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoriaEquipoCreado.DefaultCellStyle = dataGridViewCellStyle41;
+            this.categoriaEquipoCreado.HeaderText = "DORSAL";
+            this.categoriaEquipoCreado.Name = "categoriaEquipoCreado";
+            this.categoriaEquipoCreado.ReadOnly = true;
+            this.categoriaEquipoCreado.Width = 60;
+            // 
+            // zonaEquipo
+            // 
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zonaEquipo.DefaultCellStyle = dataGridViewCellStyle42;
+            this.zonaEquipo.HeaderText = "EQUIPO";
+            this.zonaEquipo.Name = "zonaEquipo";
+            this.zonaEquipo.ReadOnly = true;
+            this.zonaEquipo.Width = 200;
+            // 
+            // foto_jugador
+            // 
+            this.foto_jugador.HeaderText = "[FOTO_JUGADOR]";
+            this.foto_jugador.Name = "foto_jugador";
+            this.foto_jugador.ReadOnly = true;
+            // 
+            // tbNombreJugador3
+            // 
+            this.tbNombreJugador3.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNombreJugador3.Location = new System.Drawing.Point(167, 35);
+            this.tbNombreJugador3.Margin = new System.Windows.Forms.Padding(4);
+            this.tbNombreJugador3.Name = "tbNombreJugador3";
+            this.tbNombreJugador3.Size = new System.Drawing.Size(222, 27);
+            this.tbNombreJugador3.TabIndex = 1;
+            this.tbNombreJugador3.TextChanged += new System.EventHandler(this.tbNombreJugador3_TextChanged);
+            // 
+            // btEliminarJugador
+            // 
+            this.btEliminarJugador.BackColor = System.Drawing.Color.DarkRed;
+            this.btEliminarJugador.Enabled = false;
+            this.btEliminarJugador.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEliminarJugador.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btEliminarJugador.Location = new System.Drawing.Point(144, 484);
+            this.btEliminarJugador.Margin = new System.Windows.Forms.Padding(4);
+            this.btEliminarJugador.Name = "btEliminarJugador";
+            this.btEliminarJugador.Size = new System.Drawing.Size(150, 40);
+            this.btEliminarJugador.TabIndex = 3;
+            this.btEliminarJugador.Text = "Eliminar jugador";
+            this.btEliminarJugador.UseVisualStyleBackColor = false;
+            this.btEliminarJugador.Click += new System.EventHandler(this.btEliminarJugador_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
+            this.groupBox4.Controls.Add(this.btAgregarJugador);
+            this.groupBox4.Controls.Add(this.label65);
+            this.groupBox4.Controls.Add(this.label63);
+            this.groupBox4.Controls.Add(this.tbFiltrarEquipoJugador1);
+            this.groupBox4.Controls.Add(this.tbEquipoJugador1);
+            this.groupBox4.Controls.Add(this.pbJugador1);
+            this.groupBox4.Controls.Add(this.label64);
+            this.groupBox4.Controls.Add(this.label62);
+            this.groupBox4.Controls.Add(this.tbDNIJugador1);
+            this.groupBox4.Controls.Add(this.label6);
+            this.groupBox4.Controls.Add(this.tbDorsalJugador1);
+            this.groupBox4.Controls.Add(this.label60);
+            this.groupBox4.Controls.Add(this.tbNombreJugador1);
+            this.groupBox4.Controls.Add(this.dgvJugador1);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(40, 26);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Size = new System.Drawing.Size(566, 539);
+            this.groupBox4.TabIndex = 44;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "CREAR JUGADOR";
+            // 
+            // btAgregarJugador
+            // 
+            this.btAgregarJugador.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAgregarJugador.Location = new System.Drawing.Point(396, 484);
+            this.btAgregarJugador.Margin = new System.Windows.Forms.Padding(4);
+            this.btAgregarJugador.Name = "btAgregarJugador";
+            this.btAgregarJugador.Size = new System.Drawing.Size(150, 40);
+            this.btAgregarJugador.TabIndex = 6;
+            this.btAgregarJugador.Text = "Agregar jugador";
+            this.btAgregarJugador.UseVisualStyleBackColor = true;
+            this.btAgregarJugador.Click += new System.EventHandler(this.btAgregarJugador_Click);
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.Location = new System.Drawing.Point(76, 239);
+            this.label65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(49, 20);
+            this.label65.TabIndex = 45;
+            this.label65.Text = "Filtar:";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.Location = new System.Drawing.Point(65, 189);
+            this.label63.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(64, 20);
+            this.label63.TabIndex = 46;
+            this.label63.Text = "Equipo:";
+            // 
+            // tbFiltrarEquipoJugador1
+            // 
+            this.tbFiltrarEquipoJugador1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbFiltrarEquipoJugador1.Location = new System.Drawing.Point(131, 236);
+            this.tbFiltrarEquipoJugador1.Margin = new System.Windows.Forms.Padding(4);
+            this.tbFiltrarEquipoJugador1.Name = "tbFiltrarEquipoJugador1";
+            this.tbFiltrarEquipoJugador1.Size = new System.Drawing.Size(416, 27);
+            this.tbFiltrarEquipoJugador1.TabIndex = 5;
+            this.tbFiltrarEquipoJugador1.TextChanged += new System.EventHandler(this.tbFiltrarEquipoJugador1_TextChanged);
+            // 
+            // tbEquipoJugador1
+            // 
+            this.tbEquipoJugador1.Enabled = false;
+            this.tbEquipoJugador1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEquipoJugador1.Location = new System.Drawing.Point(132, 187);
+            this.tbEquipoJugador1.Margin = new System.Windows.Forms.Padding(4);
+            this.tbEquipoJugador1.Name = "tbEquipoJugador1";
+            this.tbEquipoJugador1.Size = new System.Drawing.Size(278, 27);
+            this.tbEquipoJugador1.TabIndex = 4;
+            // 
+            // pbJugador1
+            // 
+            this.pbJugador1.Image = global::LIPa.Properties.Resources.nada;
+            this.pbJugador1.Location = new System.Drawing.Point(417, 86);
+            this.pbJugador1.Name = "pbJugador1";
+            this.pbJugador1.Size = new System.Drawing.Size(129, 129);
+            this.pbJugador1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbJugador1.TabIndex = 44;
+            this.pbJugador1.TabStop = false;
+            this.pbJugador1.Click += new System.EventHandler(this.pbJugador1_Click);
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Location = new System.Drawing.Point(364, 139);
+            this.label64.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(47, 20);
+            this.label64.TabIndex = 43;
+            this.label64.Text = "Foto:";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(18, 94);
+            this.label62.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(114, 20);
+            this.label62.TabIndex = 41;
+            this.label62.Text = "DNI/N° carnet:";
+            // 
+            // tbDNIJugador1
+            // 
+            this.tbDNIJugador1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDNIJugador1.Location = new System.Drawing.Point(133, 91);
+            this.tbDNIJugador1.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDNIJugador1.Name = "tbDNIJugador1";
+            this.tbDNIJugador1.Size = new System.Drawing.Size(277, 27);
+            this.tbDNIJugador1.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(59, 142);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 20);
+            this.label6.TabIndex = 39;
+            this.label6.Text = "Dorsal: #";
+            // 
+            // tbDorsalJugador1
+            // 
+            this.tbDorsalJugador1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDorsalJugador1.Location = new System.Drawing.Point(133, 139);
+            this.tbDorsalJugador1.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDorsalJugador1.Name = "tbDorsalJugador1";
+            this.tbDorsalJugador1.Size = new System.Drawing.Size(52, 27);
+            this.tbDorsalJugador1.TabIndex = 3;
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.Location = new System.Drawing.Point(54, 43);
+            this.label60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(74, 20);
+            this.label60.TabIndex = 37;
+            this.label60.Text = "Nombre:";
+            // 
+            // tbNombreJugador1
+            // 
+            this.tbNombreJugador1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNombreJugador1.Location = new System.Drawing.Point(131, 40);
+            this.tbNombreJugador1.Margin = new System.Windows.Forms.Padding(4);
+            this.tbNombreJugador1.Name = "tbNombreJugador1";
+            this.tbNombreJugador1.Size = new System.Drawing.Size(416, 27);
+            this.tbNombreJugador1.TabIndex = 1;
+            // 
+            // dgvJugador1
+            // 
+            this.dgvJugador1.AllowUserToAddRows = false;
+            this.dgvJugador1.AllowUserToDeleteRows = false;
+            this.dgvJugador1.AllowUserToResizeRows = false;
+            this.dgvJugador1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvJugador1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idEquipo,
+            this.nombreClub,
+            this.division1});
+            this.dgvJugador1.Location = new System.Drawing.Point(34, 283);
+            this.dgvJugador1.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvJugador1.MultiSelect = false;
+            this.dgvJugador1.Name = "dgvJugador1";
+            this.dgvJugador1.ReadOnly = true;
+            this.dgvJugador1.RowHeadersVisible = false;
+            this.dgvJugador1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvJugador1.Size = new System.Drawing.Size(509, 185);
+            this.dgvJugador1.TabIndex = 28;
+            this.dgvJugador1.TabStop = false;
+            this.dgvJugador1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvJugador1_CellClick);
+            // 
+            // idEquipo
+            // 
+            dataGridViewCellStyle43.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle43.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle43.ForeColor = System.Drawing.Color.White;
+            this.idEquipo.DefaultCellStyle = dataGridViewCellStyle43;
+            this.idEquipo.HeaderText = "ID";
+            this.idEquipo.Name = "idEquipo";
+            this.idEquipo.ReadOnly = true;
+            this.idEquipo.Visible = false;
+            this.idEquipo.Width = 500;
+            // 
+            // nombreClub
+            // 
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreClub.DefaultCellStyle = dataGridViewCellStyle44;
+            this.nombreClub.HeaderText = "EQUIPO";
+            this.nombreClub.Name = "nombreClub";
+            this.nombreClub.ReadOnly = true;
+            this.nombreClub.Width = 350;
+            // 
+            // division1
+            // 
+            this.division1.HeaderText = "DIVISION";
+            this.division1.Name = "division1";
+            this.division1.ReadOnly = true;
+            this.division1.Width = 150;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
+            this.groupBox5.Controls.Add(this.cbCambiarEquipoJugador);
+            this.groupBox5.Controls.Add(this.pbJugador2Control);
+            this.groupBox5.Controls.Add(this.pbJugador2);
+            this.groupBox5.Controls.Add(this.label67);
+            this.groupBox5.Controls.Add(this.label9);
+            this.groupBox5.Controls.Add(this.label7);
+            this.groupBox5.Controls.Add(this.tbEquipoJugador2);
+            this.groupBox5.Controls.Add(this.label66);
+            this.groupBox5.Controls.Add(this.tbDNIJugador2);
+            this.groupBox5.Controls.Add(this.tbFiltroEquipoJugador2);
+            this.groupBox5.Controls.Add(this.label8);
+            this.groupBox5.Controls.Add(this.label10);
+            this.groupBox5.Controls.Add(this.tbDorsalJugador2);
+            this.groupBox5.Controls.Add(this.btModificarJugador);
+            this.groupBox5.Controls.Add(this.tbNombreJugador2);
+            this.groupBox5.Controls.Add(this.dgvJugador3);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(40, 577);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox5.Size = new System.Drawing.Size(993, 276);
+            this.groupBox5.TabIndex = 46;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "MODIFICAR JUGADOR";
+            // 
+            // cbCambiarEquipoJugador
+            // 
+            this.cbCambiarEquipoJugador.AutoSize = true;
+            this.cbCambiarEquipoJugador.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCambiarEquipoJugador.Location = new System.Drawing.Point(830, 22);
+            this.cbCambiarEquipoJugador.Name = "cbCambiarEquipoJugador";
+            this.cbCambiarEquipoJugador.Size = new System.Drawing.Size(151, 25);
+            this.cbCambiarEquipoJugador.TabIndex = 6;
+            this.cbCambiarEquipoJugador.Text = "Cambiar equipo";
+            this.cbCambiarEquipoJugador.UseVisualStyleBackColor = true;
+            this.cbCambiarEquipoJugador.CheckedChanged += new System.EventHandler(this.cbCambiarEquipoJugador_CheckedChanged);
+            // 
+            // pbJugador2Control
+            // 
+            this.pbJugador2Control.Location = new System.Drawing.Point(498, 58);
+            this.pbJugador2Control.Name = "pbJugador2Control";
+            this.pbJugador2Control.Size = new System.Drawing.Size(45, 38);
+            this.pbJugador2Control.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbJugador2Control.TabIndex = 51;
+            this.pbJugador2Control.TabStop = false;
+            this.pbJugador2Control.Visible = false;
+            // 
+            // pbJugador2
+            // 
+            this.pbJugador2.Location = new System.Drawing.Point(380, 84);
+            this.pbJugador2.Name = "pbJugador2";
+            this.pbJugador2.Size = new System.Drawing.Size(129, 129);
+            this.pbJugador2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbJugador2.TabIndex = 48;
+            this.pbJugador2.TabStop = false;
+            this.pbJugador2.Click += new System.EventHandler(this.pbJugador2_Click);
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(326, 138);
+            this.label67.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(47, 20);
+            this.label67.TabIndex = 47;
+            this.label67.Text = "Foto:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(64, 195);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 20);
+            this.label9.TabIndex = 48;
+            this.label9.Text = "Equipo:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(13, 84);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 20);
+            this.label7.TabIndex = 50;
+            this.label7.Text = "DNI/N° carnet:";
+            // 
+            // tbEquipoJugador2
+            // 
+            this.tbEquipoJugador2.Enabled = false;
+            this.tbEquipoJugador2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEquipoJugador2.Location = new System.Drawing.Point(131, 193);
+            this.tbEquipoJugador2.Margin = new System.Windows.Forms.Padding(4);
+            this.tbEquipoJugador2.Name = "tbEquipoJugador2";
+            this.tbEquipoJugador2.Size = new System.Drawing.Size(238, 27);
+            this.tbEquipoJugador2.TabIndex = 4;
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.Location = new System.Drawing.Point(529, 24);
+            this.label66.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(49, 20);
+            this.label66.TabIndex = 48;
+            this.label66.Text = "Filtar:";
+            // 
+            // tbDNIJugador2
+            // 
+            this.tbDNIJugador2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDNIJugador2.Location = new System.Drawing.Point(132, 81);
+            this.tbDNIJugador2.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDNIJugador2.Name = "tbDNIJugador2";
+            this.tbDNIJugador2.Size = new System.Drawing.Size(237, 27);
+            this.tbDNIJugador2.TabIndex = 2;
+            // 
+            // tbFiltroEquipoJugador2
+            // 
+            this.tbFiltroEquipoJugador2.Enabled = false;
+            this.tbFiltroEquipoJugador2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbFiltroEquipoJugador2.Location = new System.Drawing.Point(583, 21);
+            this.tbFiltroEquipoJugador2.Margin = new System.Windows.Forms.Padding(4);
+            this.tbFiltroEquipoJugador2.Name = "tbFiltroEquipoJugador2";
+            this.tbFiltroEquipoJugador2.Size = new System.Drawing.Size(234, 27);
+            this.tbFiltroEquipoJugador2.TabIndex = 5;
+            this.tbFiltroEquipoJugador2.TextChanged += new System.EventHandler(this.tbFiltroEquipoJugador2_TextChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(59, 138);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(73, 20);
+            this.label8.TabIndex = 48;
+            this.label8.Text = "Dorsal: #";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(54, 27);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(74, 20);
+            this.label10.TabIndex = 36;
+            this.label10.Text = "Nombre:";
+            // 
+            // tbDorsalJugador2
+            // 
+            this.tbDorsalJugador2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDorsalJugador2.Location = new System.Drawing.Point(133, 135);
+            this.tbDorsalJugador2.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDorsalJugador2.Name = "tbDorsalJugador2";
+            this.tbDorsalJugador2.Size = new System.Drawing.Size(52, 27);
+            this.tbDorsalJugador2.TabIndex = 3;
+            // 
+            // btModificarJugador
+            // 
+            this.btModificarJugador.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btModificarJugador.Location = new System.Drawing.Point(833, 226);
+            this.btModificarJugador.Margin = new System.Windows.Forms.Padding(4);
+            this.btModificarJugador.Name = "btModificarJugador";
+            this.btModificarJugador.Size = new System.Drawing.Size(150, 40);
+            this.btModificarJugador.TabIndex = 7;
+            this.btModificarJugador.Text = "Modificar jugador";
+            this.btModificarJugador.UseVisualStyleBackColor = true;
+            this.btModificarJugador.Click += new System.EventHandler(this.btModificarJugador_Click);
+            // 
+            // tbNombreJugador2
+            // 
+            this.tbNombreJugador2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNombreJugador2.Location = new System.Drawing.Point(133, 24);
+            this.tbNombreJugador2.Margin = new System.Windows.Forms.Padding(4);
+            this.tbNombreJugador2.Name = "tbNombreJugador2";
+            this.tbNombreJugador2.Size = new System.Drawing.Size(376, 27);
+            this.tbNombreJugador2.TabIndex = 1;
+            // 
+            // dgvJugador3
+            // 
+            this.dgvJugador3.AllowUserToAddRows = false;
+            this.dgvJugador3.AllowUserToDeleteRows = false;
+            this.dgvJugador3.AllowUserToResizeRows = false;
+            this.dgvJugador3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvJugador3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn44,
+            this.dataGridViewTextBoxColumn45,
+            this.division2});
+            this.dgvJugador3.Location = new System.Drawing.Point(530, 56);
+            this.dgvJugador3.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvJugador3.MultiSelect = false;
+            this.dgvJugador3.Name = "dgvJugador3";
+            this.dgvJugador3.ReadOnly = true;
+            this.dgvJugador3.RowHeadersVisible = false;
+            this.dgvJugador3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvJugador3.Size = new System.Drawing.Size(453, 164);
+            this.dgvJugador3.TabIndex = 47;
+            this.dgvJugador3.TabStop = false;
+            // 
+            // dataGridViewTextBoxColumn44
+            // 
+            dataGridViewCellStyle45.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle45.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle45.ForeColor = System.Drawing.Color.White;
+            this.dataGridViewTextBoxColumn44.DefaultCellStyle = dataGridViewCellStyle45;
+            this.dataGridViewTextBoxColumn44.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn44.Name = "dataGridViewTextBoxColumn44";
+            this.dataGridViewTextBoxColumn44.ReadOnly = true;
+            this.dataGridViewTextBoxColumn44.Visible = false;
+            this.dataGridViewTextBoxColumn44.Width = 40;
+            // 
+            // dataGridViewTextBoxColumn45
+            // 
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewTextBoxColumn45.DefaultCellStyle = dataGridViewCellStyle46;
+            this.dataGridViewTextBoxColumn45.HeaderText = "EQUIPO";
+            this.dataGridViewTextBoxColumn45.Name = "dataGridViewTextBoxColumn45";
+            this.dataGridViewTextBoxColumn45.ReadOnly = true;
+            this.dataGridViewTextBoxColumn45.Width = 300;
+            // 
+            // division2
+            // 
+            this.division2.HeaderText = "DIVISION";
+            this.division2.Name = "division2";
+            this.division2.ReadOnly = true;
+            this.division2.Width = 150;
+            // 
             // gbEncuentros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -3900,6 +4670,8 @@ namespace Torneo_Guillermito
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(1360, 922);
+            this.Controls.Add(this.pictureBox23);
+            this.Controls.Add(this.btJugadores);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox8);
@@ -3916,18 +4688,20 @@ namespace Torneo_Guillermito
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.gbJugadores);
+            this.Controls.Add(this.gbCanchas);
+            this.Controls.Add(this.gbCruces);
             this.Controls.Add(this.gbPartidos);
             this.Controls.Add(this.gbClubes);
             this.Controls.Add(this.gbCyZ);
             this.Controls.Add(this.gbEquipos);
-            this.Controls.Add(this.gbCanchas);
-            this.Controls.Add(this.gbCruces);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(1376, 961);
             this.Name = "gbEncuentros";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Torneo Guillermito";
+            this.Text = "Liga Infantil del Paraná";
             this.Load += new System.EventHandler(this.Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -3946,14 +4720,14 @@ namespace Torneo_Guillermito
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoria)).EndInit();
             this.gbEquipos.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEquipo2)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEquipo1)).EndInit();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox15.PerformLayout();
             this.gbCanchas.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCanchas)).EndInit();
@@ -3981,6 +4755,8 @@ namespace Torneo_Guillermito
             this.groupBox10.PerformLayout();
             this.gbCruces.ResumeLayout(false);
             this.gbCruces.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCruces)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.gbCruce.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv16vosPlata)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFinalesOro)).EndInit();
@@ -3990,8 +4766,6 @@ namespace Torneo_Guillermito
             ((System.ComponentModel.ISupportInitialize)(this.dgv16vosOro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv8vosOro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFinalesPlata)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCruces)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClub)).EndInit();
             this.gbAgregarClub.ResumeLayout(false);
             this.gbAgregarClub.PerformLayout();
@@ -4002,6 +4776,20 @@ namespace Torneo_Guillermito
             this.gbClubes.ResumeLayout(false);
             this.gbClubes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCancha2Control)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            this.gbJugadores.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJugador2)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJugador1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJugador1)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJugador2Control)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJugador2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJugador3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4039,21 +4827,6 @@ namespace Torneo_Guillermito
         private System.Windows.Forms.Button btAgregarCategoria;
         private System.Windows.Forms.DataGridView dgvCategoria;
         private System.Windows.Forms.GroupBox gbEquipos;
-        private System.Windows.Forms.Button btEliminarEquipo;
-        private System.Windows.Forms.DataGridView dgvEquipo2;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView dgvEquipo1;
-        private System.Windows.Forms.TextBox tbEquipos1;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button btEquipos1;
-        private System.Windows.Forms.TextBox tbEquipos2;
-        private System.Windows.Forms.ComboBox comboEquipo1;
-        private System.Windows.Forms.ComboBox comboEquipo2;
         private System.Windows.Forms.GroupBox gbCanchas;
         private System.Windows.Forms.Button btEliminarCancha;
         private System.Windows.Forms.DataGridView dgvCanchas;
@@ -4076,9 +4849,6 @@ namespace Torneo_Guillermito
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.DataGridView dgvClub;
         private System.Windows.Forms.GroupBox gbAgregarClub;
@@ -4165,9 +4935,6 @@ namespace Torneo_Guillermito
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_partido_cruce_7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idEquipo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreClub;
-        private System.Windows.Forms.DataGridViewTextBoxColumn escudoClub;
         private System.Windows.Forms.DataGridViewTextBoxColumn nroCancha;
         private System.Windows.Forms.DataGridViewTextBoxColumn latitud;
         private System.Windows.Forms.DataGridViewTextBoxColumn longitud;
@@ -4246,26 +5013,21 @@ namespace Torneo_Guillermito
         private System.Windows.Forms.DataGridViewTextBoxColumn zona;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDivision;
         private System.Windows.Forms.DataGridViewTextBoxColumn asd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idEquipoCreado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreEquipoCreado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn categoriaEquipoCreado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zonaEquipo;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.TextBox tbDriveEncuentro1;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.TextBox tbYoutubeEncuentro1;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox tbRojasVisita;
+        private System.Windows.Forms.TextBox tbRojasLocal;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox tbAmarillasVisita;
+        private System.Windows.Forms.TextBox tbAmarillasLocal;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.TextBox tbDriveEncuentro2;
         private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.TextBox tbYoutubeEncuentro2;
         private System.Windows.Forms.DateTimePicker datePickerEn2;
         private System.Windows.Forms.DateTimePicker datePickerEnc1;
         private System.Windows.Forms.PictureBox pictureBox20;
@@ -4278,6 +5040,88 @@ namespace Torneo_Guillermito
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox23;
+        private System.Windows.Forms.Button btJugadores;
+        private System.Windows.Forms.GroupBox gbJugadores;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.DataGridView dgvEquipo2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn38;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn39;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn40;
+        private System.Windows.Forms.TextBox tbEquipos3;
+        private System.Windows.Forms.Button btEliminarEquipo;
+        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.DataGridView dgvEquipo1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn41;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn42;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn43;
+        private System.Windows.Forms.TextBox tbEquipos1;
+        private System.Windows.Forms.GroupBox groupBox15;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Button btEquipos1;
+        private System.Windows.Forms.TextBox tbEquipos2;
+        private System.Windows.Forms.ComboBox comboEquipo1;
+        private System.Windows.Forms.ComboBox comboEquipo2;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.TextBox tbEquipoJugador3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dgvJugador2;
+        private System.Windows.Forms.TextBox tbNombreJugador3;
+        private System.Windows.Forms.Button btEliminarJugador;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button btAgregarJugador;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.TextBox tbFiltrarEquipoJugador1;
+        private System.Windows.Forms.TextBox tbEquipoJugador1;
+        private System.Windows.Forms.PictureBox pbJugador1;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.TextBox tbDNIJugador1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tbDorsalJugador1;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.TextBox tbNombreJugador1;
+        private System.Windows.Forms.DataGridView dgvJugador1;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.PictureBox pbJugador2;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox tbEquipoJugador2;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.TextBox tbDNIJugador2;
+        private System.Windows.Forms.TextBox tbFiltroEquipoJugador2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox tbDorsalJugador2;
+        private System.Windows.Forms.Button btModificarJugador;
+        private System.Windows.Forms.TextBox tbNombreJugador2;
+        private System.Windows.Forms.DataGridView dgvJugador3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idEquipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreClub;
+        private System.Windows.Forms.DataGridViewTextBoxColumn division1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn44;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn45;
+        private System.Windows.Forms.DataGridViewTextBoxColumn division2;
+        private System.Windows.Forms.PictureBox pbJugador2Control;
+        private System.Windows.Forms.CheckBox cbCambiarEquipoJugador;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idEquipoCreado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreEquipoCreado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoriaEquipoCreado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zonaEquipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn foto_jugador;
+        private System.Windows.Forms.CheckBox checkFechaEncuentro;
+        private System.Windows.Forms.TextBox tbYoutubeEncuentro2;
+        private System.Windows.Forms.CheckBox checkFechaNuevoEncuentro;
+        private System.Windows.Forms.CheckBox checkPartidoTerminado;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_partido;
         private System.Windows.Forms.DataGridViewTextBoxColumn local;
         private System.Windows.Forms.DataGridViewTextBoxColumn gl;
@@ -4290,6 +5134,7 @@ namespace Torneo_Guillermito
         private System.Windows.Forms.DataGridViewTextBoxColumn hora_encuentro;
         private System.Windows.Forms.DataGridViewTextBoxColumn url_transmicion;
         private System.Windows.Forms.DataGridViewTextBoxColumn url_imagenes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estado;
     }
 }
 

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Torneo_Guillermito
+namespace LIPa
 {
     public partial class AddStat : Form
     {
@@ -16,11 +16,81 @@ namespace Torneo_Guillermito
         public string id_partido = string.Empty;
         Querys q = new Querys();
         DataTable dt1, dt2 = new DataTable();
-        public AddStat(string id_partido, string value)
+        Action refresh;
+        TextBox gl, gv, yl, yv, rl, rv;
+
+        private void checkEncuentroComenzado_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void checkEncuentroComenzado_Click(object sender, EventArgs e)
+        {
+            if (checkEncuentroComenzado.Checked == true)
+            {
+                if (MessageBox.Show("¿Está seguro que desea comenzar el partido?", "LIPa", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    Querys q = new Querys();
+                    q.ComenzarEncuentro(id_partido);
+                    menuPrincipal.refreshEncuentros(true);
+                }
+                else
+                {
+                    checkEncuentroComenzado.Checked = false;
+                }
+            }
+            else if(checkEncuentroComenzado.Checked == false)
+            {
+                if (MessageBox.Show("Si lo desactiva, borrará todas las acciones relacionadas a este partido, ¿está seguro?", "LIPa", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    Querys q = new Querys();
+                    q.ReiniciarEncuentro(id_partido);
+                    menuPrincipal.refreshEncuentros(false);
+
+                    dt2 = q.LlenarTablaStats(id_partido, value);
+                    dgvAcciones.Rows.Clear();
+
+                    foreach (DataRow row in dt2.Rows)
+                    {
+                        dgvAcciones.Rows.Add(new string[]
+                        {
+                    row[0].ToString(), //ID partido
+                    row[1].ToString(), //ID jugador
+                    row[2].ToString(), //Nombre Completo
+                    row[3].ToString(), //Dorsal
+
+                        });
+                    }
+
+                }
+                else
+                {
+                    checkEncuentroComenzado.Checked = true;
+                }
+            }
+        }
+
+        private gbEncuentros menuPrincipal;
+        public AddStat(string id_partido, string value, Action refresh, TextBox glocal, TextBox gvisit, TextBox ylocal, TextBox yvisit, TextBox rlocal, TextBox rvisit)
         {
             this.value = value;
             this.id_partido = id_partido;
+            this.refresh = refresh;
+            this.gl = glocal;
+            this.gv = gvisit;
+            this.yl = ylocal;
+            yv = yvisit;
+            rl = rlocal;
+            rv = rvisit;
             InitializeComponent();
+        }
+        public AddStat(string id_partido, string value, gbEncuentros menu, bool comenzado)
+        {
+            this.value = value;
+            this.id_partido = id_partido;
+            this.menuPrincipal = menu;
+            InitializeComponent();
+            this.checkEncuentroComenzado.Checked = comenzado;
         }
 
         private void AddStat_Load(object sender, EventArgs e)
@@ -129,6 +199,11 @@ namespace Torneo_Guillermito
 
             if (dgvJugadoresPartido.SelectedRows.Count != 0)
             {
+                if (checkEncuentroComenzado.Checked == false)
+                {
+                    MessageBox.Show("Para añadir una acción, debe tener el partido comenzado", "LIPa", MessageBoxButtons.OK);
+                    return;
+                }
                 string id_jugador = dgvJugadoresPartido.SelectedRows[0].Cells[0].Value.ToString();
                 q.InsertarAccion(id_partido, id_jugador, value);
 
@@ -146,6 +221,8 @@ namespace Torneo_Guillermito
 
                     });
                 }
+                menuPrincipal.refreshEncuentros(false);
+                
             }
         }
 
@@ -177,6 +254,7 @@ namespace Torneo_Guillermito
                     }
 
                 }
+                menuPrincipal.refreshEncuentros(false);
             }
         }
     }

@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Torneo_Guillermito
+namespace LIPa
 {
     public partial class GenerarCruce : Form
     {
@@ -292,24 +292,24 @@ namespace Torneo_Guillermito
             Querys q = new Querys();
             if (modificado)
             {
-                if (MessageBox.Show("Se han realizado modificaciones manuales en las posiciones de los equipos, ¿desea continuar de igual forma?", "Torneo Guillermito", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Se han realizado modificaciones manuales en las posiciones de los equipos, ¿desea continuar de igual forma?", "Liga Infantil del Paraná", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     foreach (DataGridViewRow row in dgvTabla.Rows)
                     {
                         q.rellenarCruce(row.Cells[9].Value.ToString(), parametro, row.Cells[0].Value.ToString());
                     }
-                    MessageBox.Show("Se han generado los cruces de forma correcta, puede salir para ver los cruces en la ventana anterio.", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Se han generado los cruces de forma correcta, puede salir para ver los cruces en la ventana anterio.", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else
             {
-                if (MessageBox.Show("¿Está seguro que desea crear los cruces?", "Torneo Guillermito", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("¿Está seguro que desea crear los cruces?", "Liga Infantil del Paraná", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     foreach (DataGridViewRow row in dgvTabla.Rows)
                     {
                         q.rellenarCruce(row.Cells[9].Value.ToString(), parametro, row.Cells[0].Value.ToString());
                     }
-                    MessageBox.Show("Se han generado los cruces de forma correcta, puede salir para ver los cruces en la ventana anterio.", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Se han generado los cruces de forma correcta, puede salir para ver los cruces en la ventana anterio.", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }

@@ -19,14 +19,15 @@ using System.Text;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Torneo_Guillermito.Properties;
+using LIPa.Properties;
 using System.Drawing.Imaging;
 using System.Net.Sockets;
 using System.Drawing.Printing;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Diagnostics.Eventing.Reader;
+using Google.Protobuf.WellKnownTypes;
 
-namespace Torneo_Guillermito
+namespace LIPa
 {
 
 
@@ -37,6 +38,10 @@ namespace Torneo_Guillermito
         private DataTable dtFiltro;
         private DataTable dtFiltro2; //solo para el de equipos por ahora, que tiene dos datagrid al mismo tiempo
         private String conexionFoto;
+        private String partidoSeleccionado;
+        private bool comenzado;
+        Querys q = new Querys();
+        
 
 
         public gbEncuentros()
@@ -53,21 +58,21 @@ namespace Torneo_Guillermito
             Screen screen = Screen.PrimaryScreen;
 
             //MessageBox.Show((screen.Bounds.Width * 9 / 10).ToString() + " " + screen.Bounds.Height.ToString());
-            if (screen.Bounds.Width * 9 / 10 < 1376)
+            if (screen.Bounds.Width * 9 / 10 < 1400)
             {
                 this.Width = screen.Bounds.Width * 9 / 10;
             }
             else
             {
-                this.Width = 1376;
+                this.Width = 1399;
             }
-            if (screen.Bounds.Height * 9 / 10 < 961)
+            if (screen.Bounds.Height * 9 / 10 < 990)
             {
                 this.Height = screen.Bounds.Height * 9 / 10;
             }
             else
             {
-                this.Height = 961;
+                this.Height = 980;
             }
 
             gbCanchas.Visible = true;
@@ -91,7 +96,7 @@ namespace Torneo_Guillermito
             }
             catch (Exception ef)
             {
-                MessageBox.Show(ef.Message);
+                MessageBox.Show("Errror al leer el archivo de conexion para las fotos: "+ ef.Message, "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
             //Querys q = new Querys();
@@ -240,7 +245,7 @@ namespace Torneo_Guillermito
                     printDoc.Print();
                 }
             }else
-                MessageBox.Show("Seleccione partidos para imprimir", "Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Seleccione partidos para imprimir", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
 
@@ -277,7 +282,7 @@ namespace Torneo_Guillermito
                 }
                 else
                 {
-                    MessageBox.Show("Error al subir la imagen al servidor", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error al subir la imagen al servidor, intente modificar el club, caso contrario comuuniquese con el administrador", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -315,11 +320,85 @@ namespace Torneo_Guillermito
                 }
                 else
                 {
-                    MessageBox.Show("Error al subir la imagen al servidor", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error al subir la imagen al servidor, intente modificar el club, caso contrario comuuniquese con el administrador", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
 
+        private async void subirFotoAgregarJugador(string nombre)
+        {
+            string serverUrl = conexionFoto + "jugadores/imagen.php"; // Reemplaza con la URL de tu API
+            string fieldName = "archivo"; // Nombre del campo de entrada del archivo en el formulario HTML
+
+            System.Drawing.Image image = pbJugador1.Image;
+            byte[] fileBytes;
+            // Crea un objeto MemoryStream para almacenar los bytes de la imagen
+            using (MemoryStream stream = new MemoryStream())
+            {
+                // Convierte la imagen en formato PNG y guárdala en el MemoryStream
+                image.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+
+                // Obtiene los bytes de la imagen
+                fileBytes = stream.ToArray();
+
+                // Ahora, 'fileBytes' contiene la imagen en formato PNG en forma de arreglo de bytes
+            }
+            using (HttpClient client = new HttpClient())
+            using (var content = new MultipartFormDataContent())
+            {
+                var fileContent = new ByteArrayContent(fileBytes);
+
+                content.Add(fileContent, fieldName, nombre);
+
+                var response = await client.PostAsync(serverUrl, content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    //MessageBox.Show("Archivo cargado con éxito.");
+                }
+                else
+                {
+                    MessageBox.Show("Error al subir la imagen al servidor, intente modificar el jugador, caso contrario comuuniquese con el administrador", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+        private async void subirFotoModificarJugador(string nombre)
+        {
+            string serverUrl = conexionFoto + "jugadores/imagen.php"; // Reemplaza con la URL de tu API
+            string fieldName = "archivo"; // Nombre del campo de entrada del archivo en el formulario HTML
+
+            System.Drawing.Image image = pbJugador2.Image;
+            byte[] fileBytes;
+            // Crea un objeto MemoryStream para almacenar los bytes de la imagen
+            using (MemoryStream stream = new MemoryStream())
+            {
+                // Convierte la imagen en formato PNG y guárdala en el MemoryStream
+                image.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+
+                // Obtiene los bytes de la imagen
+                fileBytes = stream.ToArray();
+
+                // Ahora, 'fileBytes' contiene la imagen en formato PNG en forma de arreglo de bytes
+            }
+            using (HttpClient client = new HttpClient())
+            using (var content = new MultipartFormDataContent())
+            {
+                var fileContent = new ByteArrayContent(fileBytes);
+
+                content.Add(fileContent, fieldName, nombre);
+
+                var response = await client.PostAsync(serverUrl, content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    //MessageBox.Show("Archivo cargado con éxito.");
+                }
+                else
+                {
+                    MessageBox.Show("Error al subir la imagen al servidor, intente modificar el jugador, caso contrario comuuniquese con el administrador", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
         private void gbEquipos_Enter(object sender, EventArgs e)
         {
 
@@ -352,9 +431,8 @@ namespace Torneo_Guillermito
             gbEquipos.Visible = false;
             gbPartidos.Visible = false;
             gbCruces.Visible = false;
+            gbJugadores.Visible = false;
             //
-
-            Querys q = new Querys();
 
             dtFiltro = q.LlenarTablaClub();
 
@@ -378,8 +456,8 @@ namespace Torneo_Guillermito
             gbEquipos.Visible = false;
             gbPartidos.Visible = false;
             gbCruces.Visible = false;
+            gbJugadores.Visible=false;
 
-            Querys q = new Querys();
             List<string> zonas = new List<string> { "General", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q" };
             List<String> categorias2 = new List<String>();
             categorias2.Clear();
@@ -422,12 +500,12 @@ namespace Torneo_Guillermito
             gbEquipos.Visible = true;
             gbPartidos.Visible = false;
             gbCruces.Visible = false;
+            gbJugadores.Visible = false;
 
             tbEquipos1.Text = "";
-            textBox2.Text = "";
+            tbNombreJugador3.Text = "";
 
 
-            Querys q = new Querys();
             DataTable dt = new DataTable();
 
             comboEquipo1.Items.Clear();
@@ -467,8 +545,8 @@ namespace Torneo_Guillermito
             gbEquipos.Visible = false;
             gbPartidos.Visible = false;
             gbCruces.Visible = false;
+            gbJugadores.Visible = false;
 
-            Querys q = new Querys();
             //dtFiltro = q.LlenarTablaCanchas();
 
             dgvCanchas.Rows.Clear();
@@ -483,6 +561,34 @@ namespace Torneo_Guillermito
         {
             btCanchas_Click(null, null);
         }
+        private void limpiarFichaEncuentros()
+        {
+            tbLocalEncuentro2.Text = string.Empty;
+            tbVisitaEncuentro2.Text = string.Empty;
+            tbGolesLocal.Text = string.Empty;
+            tbGolesVisita.Text = string.Empty;
+            tbAmarillasLocal.Text = string.Empty;
+            tbAmarillasVisita.Text = string.Empty;
+            tbRojasLocal.Text = string.Empty;
+            tbRojasVisita.Text = string.Empty;
+            tbYoutubeEncuentro2.Text = string.Empty;
+            tbDriveEncuentro2.Text = string.Empty;
+            comboFechaEncuentro2.Text = string.Empty;
+            tbHoraEncuentro2.Text = string.Empty;
+            datePickerEn2.Text = string.Empty;
+            checkFechaEncuentro.Checked = false;
+            datePickerEn2.Enabled = false;
+            checkFechaNuevoEncuentro.Checked = false;
+            datePickerEnc1.Enabled = false;
+
+            comboCategoriaEncuentro.Text = string.Empty;
+            comboLocalEncuentro1.Text = string.Empty;
+            comboVisitaEncuentro1.Text = string.Empty;
+            tbHoraEncuentro1.Text = string.Empty;
+            comboFechaEncuentro1.Text = string.Empty;
+            tbDriveEncuentro1.Text = string.Empty;
+            tbYoutubeEncuentro1.Text = string.Empty;
+        }
 
         private void btEncuentros_Click(object sender, EventArgs e)
         {
@@ -492,14 +598,15 @@ namespace Torneo_Guillermito
             gbEquipos.Visible = false;
             gbPartidos.Visible = true;
             gbCruces.Visible = false;
+            gbJugadores.Visible=false;
 
+            limpiarFichaEncuentros();
             comboFiltroEncuentros1.Items.Clear();
             comboFiltroEncuentros3.Items.Clear();
 
             List<String> list = new List<String>();
-            Querys query = new Querys();
 
-            dtFiltro = query.LlenarTablaCategoria();
+            dtFiltro = q.LlenarTablaCategoria();
 
             comboCategoriaEncuentro.Items.Clear();
             foreach (DataRow row in dtFiltro.Rows)
@@ -522,7 +629,7 @@ namespace Torneo_Guillermito
             */
             //comboCanchaEncuentro2.SelectedItem = null;
 
-            dtFiltro = query.LlenarTablaFechas();
+            dtFiltro = q.LlenarTablaFechas();
 
             comboFechaEncuentro1.Items.Clear();
             comboFechaEncuentro2.Items.Clear();
@@ -536,7 +643,7 @@ namespace Torneo_Guillermito
             
             comboFechaEncuentro2.SelectedItem = null;
 
-            dtFiltro = query.LlenarTablaEncuentro("WHERE en.tipo = 1");
+            dtFiltro = q.LlenarTablaEncuentro("WHERE en.tipo = 1");
             dgvEncuentros.Rows.Clear();
             foreach (DataRow row in dtFiltro.Rows)
             {
@@ -553,6 +660,7 @@ namespace Torneo_Guillermito
                     row[8].ToString(), // Hora
                      row[9].ToString(), // Youtube
                     row[10].ToString(), // Imagenes
+                    row[11].ToString() //terminado
                 });
             }
 
@@ -610,8 +718,6 @@ namespace Torneo_Guillermito
                 if (!imageBytes1.SequenceEqual(imageBytes2))
                 {
                     string nombreArchivo = DateTime.Now.ToString("yyyyMMddHHmmss") + ".png";
-
-                    Querys q = new Querys();
                     q.InsertarClub(tbNombreClub1.Text, tbNombreCortoClub1.Text, nombreArchivo);
 
                     FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
@@ -635,11 +741,10 @@ namespace Torneo_Guillermito
                 }
                 else
                 {
-                    if (MessageBox.Show("No ha insertado una foto para el escudo, ¿Desea agregar el club sin escudo? Se pondra un escudo por defecto", "Torneo Guillermito", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show("No ha insertado una foto para el escudo, ¿Desea agregar el club sin escudo? Se pondra un escudo por defecto", "Liga Infantil del Paraná", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         string nombreArchivo = "0.png";
 
-                        Querys q = new Querys();
                         q.InsertarClub(tbNombreClub1.Text, tbNombreCortoClub1.Text, nombreArchivo);
 
 
@@ -664,7 +769,7 @@ namespace Torneo_Guillermito
             }
             else
             {
-                MessageBox.Show("Debe completar todos los datos obligatorios para insertar un club", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Debe completar todos los datos obligatorios para insertar un club", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -674,9 +779,8 @@ namespace Torneo_Guillermito
 
         private void btEliminarClub_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Está seguro que desea eliminar el club seleccionado?", "Torneo Guillermito", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("¿Está seguro que desea eliminar el club seleccionado?", "Liga Infantil del Paraná", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                Querys q = new Querys();
                 q.EliminarClub(dgvClub.SelectedRows[0].Cells[0].Value.ToString());
 
                 tbNombreClub2.Text = "";
@@ -813,7 +917,7 @@ namespace Torneo_Guillermito
 
             if (!string.IsNullOrEmpty(busqueda))
             {
-                var filasCoincidentes = dtFiltro.AsEnumerable().Where(row => row.Field<string>(1).Contains(busqueda)).ToList();
+                var filasCoincidentes = dtFiltro.AsEnumerable().Where(row => row.Field<string>(1).ToUpper().Contains(busqueda)).ToList();
 
                 if (filasCoincidentes.Count > 0)
                 {
@@ -822,7 +926,7 @@ namespace Torneo_Guillermito
                     dgvClub.Rows.Clear();
                     foreach (DataRow row in filasFiltradas.Rows)
                     {
-                        dgvClub.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString() });
+                        dgvClub.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString() });
                     }
 
                 }
@@ -836,7 +940,7 @@ namespace Torneo_Guillermito
                 dgvClub.Rows.Clear();
                 foreach (DataRow row in dtFiltro.Rows)
                 {
-                    dgvClub.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString() });
+                    dgvClub.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString() });
                 }
             }
         }
@@ -874,7 +978,7 @@ namespace Torneo_Guillermito
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error al descargar la imagen: " + ex.Message);
+                    MessageBox.Show("Error al descargar la imagen: " + ex.Message, "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -918,9 +1022,8 @@ namespace Torneo_Guillermito
 
         private void btEliminarCategoria_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Está seguro que desea eliminar la categoría seleccionada?", "Torneo Guillermito", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("¿Está seguro que desea eliminar la categoría seleccionada?", "Liga Infantil del Paraná", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                Querys q = new Querys();
                 q.EliminarCategoria(dgvCategoria.SelectedRows[0].Cells[0].Value.ToString());
                 tbModificarCategoria.Text = "";
 
@@ -956,9 +1059,8 @@ namespace Torneo_Guillermito
 
         private void btEliminarZona_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Está seguro que desea eliminar la zona seleccionada?", "Torneo Guillermito", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("¿Está seguro que desea eliminar la zona seleccionada?", "Liga Infantil del Paraná", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                Querys q = new Querys();
                 q.EliminarZona(dgvZona.SelectedRows[0].Cells[0].Value.ToString());
 
                 dtFiltro = q.LlenarTablaZona();
@@ -975,7 +1077,6 @@ namespace Torneo_Guillermito
         {
             if (tbAgregarCategoria.Text != "")
             {
-                Querys q = new Querys();
                 q.InsertarCategoria(tbAgregarCategoria.Text);
                 tbAgregarCategoria.Text = "";
 
@@ -1010,13 +1111,12 @@ namespace Torneo_Guillermito
             }
             else
             {
-                MessageBox.Show("Error al insertar la categoría, verifique que los datos esten completos y correctos.", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error al insertar la categoría, verifique que los datos esten completos y correctos.", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void btAgregarZona_Click(object sender, EventArgs e)
         {
-            Querys q = new Querys();
             q.InsertarZona(comboZona1.SelectedItem.ToString(), comboZona2.SelectedItem.ToString());
 
             dtFiltro = q.LlenarTablaZona();
@@ -1030,11 +1130,10 @@ namespace Torneo_Guillermito
 
         private void btModificarCategoria_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Está seguro que desea modificar la categoria seleccionada?", "Toreno Guillermito", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("¿Está seguro que desea modificar la categoria seleccionada?", "Liga Infantil del Paraná", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 if (tbModificarCategoria.Text != "")
                 {
-                    Querys q = new Querys();
                     q.actualizarCategoria(tbModificarCategoria.Text, dgvCategoria.SelectedRows[0].Cells[0].Value.ToString());
                     DataTable dt = q.LlenarTablaCategoria();
 
@@ -1088,7 +1187,7 @@ namespace Torneo_Guillermito
             string busqueda = tbEquipos1.Text.ToUpper();
             if (!string.IsNullOrEmpty(busqueda))
             {
-                var filasCoincidentes = dtFiltro.AsEnumerable().Where(row => row.Field<string>(1).Contains(busqueda)).ToList();
+                var filasCoincidentes = dtFiltro.AsEnumerable().Where(row => row.Field<string>(1).ToUpper().Contains(busqueda)).ToList();
 
                 if (filasCoincidentes.Count > 0)
                 {
@@ -1123,7 +1222,6 @@ namespace Torneo_Guillermito
 
         private void comboEquipo1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Querys q = new Querys();
 
             DataTable dt = new DataTable();
             dt = q.LlenarTablaZonaFiltrado(comboEquipo1.Text);
@@ -1139,11 +1237,11 @@ namespace Torneo_Guillermito
         {
             var filasFiltradas = dtFiltro2.Clone();
 
-            string busqueda = textBox2.Text.ToUpper();
+            string busqueda = tbEquipos3.Text.ToUpper();
 
             if (!string.IsNullOrEmpty(busqueda))
             {
-                var filasCoincidentes = dtFiltro2.AsEnumerable().Where(row => row.Field<string>(1).Contains(busqueda)).ToList();
+                var filasCoincidentes = dtFiltro2.AsEnumerable().Where(row => row.Field<string>(1).ToUpper().Contains(busqueda)).ToList();
 
                 if (filasCoincidentes.Count > 0)
                 {
@@ -1173,7 +1271,7 @@ namespace Torneo_Guillermito
 
         private void btEquipos1_Click(object sender, EventArgs e)
         {
-            Querys q = new Querys();
+            
 
             if (dgvEquipo1.SelectedRows.Count == 1 && comboEquipo1.Text != "" && comboEquipo2.Text != "")
             {
@@ -1189,7 +1287,7 @@ namespace Torneo_Guillermito
             }
             else
             {
-                MessageBox.Show("Error al insertar el equipo, asegúrese de que todos los datos estén completos.", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error al insertar el equipo, asegúrese de que todos los datos estén completos.", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -1200,9 +1298,9 @@ namespace Torneo_Guillermito
 
         private void btEliminarEquipo_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Está seguro que desea eliminar el equipo seleccionado?", "Torneo Guillermito", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("¿Está seguro que desea eliminar el equipo seleccionado?", "Liga Infantil del Paraná", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                Querys q = new Querys();
+                
                 q.EliminarEquipo(dgvEquipo2.SelectedRows[0].Cells[0].Value.ToString());
 
                 dtFiltro2 = q.LlenarTablaEquipo();
@@ -1229,9 +1327,9 @@ namespace Torneo_Guillermito
         {
             if (dgvCanchas.SelectedRows.Count == 1)
             {
-                if (MessageBox.Show("¿Está seguro que desea eliminar la cancha seleccionada?", "Torneo Guillermito", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (MessageBox.Show("¿Está seguro que desea eliminar la cancha seleccionada?", "Liga Infantil del Paraná", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    Querys q = new Querys();
+                    
                     q.EliminarCancha(dgvCanchas.SelectedRows[0].Cells[0].Value.ToString());
 
                     dtFiltro = q.LlenarTablaCanchas();
@@ -1259,7 +1357,7 @@ namespace Torneo_Guillermito
         {
             if (tbNumero.Text != "" && tbLongitud.Text != "" && tbLatitud.Text != "")
             {
-                Querys q = new Querys();
+                
                 q.InsertarCancha(tbNumero.Text, tbLatitud.Text, tbLatitud.Text);
 
                 dtFiltro = q.LlenarTablaCanchas();
@@ -1274,7 +1372,7 @@ namespace Torneo_Guillermito
             }
             else
             {
-                MessageBox.Show("Complete todos los campos para agregar la cancha correspondiente o asegurese que el numero de cancha no sea uno existente.", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Complete todos los campos para agregar la cancha correspondiente o asegurese que el numero de cancha no sea uno existente.", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -1286,7 +1384,7 @@ namespace Torneo_Guillermito
         private void comboCategoriaEncuentro_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            Querys q = new Querys();
+            
             List<String> lista = new List<String>();
             dtFiltro = q.LlenarTablaZonaFiltrado(comboCategoriaEncuentro.SelectedItem.ToString());
 
@@ -1300,7 +1398,7 @@ namespace Torneo_Guillermito
 
         private void comboZonaEncuentro_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Querys q = new Querys();
+            
 
             List<String> listaNombre = new List<String>();
             List<String> listaID = new List<String>();
@@ -1329,10 +1427,17 @@ namespace Torneo_Guillermito
 
         private void btAgregarEncuentro_Click(object sender, EventArgs e)
         {
-            Querys q = new Querys();
+            
             if (comboCategoriaEncuentro.Text != "" && comboZonaEncuentro.Text != "" && comboLocalEncuentro1.Text != "" && comboVisitaEncuentro1.Text != "" && comboFechaEncuentro1.Text != "" && comboLocalEncuentro1.SelectedIndex != comboVisitaEncuentro1.SelectedIndex)
             {
-                q.InsertarEncuentro(comboIDlocal.Items[comboLocalEncuentro1.SelectedIndex].ToString(), comboIDvisita.Items[comboVisitaEncuentro1.SelectedIndex].ToString(), datePickerEnc1.Value.ToString("yyyy-MM-dd"), comboFechaEncuentro1.Text, tbHoraEncuentro1.Text, tbYoutubeEncuentro1.Text, tbDriveEncuentro1.Text);
+                if(checkFechaNuevoEncuentro.Checked == true)
+                {
+                    q.InsertarEncuentro(comboIDlocal.Items[comboLocalEncuentro1.SelectedIndex].ToString(), comboIDvisita.Items[comboVisitaEncuentro1.SelectedIndex].ToString(), datePickerEnc1.Value.ToString("yyyy-MM-dd"), comboFechaEncuentro1.Text, tbHoraEncuentro1.Text, tbYoutubeEncuentro1.Text, tbDriveEncuentro1.Text);
+                }
+                else
+                {
+                    q.InsertarEncuentro(comboIDlocal.Items[comboLocalEncuentro1.SelectedIndex].ToString(), comboIDvisita.Items[comboVisitaEncuentro1.SelectedIndex].ToString(), "", comboFechaEncuentro1.Text, tbHoraEncuentro1.Text, tbYoutubeEncuentro1.Text, tbDriveEncuentro1.Text);
+                }
 
                 string filtro;
                 if (cbCruces.Checked)
@@ -1358,23 +1463,26 @@ namespace Torneo_Guillermito
                     row[8].ToString(), // Hora
                     row[9].ToString(), // Youtube
                     row[10].ToString(), // Imagenes
+                    row[11].ToString() //terminado
                 });
                 }
 
             }
             else
             {
-                MessageBox.Show("Complete todos los campos para agregar el encuentro o asegurece que los equipos sean distintos", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Complete todos los campos para agregar el encuentro o asegurece que los equipos sean distintos", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void dgvEncuentros_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             var fila = dgvEncuentros.SelectedRows[0];
+            partidoSeleccionado = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString(); ;
 
             tbLocalEncuentro2.Text = fila.Cells[1].Value.ToString();
             tbGolesLocal.Text = fila.Cells[2].Value.ToString();
             tbGolesVisita.Text = fila.Cells[4].Value.ToString();
+            if (fila.Cells[2].Value.ToString() == "" || fila.Cells[4].Value.ToString() == "") { comenzado = false; } else { comenzado = true; }
             tbVisitaEncuentro2.Text = fila.Cells[5].Value.ToString();
             tbCategoriaEncuentro2.Text = "División " + fila.Cells[6].Value.ToString();
             comboFechaEncuentro2.SelectedItem = fila.Cells[7].Value.ToString();
@@ -1386,7 +1494,37 @@ namespace Torneo_Guillermito
             tbHoraEncuentro2.Text = fila.Cells[9].Value.ToString();
             tbYoutubeEncuentro2.Text = fila.Cells[10].Value.ToString();
             tbDriveEncuentro2.Text = fila.Cells[11].Value.ToString();
+
+            if (fila.Cells[12].Value.ToString() == "True")
+            {
+                checkPartidoTerminado.Checked = true;
+            }
+            else
+            {
+                checkPartidoTerminado.Checked = false;
+            }
             //comboCanchaEncuentro2.SelectedItem = fila.Cells[11].Value.ToString();
+
+            //Ahora llenar lo de las tarjetas
+            if (fila.Cells[2].Value.ToString() != "" && fila.Cells[4].Value.ToString() != "")
+            {
+                DataTable dt = new DataTable();
+                dt = q.ObtenerStats(partidoSeleccionado);
+                foreach (DataRow row in dt.Rows)
+                {
+                    tbAmarillasLocal.Text = row[0].ToString();
+                    tbAmarillasVisita.Text = row[1].ToString();
+                    tbRojasLocal.Text = row[2].ToString();
+                    tbRojasVisita.Text = row[3].ToString();
+                }
+            }
+            else
+            {
+                tbAmarillasLocal.Text = "";
+                tbAmarillasVisita.Text = "";
+                tbRojasLocal.Text = "";
+                tbRojasVisita.Text = "";
+            }
         }
 
         private void comboLocalEncuentro1_SelectedIndexChanged(object sender, EventArgs e)
@@ -1402,7 +1540,7 @@ namespace Torneo_Guillermito
             else
                 filtro = "WHERE en.tipo = 1";
 
-            Querys q = new Querys();
+            
             DataTable dt = new DataTable();
             dt = q.LlenarTablaEncuentroFiltrado(!cbPartidos.Checked, comboFiltroEncuentros1.Text, comboFiltroEncuentros2.Text, comboFiltroEncuentros3.Text, filtro);
             dgvEncuentros.Rows.Clear();
@@ -1421,13 +1559,14 @@ namespace Torneo_Guillermito
                     row[8].ToString(), // Hora
                      row[9].ToString(), // Youtube
                     row[10].ToString(), // Imagenes
+                    row[11].ToString() //terminado
                 });
             }
         }
 
         private void comboFiltroEncuentros1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Querys q = new Querys();
+            
             List<String> lista = new List<String>();
             DataTable dt = new DataTable();
             dt = q.LlenarTablaZonaFiltrado(comboFiltroEncuentros1.SelectedItem.ToString());
@@ -1462,6 +1601,7 @@ namespace Torneo_Guillermito
                     row[8].ToString(), // Hora
                      row[9].ToString(), // Youtube
                     row[10].ToString(), // Imagenes
+                    row[11].ToString() //terminado
                 });
             }
         }
@@ -1475,11 +1615,18 @@ namespace Torneo_Guillermito
         {
             if (comboFechaEncuentro2.Text != "" && tbHoraEncuentro2.Text != "" && ((tbGolesLocal.Text != "" && tbGolesVisita.Text != "") || (tbGolesLocal.Text == "" && tbGolesVisita.Text == "")))
             {
-                if (MessageBox.Show("¿Seguro que desea modificar el Encuentro?", "Torneo Guillermito", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("¿Seguro que desea modificar el Encuentro?", "Liga Infantil del Paraná", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    Querys q = new Querys();
-                    q.actualizarEncuentro(dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString(), tbGolesLocal.Text, tbGolesVisita.Text, comboFechaEncuentro2.Text, tbHoraEncuentro2.Text, comboCanchaEncuentro2.Text);
-
+                    if (checkFechaEncuentro.Checked == true)
+                    {
+                    q.actualizarEncuentro(dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString(), tbGolesLocal.Text, tbGolesVisita.Text, comboFechaEncuentro2.Text, tbHoraEncuentro2.Text, comboCanchaEncuentro2.Text
+                        , datePickerEn2.Value.ToString("yyyy-MM-dd"), tbYoutubeEncuentro2.Text, tbDriveEncuentro2.Text) ;
+                    }
+                    else
+                    {
+                        q.actualizarEncuentro(dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString(), tbGolesLocal.Text, tbGolesVisita.Text, comboFechaEncuentro2.Text, tbHoraEncuentro2.Text, comboCanchaEncuentro2.Text
+                         , "", tbYoutubeEncuentro2.Text, tbDriveEncuentro2.Text);
+                    }
                     string filtro;
                     if (cbCruces.Checked)
                         filtro = "WHERE en.tipo <> 1";
@@ -1503,6 +1650,7 @@ namespace Torneo_Guillermito
                     row[8].ToString(), // Hora
                      row[9].ToString(), // Youtube
                     row[10].ToString(), // Imagenes
+                    row[11].ToString() //terminado
                 });
                     }
 
@@ -1517,7 +1665,7 @@ namespace Torneo_Guillermito
             }
             else
             {
-                MessageBox.Show("Verifique que todos los datos esten completos y correctos", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Verifique que todos los datos esten completos y correctos", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -1541,14 +1689,14 @@ namespace Torneo_Guillermito
                 {
                     string nombreArchivo = DateTime.Now.ToString("yyyyMMddHHmmss") + ".png";
 
-                    Querys q = new Querys();
+                    
                     q.actualizarClub(dgvClub.SelectedRows[0].Cells[0].Value.ToString(), tbNombreClub2.Text, tbNombreCortoClub2.Text, "ESCUDOS/"+nombreArchivo);
                     subirFoto2(nombreArchivo);
 
-
+                    dgvClub.Rows.Clear();
                     DataTable dt = new DataTable();
                     dt = q.LlenarTablaClub();
-                    dgvClub.Rows.Clear();
+                    
                     foreach (DataRow row in dt.Rows)
                     {
                         dgvClub.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString() });
@@ -1564,13 +1712,13 @@ namespace Torneo_Guillermito
                 else
                 {
                     string nombreArchivo = dgvClub.SelectedRows[0].Cells[3].Value.ToString();
-                    Querys q = new Querys();
+                    
                     q.actualizarClub(dgvClub.SelectedRows[0].Cells[0].Value.ToString(), tbNombreClub2.Text, tbNombreCortoClub2.Text, nombreArchivo);
 
-
+                    dgvClub.Rows.Clear();
                     DataTable dt = new DataTable();
                     dt = q.LlenarTablaClub();
-                    dgvClub.Rows.Clear();
+                    
                     foreach (DataRow row in dt.Rows)
                     {
                         dgvClub.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString() });
@@ -1591,7 +1739,7 @@ namespace Torneo_Guillermito
             }
             else
             {
-                MessageBox.Show("Debe completar todos los datos obligatorios para insertar un club", "Torneo Guillermito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Debe completar todos los datos obligatorios para insertar un club", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -1602,7 +1750,7 @@ namespace Torneo_Guillermito
                 filtro = "WHERE z.id_zona<> 'Z' and z2.id_zona<> 'Z' and en.tipo <> 1";
             else
                 filtro = "WHERE z.id_zona<> 'Z' and z2.id_zona<> 'Z' and en.tipo = 1";
-            Querys q = new Querys();
+            
             DataTable dt = new DataTable();
             dt = q.LlenarTablaEncuentroFiltrado(!cbPartidos.Checked, comboFiltroEncuentros1.Text, comboFiltroEncuentros2.Text, comboFiltroEncuentros3.Text, filtro);
             dgvEncuentros.Rows.Clear();
@@ -1621,6 +1769,7 @@ namespace Torneo_Guillermito
                     row[8].ToString(), // Hora
                      row[9].ToString(), // Youtube
                     row[10].ToString(), // Imagenes
+                    row[11].ToString() //terminado
                 });
             }
         }
@@ -1633,7 +1782,7 @@ namespace Torneo_Guillermito
             else
                 filtro = "WHERE en.tipo = 1";
 
-            Querys q = new Querys();
+            
             DataTable dt = new DataTable();
             dt = q.LlenarTablaEncuentroFiltrado(!cbPartidos.Checked, comboFiltroEncuentros1.Text, comboFiltroEncuentros2.Text, comboFiltroEncuentros3.Text, filtro);
             dgvEncuentros.Rows.Clear();
@@ -1652,6 +1801,7 @@ namespace Torneo_Guillermito
                     row[8].ToString(), // Hora
                     row[9].ToString(), // Youtube
                     row[10].ToString(), // Imagenes
+                    row[11].ToString() //terminado
                 });
             }
         }
@@ -1662,9 +1812,8 @@ namespace Torneo_Guillermito
             comboFiltroEncuentros3.Items.Clear();
 
             List<String> list = new List<String>();
-            Querys query = new Querys();
 
-            dtFiltro = query.LlenarTablaCategoria();
+            dtFiltro = q.LlenarTablaCategoria();
 
             comboCategoriaEncuentro.Items.Clear();
             foreach (DataRow row in dtFiltro.Rows)
@@ -1685,7 +1834,7 @@ namespace Torneo_Guillermito
             }
             comboCanchaEncuentro2.SelectedItem = null;
 
-            dtFiltro = query.LlenarTablaFechas();
+            dtFiltro = q.LlenarTablaFechas();
 
             comboFechaEncuentro1.Items.Clear();
             comboFechaEncuentro2.Items.Clear();
@@ -1697,7 +1846,7 @@ namespace Torneo_Guillermito
             }
             comboFechaEncuentro2.SelectedItem = null;
 
-            dtFiltro = query.LlenarTablaEncuentro("WHERE en.tipo = 1");
+            dtFiltro = q.LlenarTablaEncuentro("WHERE en.tipo = 1");
             dgvEncuentros.Rows.Clear();
             foreach (DataRow row in dtFiltro.Rows)
             {
@@ -1714,6 +1863,7 @@ namespace Torneo_Guillermito
                     row[8].ToString(), // Hora
                      row[9].ToString(), // Youtube
                     row[10].ToString(), // Imagenes
+                    row[11].ToString() //terminado
                 });
             }
             comboFiltroEncuentros1.SelectedIndex = -1;
@@ -1726,7 +1876,7 @@ namespace Torneo_Guillermito
 
         private void comboCategoriaCruce_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Querys q = new Querys();
+            
             DataTable dt = new DataTable();
             dt = q.ConsultarCruces(comboCategoriaCruce.Text);
             dgvCruces.DataSource = dt;
@@ -1794,9 +1944,9 @@ namespace Torneo_Guillermito
         {
             if (dgvEncuentros.SelectedRows.Count > 0)
             {
-                if (MessageBox.Show("¿Está seguro que desea eliminar el encuentro seleccionado?", "Torneo Guillermito", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("¿Está seguro que desea eliminar el encuentro seleccionado?", "Liga Infantil del Paraná", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    Querys q = new Querys();
+                    
                     q.EliminarEncuentro(dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString());
 
                     string filtro;
@@ -1823,7 +1973,14 @@ namespace Torneo_Guillermito
                     row[8].ToString(), // Hora
                     row[9].ToString(), // Youtube
                     row[10].ToString(), // Imagenes
+                    row[11].ToString() //terminado
                 });
+                    }
+
+                    foreach (DataGridViewRow row in dgvEncuentros.Rows)
+                    {
+                        if (row.Cells[0].Value.ToString() == partidoSeleccionado) { row.Selected = true; }
+                        else { row.Selected = false; }
                     }
 
                 }
@@ -1890,7 +2047,7 @@ namespace Torneo_Guillermito
             pantalla.ChildFormClosed += ChildFormClosedHandlerEditar;
             pantalla.Show();
 
-            Querys q = new Querys();
+            
             DataTable dt = new DataTable();
             dt = q.ConsultarCruces(comboCategoriaCruce.Text);
             dgvCruces.DataSource = dt;
@@ -2287,7 +2444,7 @@ namespace Torneo_Guillermito
             else
                 filtro = "WHERE z.id_zona<> 'Z' and z2.id_zona<> 'Z' and en.tipo = 1";
 
-            Querys q = new Querys();
+            
             DataTable dt = new DataTable();
             dt = q.LlenarTablaEncuentroFiltrado(!cbPartidos.Checked, comboFiltroEncuentros1.Text, comboFiltroEncuentros2.Text, comboFiltroEncuentros3.Text, filtro);
             dgvEncuentros.Rows.Clear();
@@ -2306,6 +2463,7 @@ namespace Torneo_Guillermito
                     row[8].ToString(), // Hora
                      row[9].ToString(), // Youtube
                     row[10].ToString(), // Imagenes
+                    row[11].ToString() //terminado
                 });
             }
         }
@@ -2356,90 +2514,648 @@ namespace Torneo_Guillermito
         private void pictureBox11_Click(object sender, EventArgs e)
         {
             string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
-            AddStat addStat = new AddStat(id_partido, "add-goal-local");
+            AddStat addStat = new AddStat(id_partido, "add-goal-local", this, comenzado);
             addStat.Show();
-        }
-
-        private void dgvEncuentros_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void pictureBox12_Click(object sender, EventArgs e)
         {
             string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
-            AddStat addStat = new AddStat(id_partido, "rest-goal-local");
+            AddStat addStat = new AddStat(id_partido, "rest-goal-local", this, comenzado);
             addStat.Show();
         }
 
         private void pictureBox19_Click(object sender, EventArgs e)
         {
             string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
-            AddStat addStat = new AddStat(id_partido, "add-goal-visit");
+            AddStat addStat = new AddStat(id_partido, "add-goal-visit", this, comenzado);
             addStat.Show();
         }
 
         private void pictureBox22_Click(object sender, EventArgs e)
         {
             string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
-            AddStat addStat = new AddStat(id_partido, "rest-goal-visit");
+            AddStat addStat = new AddStat(id_partido, "rest-goal-visit", this, comenzado);
             addStat.Show();
         }
 
         private void pictureBox14_Click_1(object sender, EventArgs e)
         {
             string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
-            AddStat addStat = new AddStat(id_partido, "add-yc-local");
+            AddStat addStat = new AddStat(id_partido, "add-yc-local", this, comenzado);
             addStat.Show();
         }
 
         private void pictureBox13_Click_1(object sender, EventArgs e)
         {
             string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
-            AddStat addStat = new AddStat(id_partido, "rest-yc-local");
+            AddStat addStat = new AddStat(id_partido, "rest-yc-local", this, comenzado);
             addStat.Show();
         }
 
         private void pictureBox18_Click(object sender, EventArgs e)
         {
             string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
-            AddStat addStat = new AddStat(id_partido, "add-yc-visit");
+            AddStat addStat = new AddStat(id_partido, "add-yc-visit", this, comenzado);
             addStat.Show();
         }
 
         private void pictureBox21_Click(object sender, EventArgs e)
         {
             string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
-            AddStat addStat = new AddStat(id_partido, "rest-yc-visit");
+            AddStat addStat = new AddStat(id_partido, "rest-yc-visit", this, comenzado);
             addStat.Show();
         }
 
         private void pictureBox16_Click(object sender, EventArgs e)
         {
             string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
-            AddStat addStat = new AddStat(id_partido, "add-rc-local");
+            AddStat addStat = new AddStat(id_partido, "add-rc-local", this, comenzado);
             addStat.Show();
         }
 
         private void pictureBox15_Click(object sender, EventArgs e)
         {
             string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
-            AddStat addStat = new AddStat(id_partido, "rest-rc-local");
+            AddStat addStat = new AddStat(id_partido, "rest-rc-local", this, comenzado);
             addStat.Show();
         }
 
         private void pictureBox17_Click(object sender, EventArgs e)
         {
             string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
-            AddStat addStat = new AddStat(id_partido, "add-rc-visit");
+            AddStat addStat = new AddStat(id_partido, "add-rc-visit", this, comenzado);
             addStat.Show();
         }
 
         private void pictureBox20_Click(object sender, EventArgs e)
         {
             string id_partido = dgvEncuentros.SelectedRows[0].Cells[0].Value.ToString();
-            AddStat addStat = new AddStat(id_partido, "rest-rc-visit");
+            AddStat addStat = new AddStat(id_partido, "rest-rc-visit", this, comenzado);
             addStat.Show();
+        }
+
+
+        public void refreshEncuentros(bool comenzar)
+        {
+            
+            string filtro;
+            if (cbCruces.Checked)
+                filtro = "WHERE en.tipo <> 1";
+            else
+                filtro = "WHERE en.tipo = 1";
+            DataTable dt = new DataTable();
+            if (comenzar) { cbPartidos.Checked = true; }
+            dt = q.LlenarTablaEncuentroFiltrado(!cbPartidos.Checked, comboFiltroEncuentros1.Text, comboFiltroEncuentros2.Text, comboFiltroEncuentros3.Text, filtro);
+            dgvEncuentros.Rows.Clear();
+            foreach (DataRow row in dt.Rows)
+            {
+                dgvEncuentros.Rows.Add(new string[] {
+                    row[0].ToString(), // ID
+                    row[1].ToString(), // Nombre Local
+                    row[2].ToString(), // Resultado Local
+                    "-",
+                    row[3].ToString(), // Resultado Visita
+                    row[4].ToString(), // Nombre Visita
+                    row[5].ToString(), // Division
+                    row[6].ToString(), // Fecha
+                    row[7].ToString(), // Dia
+                    row[8].ToString(), // Hora
+                     row[9].ToString(), // Youtube
+                    row[10].ToString(), // Imagenes
+                    row[11].ToString() //terminado
+                });
+            }
+
+            foreach (DataGridViewRow row in dgvEncuentros.Rows)
+            {
+                if (row.Cells[0].Value.ToString() == partidoSeleccionado)
+                {
+                    row.Selected = true;
+                }
+                else
+                {
+                    row.Selected = false;
+                }
+            }
+            /*
+            if (dgvEncuentros.Rows.Count > 0)
+            {
+                dgvEncuentros.CurrentCell = dgvEncuentros.Rows[0].Cells[1];
+                dgvEncuentros.Rows[0].Selected = true;
+            }
+            */
+            dgvEncuentros_CellClick(null, null);
+        }
+
+        private void limpiarFichaJugadores()
+        {
+            tbNombreJugador1.Text = string.Empty;
+            tbDNIJugador1.Text = string.Empty;
+            tbDorsalJugador1.Text = string.Empty;
+            tbEquipoJugador1.Text = string.Empty;
+            tbFiltrarEquipoJugador1.Text = string.Empty;
+            pbJugador1.Image = Resources.nada;
+
+
+            tbNombreJugador2.Text = string.Empty;
+            tbDNIJugador2.Text = string.Empty;
+            tbDorsalJugador2.Text = string.Empty;
+            tbEquipoJugador2.Text = string.Empty;
+            tbFiltroEquipoJugador2.Text = string.Empty;
+            pbJugador2.Image = Resources.nada;
+
+            btEliminarJugador.Enabled = false;
+            cbCambiarEquipoJugador.Checked = false;
+            tbFiltroEquipoJugador2.Text = "";
+            tbFiltroEquipoJugador2.Enabled = false;
+        }
+        private void btJugadores_Click(object sender, EventArgs e)
+        {
+            gbClubes.Visible = false;
+            gbCanchas.Visible = false;
+            gbCyZ.Visible = false;
+            gbEquipos.Visible = false;
+            gbJugadores.Visible = true;
+            gbCruces.Visible = false;
+            gbPartidos.Visible = false;
+
+            pbJugador1.Image = Resources.nada;
+            pbJugador2.Image = Resources.nada;
+
+            limpiarFichaJugadores();
+
+
+            DataTable dt = new DataTable();
+
+            dtFiltro = q.LlenarTablaEquipoJugadorFiltrado("");
+
+            dgvJugador1.Rows.Clear();
+            foreach (DataRow row in dtFiltro.Rows)
+            {
+                dgvJugador1.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString() });
+            }
+
+            dtFiltro2 = q.LlenarTablaJugador();
+
+            dgvJugador2.Rows.Clear();
+            foreach (DataRow row in dtFiltro2.Rows)
+            {
+                dgvJugador2.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString() });
+            }
+        }
+
+        private void tbFiltrarEquipoJugador1_TextChanged(object sender, EventArgs e)
+        {
+            var filasFiltradas = dtFiltro.Clone();
+
+            string busqueda = tbFiltrarEquipoJugador1.Text.ToUpper();
+
+            if (!string.IsNullOrEmpty(busqueda))
+            {
+                var filasCoincidentes = dtFiltro.AsEnumerable().Where(row => row.Field<string>(1).ToUpper().Contains(busqueda)).ToList();
+
+                if (filasCoincidentes.Count > 0)
+                {
+                    filasCoincidentes.ForEach(row => filasFiltradas.ImportRow(row));
+
+                    dgvJugador1.Rows.Clear();
+                    foreach (DataRow row in filasFiltradas.Rows)
+                    {
+                        dgvJugador1.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString() });
+                    }
+
+                }
+                else
+                {
+                    dgvJugador1.DataSource = null;
+                }
+            }
+            else
+            {
+                dgvJugador1.Rows.Clear();
+                foreach (DataRow row in dtFiltro.Rows)
+                {
+                    dgvJugador1.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString() });
+                }
+            }
+        }
+
+        private void tbFiltroEquipoJugador2_TextChanged(object sender, EventArgs e)
+        {
+            if (tbFiltroEquipoJugador2.Text == "") { dgvJugador3.Rows.Clear(); }
+            var filasFiltradas = dtFiltro.Clone();
+
+            string busqueda = tbFiltroEquipoJugador2.Text.ToUpper();
+
+            if (!string.IsNullOrEmpty(busqueda))
+            {
+                var filasCoincidentes = dtFiltro.AsEnumerable().Where(row => row.Field<string>(1).ToUpper().Contains(busqueda)).ToList();
+
+                if (filasCoincidentes.Count > 0)
+                {
+                    filasCoincidentes.ForEach(row => filasFiltradas.ImportRow(row));
+
+                    dgvJugador3.Rows.Clear();
+                    foreach (DataRow row in filasFiltradas.Rows)
+                    {
+                        dgvJugador3.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString() });
+                    }
+
+                }
+                else
+                {
+                    dgvJugador3.DataSource = null;
+                }
+            }
+            else
+            {
+                dgvJugador3.Rows.Clear();
+                foreach (DataRow row in dtFiltro.Rows)
+                {
+                    dgvJugador3.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString() });
+                }
+            }
+        }
+
+        private void tbNombreJugador3_TextChanged(object sender, EventArgs e)
+        {
+            var filasFiltradas = dtFiltro2.Clone();
+
+            string busqueda1 = tbNombreJugador3.Text.ToUpper();
+            string busqueda2 = tbEquipoJugador3.Text.ToUpper();
+
+            if (!string.IsNullOrEmpty(busqueda1))
+            {
+                if (!string.IsNullOrEmpty(busqueda2))
+                {
+                    var filasCoincidentes = dtFiltro2.AsEnumerable().Where(row => row.Field<string>(1).ToUpper().Contains(busqueda1) && row.Field<string>(3).ToUpper().Contains(busqueda2)).ToList();
+
+                    if (filasCoincidentes.Count > 0)
+                    {
+                        filasCoincidentes.ForEach(row => filasFiltradas.ImportRow(row));
+
+                        dgvJugador2.Rows.Clear();
+                        foreach (DataRow row in filasFiltradas.Rows)
+                        {
+                            dgvJugador2.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString() });
+                        }
+
+                    }
+                    else
+                    {
+                        dgvJugador2.DataSource = null;
+                    }
+                }
+                else
+                {
+                    var filasCoincidentes = dtFiltro2.AsEnumerable().Where(row => row.Field<string>(1).ToUpper().Contains(busqueda1)).ToList();
+
+                    if (filasCoincidentes.Count > 0)
+                    {
+                        filasCoincidentes.ForEach(row => filasFiltradas.ImportRow(row));
+
+                        dgvJugador2.Rows.Clear(); 
+                        foreach (DataRow row in filasFiltradas.Rows)
+                        {
+                            dgvJugador2.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString() , row[4].ToString() });
+                        }
+
+                    }
+                    else
+                    {
+                        dgvJugador2.DataSource = null;
+                    }
+                }
+            }
+            else
+            {
+                dgvJugador2.Rows.Clear();
+                foreach (DataRow row in dtFiltro2.Rows)
+                {
+                    dgvJugador2.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString() , row[4].ToString() });
+                }
+            }
+        }
+
+        private void dgvJugador1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            tbEquipoJugador1.Text = dgvJugador1.SelectedRows[0].Cells[1].Value.ToString();
+        }
+
+        private void btAgregarJugador_Click(object sender, EventArgs e)
+        {
+            if (tbNombreJugador1.Text == string.Empty || tbDNIJugador1.Text == string.Empty || tbDorsalJugador1.Text == string.Empty || tbEquipoJugador1.Text == string.Empty)
+            {
+                MessageBox.Show("Error al insertar el jugador, verifique que los campos esten completos y correctos", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            byte[] imageBytes1;
+            byte[] imageBytes2;
+
+            MemoryStream ms1 = new MemoryStream();
+            MemoryStream ms2 = new MemoryStream();
+            pbJugador1.Image.Save(ms1, ImageFormat.Png);
+            Resources.nada.Save(ms2, ImageFormat.Png);
+
+            imageBytes1 = ms1.ToArray();
+            imageBytes2 = ms2.ToArray();
+
+            if (!imageBytes1.SequenceEqual(imageBytes2))
+            {
+                string nombreArchivo = DateTime.Now.ToString("yyyyMMddHHmmss") + ".png";
+                q.InsertarJugador(tbDNIJugador1.Text, tbNombreJugador1.Text, tbDorsalJugador1.Text, dgvJugador1.SelectedRows[0].Cells[0].Value.ToString(), nombreArchivo);
+                
+
+                FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+
+                string rutaCompleta = Path.Combine(Resources.carpetaFotosServer, nombreArchivo);
+
+                subirFotoAgregarJugador(nombreArchivo);
+
+                DataTable dt = new DataTable();
+                dt = q.LlenarTablaJugador();
+                dgvJugador2.Rows.Clear();
+                foreach (DataRow row in dt.Rows)
+                {
+                    dgvJugador2.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString() });
+                }
+                limpiarFichaJugadores();
+            }
+            else
+            {
+                if (MessageBox.Show("No ha insertado una foto para el jugador, ¿Desea agregar el jugador sin foto? Se pondra una por defecto", "Liga Infantil del Paraná", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    string nombreArchivo = "0.png";
+
+                    q.InsertarJugador(tbDNIJugador1.Text, tbNombreJugador1.Text, tbDorsalJugador1.Text, dgvJugador1.SelectedRows[0].Cells[0].Value.ToString(), nombreArchivo);
+
+
+                    DataTable dt = new DataTable();
+                    dt = q.LlenarTablaJugador();
+                    dgvJugador2.Rows.Clear();
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        dgvJugador2.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString() });
+                    }
+                    limpiarFichaJugadores();
+                }
+
+            }
+        }
+
+        private void pbJugador1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                pbJugador1.Image = new Bitmap(openFileDialog.FileName);
+            }
+        }
+
+
+        private void dgvJugador2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btEliminarJugador.Enabled = true;
+            tbDNIJugador2.Text = dgvJugador2.SelectedRows[0].Cells[0].Value.ToString();
+            tbNombreJugador2.Text = dgvJugador2.SelectedRows[0].Cells[1].Value.ToString();
+            tbDorsalJugador2.Text = dgvJugador2.SelectedRows[0].Cells[2].Value.ToString();
+            tbEquipoJugador2.Text = dgvJugador2.SelectedRows[0].Cells[3].Value.ToString();
+
+            string imageUrl = conexionFoto + dgvJugador2.SelectedRows[0].Cells[4].Value.ToString();
+            using (WebClient webClient = new WebClient())
+            {
+                try
+                {
+                    byte[] imageBytes = webClient.DownloadData(imageUrl);
+                    using (var stream = new System.IO.MemoryStream(imageBytes))
+                    {
+                        System.Drawing.Image image = System.Drawing.Image.FromStream(stream);
+                        pbJugador2.Image = image;
+                        pbJugador2Control.Image = image;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al descargar la imagen: " + ex.Message, "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void tbEquipoJugador3_TextChanged(object sender, EventArgs e)
+        {
+            var filasFiltradas = dtFiltro2.Clone();
+
+            string busqueda1 = tbNombreJugador3.Text.ToUpper();
+            string busqueda2 = tbEquipoJugador3.Text.ToUpper();
+
+            if (!string.IsNullOrEmpty(busqueda1))
+            {
+                if (!string.IsNullOrEmpty(busqueda2))
+                {
+                    var filasCoincidentes = dtFiltro2.AsEnumerable().Where(row => row.Field<string>(1).ToUpper().Contains(busqueda1) && row.Field<string>(3).ToUpper().Contains(busqueda2)).ToList();
+
+                    if (filasCoincidentes.Count > 0)
+                    {
+                        filasCoincidentes.ForEach(row => filasFiltradas.ImportRow(row));
+
+                        dgvJugador2.Rows.Clear();
+                        foreach (DataRow row in filasFiltradas.Rows)
+                        {
+                            dgvJugador2.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString() });
+                        }
+
+                    }
+                    else
+                    {
+                        dgvJugador2.DataSource = null;
+                    }
+                }
+                else
+                {
+                    var filasCoincidentes = dtFiltro2.AsEnumerable().Where(row => row.Field<string>(1).ToUpper().Contains(busqueda1)).ToList();
+
+                    if (filasCoincidentes.Count > 0)
+                    {
+                        filasCoincidentes.ForEach(row => filasFiltradas.ImportRow(row));
+
+                        dgvJugador2.Rows.Clear();
+                        foreach (DataRow row in filasFiltradas.Rows)
+                        {
+                            dgvJugador2.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString() });
+                        }
+
+                    }
+                    else
+                    {
+                        dgvJugador2.DataSource = null;
+                    }
+                }
+            }
+            else
+            {
+                dgvJugador2.Rows.Clear();
+                foreach (DataRow row in dtFiltro2.Rows)
+                {
+                    dgvJugador2.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString() });
+                }
+            }
+        }
+
+        private void cbCambiarEquipoJugador_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbCambiarEquipoJugador.Checked == true)
+            {
+                tbFiltroEquipoJugador2.Enabled = true;
+            }
+            else if (cbCambiarEquipoJugador.Checked == false)
+            {
+                tbFiltroEquipoJugador2.Enabled = false;
+                tbFiltroEquipoJugador2.Text = "";
+                dgvJugador3.Rows.Clear();
+            }
+        }
+
+        private void pbJugador2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                pbJugador2.Image = new Bitmap(openFileDialog.FileName);
+            }
+        }
+
+        private void btModificarJugador_Click(object sender, EventArgs e)
+        {
+            if (tbNombreJugador2.Text == string.Empty || tbDNIJugador2.Text == string.Empty || tbDorsalJugador2.Text == string.Empty || tbEquipoJugador2.Text == string.Empty)
+            {
+                MessageBox.Show("Error al insertar el jugador, verifique que los campos esten completos y correctos", "Liga Infantil del Paraná", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            byte[] imageBytes1;
+            byte[] imageBytes2;
+
+            MemoryStream ms1 = new MemoryStream();
+            MemoryStream ms2 = new MemoryStream();
+
+            pbJugador2.Image.Save(ms1, ImageFormat.Png);
+            pbJugador2Control.Image.Save(ms2, ImageFormat.Png);
+
+            imageBytes1 = ms1.ToArray();
+            imageBytes2 = ms2.ToArray();
+
+                if (!imageBytes1.SequenceEqual(imageBytes2))
+                {
+                    string nombreArchivo = DateTime.Now.ToString("yyyyMMddHHmmss") + ".png";
+
+                    if (cbCambiarEquipoJugador.Checked == false)
+                    {
+                        q.actualizarJugador(tbDNIJugador2.Text, tbNombreJugador2.Text, tbDorsalJugador2.Text, "", "jugadores/"+nombreArchivo);
+                    }
+                    else
+                    {
+                        q.actualizarJugador(tbDNIJugador2.Text, tbNombreJugador2.Text, tbDorsalJugador2.Text, dgvJugador3.SelectedRows[0].Cells[0].Value.ToString(), "jugadores/"+nombreArchivo);
+                    }
+                    subirFotoModificarJugador(nombreArchivo);
+
+
+                    DataTable dt = new DataTable();
+                    dt = q.LlenarTablaJugador();
+                    dgvJugador2.Rows.Clear();
+                    foreach (DataRow row in dt.Rows)
+                    {
+                    dgvJugador2.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString() });
+                    }
+                limpiarFichaJugadores();
+                }
+                else
+                {
+                    string nombreArchivo = dgvJugador2.SelectedRows[0].Cells[4].Value.ToString();
+
+                    if (cbCambiarEquipoJugador.Checked == false)
+                    {
+                        q.actualizarJugador(tbDNIJugador2.Text, tbNombreJugador2.Text, tbDorsalJugador2.Text, "", nombreArchivo);
+                    }
+                    else
+                    {
+                        q.actualizarJugador(tbDNIJugador2.Text, tbNombreJugador2.Text, tbDorsalJugador2.Text, dgvJugador3.SelectedRows[0].Cells[0].Value.ToString(), nombreArchivo);
+                    }
+
+                     DataTable dt = new DataTable();
+                    dt = q.LlenarTablaJugador();
+                    dgvJugador2.Rows.Clear();
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        dgvJugador2.Rows.Add(new string[] { row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString() });
+                    }
+                    limpiarFichaJugadores();
+                }
+        }
+
+        private void btEliminarJugador_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Está seguro que desea eliminar el jugador seleccionado? Se quitará cualquier acción relacionada al mismo", "Liga Infantil del Paraná", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                q.EliminarJugador(dgvJugador2.SelectedRows[0].Cells[0].Value.ToString());
+                btJugadores_Click(null, null);
+            }
+        }
+
+        private void checkFechaEncuentro_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkFechaEncuentro.Checked == true)
+            {
+                datePickerEn2.Enabled = true;
+            }
+            else
+            {
+                datePickerEn2.Enabled=false;
+            }
+        }
+
+        private void checkFechaNuevoEncuentro_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkFechaNuevoEncuentro.Checked == true)
+            {
+                datePickerEnc1.Enabled = true;
+            }
+            else
+            {
+                datePickerEnc1.Enabled = false;
+            }
+        }
+
+        private void checkPartidoTerminado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkPartidoTerminado.Checked == true)
+            {
+                if (MessageBox.Show("¿Está seguro que desea finalizar el partido?", "Liga Infantil del Paraná", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    q.cambiarEstadoPartido(checkPartidoTerminado.Checked, partidoSeleccionado, Int32.Parse(tbGolesLocal.Text), Int32.Parse(tbGolesVisita.Text));
+                }
+                else
+                {
+                    checkPartidoTerminado.Checked = false;
+                }
+            }
+            else if (checkPartidoTerminado.Checked == false)
+            {
+                if (MessageBox.Show("¿Está seguro que desea reaundar el partido?", "Liga Infantil del Paraná", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    q.cambiarEstadoPartido(checkPartidoTerminado.Checked, partidoSeleccionado, Int32.Parse(tbGolesLocal.Text), Int32.Parse(tbGolesVisita.Text));
+
+                }
+                else
+                {
+                    checkPartidoTerminado.Checked = true;
+                }
+            }
         }
     }
 }

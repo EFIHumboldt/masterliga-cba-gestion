@@ -1,4 +1,4 @@
-﻿namespace Torneo_Guillermito
+﻿namespace LIPa
 {
     partial class AddStat
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddStat));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvJugadoresPartido = new System.Windows.Forms.DataGridView();
@@ -35,12 +36,13 @@
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dorsal_jugador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvAcciones = new System.Windows.Forms.DataGridView();
-            this.btEliminarEncuentro = new System.Windows.Forms.Button();
-            this.plusStat = new System.Windows.Forms.PictureBox();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dorsal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btEliminarEncuentro = new System.Windows.Forms.Button();
+            this.plusStat = new System.Windows.Forms.PictureBox();
+            this.checkEncuentroComenzado = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJugadoresPartido)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAcciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.plusStat)).BeginInit();
@@ -49,22 +51,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(26, 22);
+            this.label1.Location = new System.Drawing.Point(32, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 26);
+            this.label1.Size = new System.Drawing.Size(73, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Accion: ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(117, 22);
+            this.label2.Location = new System.Drawing.Point(101, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 26);
+            this.label2.Size = new System.Drawing.Size(0, 20);
             this.label2.TabIndex = 1;
             // 
             // dgvJugadoresPartido
@@ -120,6 +122,30 @@
             this.dgvAcciones.Size = new System.Drawing.Size(255, 408);
             this.dgvAcciones.TabIndex = 3;
             // 
+            // ID
+            // 
+            this.ID.HeaderText = "IDa";
+            this.ID.Name = "ID";
+            this.ID.Visible = false;
+            // 
+            // ID2
+            // 
+            this.ID2.HeaderText = "IDj";
+            this.ID2.Name = "ID2";
+            this.ID2.Visible = false;
+            // 
+            // name
+            // 
+            this.name.HeaderText = "Nombre";
+            this.name.Name = "name";
+            this.name.Width = 200;
+            // 
+            // dorsal
+            // 
+            this.dorsal.HeaderText = "Dorsal";
+            this.dorsal.Name = "dorsal";
+            this.dorsal.Width = 50;
+            // 
             // btEliminarEncuentro
             // 
             this.btEliminarEncuentro.BackColor = System.Drawing.Color.DarkRed;
@@ -136,7 +162,7 @@
             // 
             // plusStat
             // 
-            this.plusStat.Image = global::Torneo_Guillermito.Properties.Resources.plus;
+            this.plusStat.Image = global::LIPa.Properties.Resources.plus;
             this.plusStat.Location = new System.Drawing.Point(302, 265);
             this.plusStat.Name = "plusStat";
             this.plusStat.Size = new System.Drawing.Size(60, 50);
@@ -145,27 +171,18 @@
             this.plusStat.TabStop = false;
             this.plusStat.Click += new System.EventHandler(this.plusStat_Click);
             // 
-            // ID
+            // checkEncuentroComenzado
             // 
-            this.ID.HeaderText = "IDa";
-            this.ID.Name = "ID";
-            // 
-            // ID2
-            // 
-            this.ID2.HeaderText = "IDj";
-            this.ID2.Name = "ID2";
-            // 
-            // name
-            // 
-            this.name.HeaderText = "Nombre";
-            this.name.Name = "name";
-            this.name.Width = 200;
-            // 
-            // dorsal
-            // 
-            this.dorsal.HeaderText = "Dorsal";
-            this.dorsal.Name = "dorsal";
-            this.dorsal.Width = 50;
+            this.checkEncuentroComenzado.AutoSize = true;
+            this.checkEncuentroComenzado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkEncuentroComenzado.Location = new System.Drawing.Point(36, 50);
+            this.checkEncuentroComenzado.Name = "checkEncuentroComenzado";
+            this.checkEncuentroComenzado.Size = new System.Drawing.Size(189, 24);
+            this.checkEncuentroComenzado.TabIndex = 69;
+            this.checkEncuentroComenzado.Text = "Encuentro comenzado";
+            this.checkEncuentroComenzado.UseVisualStyleBackColor = true;
+            this.checkEncuentroComenzado.CheckedChanged += new System.EventHandler(this.checkEncuentroComenzado_CheckedChanged);
+            this.checkEncuentroComenzado.Click += new System.EventHandler(this.checkEncuentroComenzado_Click);
             // 
             // AddStat
             // 
@@ -173,14 +190,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(689, 619);
+            this.Controls.Add(this.checkEncuentroComenzado);
             this.Controls.Add(this.plusStat);
             this.Controls.Add(this.btEliminarEncuentro);
             this.Controls.Add(this.dgvAcciones);
             this.Controls.Add(this.dgvJugadoresPartido);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddStat";
-            this.Text = "AddStat";
+            this.Text = "Liga Infantil del Paraná";
             this.Load += new System.EventHandler(this.AddStat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvJugadoresPartido)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAcciones)).EndInit();
@@ -201,6 +220,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn dorsal_jugador;
         private System.Windows.Forms.PictureBox plusStat;
+        private System.Windows.Forms.CheckBox checkEncuentroComenzado;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID2;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;

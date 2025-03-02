@@ -80,9 +80,6 @@ C:\Users\Usuario\Desktop\PROYECTOS VARIOS\guillermito 2024 prueba\TorneoGuillerm
 C:\Users\Usuario\Desktop\PROYECTOS VARIOS\guillermito 2024 prueba\TorneoGuillermitoGestion\Torneo Guillermito\obj\Release\Torneo Guillermito.csproj.CopyComplete
 C:\Users\Usuario\Desktop\PROYECTOS VARIOS\guillermito 2024 prueba\TorneoGuillermitoGestion\Torneo Guillermito\obj\Release\Torneo Guillermito.exe
 C:\Users\Usuario\Desktop\PROYECTOS VARIOS\guillermito 2024 prueba\TorneoGuillermitoGestion\Torneo Guillermito\obj\Release\Torneo Guillermito.pdb
-D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\bin\Release\Torneo Guillermito.exe.config
-D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\bin\Release\Torneo Guillermito.exe
-D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\bin\Release\Torneo Guillermito.pdb
 D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\bin\Release\BouncyCastle.Crypto.dll
 D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\bin\Release\Google.Protobuf.dll
 D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\bin\Release\itext.barcodes.dll
@@ -155,13 +152,9 @@ D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\bin\
 D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\bin\Release\System.Threading.Tasks.Extensions.xml
 D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\bin\Release\System.ValueTuple.xml
 D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\obj\Release\Torneo Guillermito.csproj.AssemblyReference.cache
-D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\obj\Release\Torneo_Guillermito.gbEncuentros.resources
-D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\obj\Release\Torneo_Guillermito.Properties.Resources.resources
 D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\obj\Release\Torneo Guillermito.csproj.GenerateResource.cache
 D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\obj\Release\Torneo Guillermito.csproj.CoreCompileInputs.cache
 D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\obj\Release\Torneo Guillermito.csproj.CopyComplete
-D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\obj\Release\Torneo Guillermito.exe
-D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\obj\Release\Torneo Guillermito.pdb
 E:\Users\Usuario\Desktop\Facundo\Gestiones\masterliga-cba-gestion\Torneo Guillermito\bin\Release\Torneo Guillermito.exe.config
 E:\Users\Usuario\Desktop\Facundo\Gestiones\masterliga-cba-gestion\Torneo Guillermito\bin\Release\Torneo Guillermito.exe
 E:\Users\Usuario\Desktop\Facundo\Gestiones\masterliga-cba-gestion\Torneo Guillermito\bin\Release\Torneo Guillermito.pdb
@@ -245,3 +238,11 @@ E:\Users\Usuario\Desktop\Facundo\Gestiones\masterliga-cba-gestion\Torneo Guiller
 E:\Users\Usuario\Desktop\Facundo\Gestiones\masterliga-cba-gestion\Torneo Guillermito\obj\Release\Torneo Guillermito.exe
 E:\Users\Usuario\Desktop\Facundo\Gestiones\masterliga-cba-gestion\Torneo Guillermito\obj\Release\Torneo Guillermito.pdb
 E:\Users\Usuario\Desktop\Facundo\Gestiones\masterliga-cba-gestion\Torneo Guillermito\obj\Release\Torneo_Guillermito.AddStat.resources
+D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\obj\Release\LIPa.Properties.Resources.resources
+D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\bin\Release\Liga Infantil del Paraná.exe.config
+D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\bin\Release\Liga Infantil del Paraná.exe
+D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\bin\Release\Liga Infantil del Paraná.pdb
+D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\obj\Release\LIPa.AddStat.resources
+D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\obj\Release\LIPa.gbEncuentros.resources
+D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\obj\Release\Liga Infantil del Paraná.exe
+D:\PROYECTOS\MasterLiga\gestion\TorneoGuillermitoGestion\Torneo Guillermito\obj\Release\Liga Infantil del Paraná.pdb
